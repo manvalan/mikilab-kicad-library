@@ -6,11 +6,11 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "SW"
-			(at -7.62 8.89 0)
+			(at 0 5.08 0)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Value" "TS3425UA-3x4x2.5-160"
-			(at -7.62 -8.89 0)
+			(at 0 -5.08 0)
 			(effects (font (size 1.27 1.27)))
 		)
 		(property "Footprint" "MIKILAB_TS3425UA_3x4x2_5_160:TS3425UA-3x4x2.5-160"
@@ -21,42 +21,56 @@
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)
-		(property "Description" "SMD tactile switch, 4-pin (2 ganged contact pairs), 160gf actuation force"
+		(property "Description" "SMD tactile switch, 4-pin, 1-2 common and 3-4 common, 160gf"
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)
 		(symbol "TS3425UA-3x4x2.5-160_0_1"
-			(polyline (pts (xy -2.54 5.08) (xy 2.54 5.08)) (stroke (width 0)(type default)) (fill (type none)))
-			(polyline (pts (xy -1.27 5.08) (xy 1.905 6.858)) (stroke (width 0)(type default)) (fill (type none)))
-			(circle (center -2.54 5.08) (radius 0.254) (stroke (width 0)(type default)) (fill (type none)))
-			(circle (center 2.54 5.08) (radius 0.254) (stroke (width 0)(type default)) (fill (type none)))
-			(polyline (pts (xy -2.54 -5.08) (xy 2.54 -5.08)) (stroke (width 0)(type default)) (fill (type none)))
-			(polyline (pts (xy -1.27 -5.08) (xy 1.905 -3.302)) (stroke (width 0)(type default)) (fill (type none)))
-			(circle (center -2.54 -5.08) (radius 0.254) (stroke (width 0)(type default)) (fill (type none)))
-			(circle (center 2.54 -5.08) (radius 0.254) (stroke (width 0)(type default)) (fill (type none)))
-			(pin passive line
-				(at -7.62 5.08 0)
-				(length 5.08)
-				(name "3" (effects (font (size 1.27 1.27))))
-				(number "3" (effects (font (size 1.27 1.27))))
+			(polyline
+				(pts (xy -2.54 0) (xy 2.54 0))
+				(stroke (width 0) (type default))
+				(fill (type none))
+			)
+			(polyline
+				(pts (xy -1.27 0.508) (xy 1.905 2.286))
+				(stroke (width 0) (type default))
+				(fill (type none))
+			)
+			(circle
+				(center -2.54 0)
+				(radius 0.254)
+				(stroke (width 0) (type default))
+				(fill (type none))
+			)
+			(circle
+				(center 2.54 0)
+				(radius 0.254)
+				(stroke (width 0) (type default))
+				(fill (type none))
 			)
 			(pin passive line
-				(at 7.62 5.08 180)
-				(length 5.08)
-				(name "4" (effects (font (size 1.27 1.27))))
-				(number "4" (effects (font (size 1.27 1.27))))
-			)
-			(pin passive line
-				(at -7.62 -5.08 0)
+				(at -7.62 0 0)
 				(length 5.08)
 				(name "1" (effects (font (size 1.27 1.27))))
 				(number "1" (effects (font (size 1.27 1.27))))
 			)
 			(pin passive line
-				(at 7.62 -5.08 180)
+				(at -7.62 0 0)
 				(length 5.08)
 				(name "2" (effects (font (size 1.27 1.27))))
 				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 5.08)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 5.08)
+				(name "4" (effects (font (size 1.27 1.27))))
+				(number "4" (effects (font (size 1.27 1.27))))
 			)
 		)
 	)

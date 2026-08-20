@@ -1,0 +1,234 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "SJ-435107RS" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (id 0) (at -7.6327 10.9402 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "SJ-435107RS" (id 1) (at -7.63154 -12.7192 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "MIKILAB_SJ_435107RS:CUI_SJ-435107RS" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Same Sky" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "DESCRIPTION" "3.5 mm Right Angle Shielded _0.141, 1/8, Mini Plug_ Female HeadPhone Jack" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PACKAGE" "None" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PRICE" "1.04 USD" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/SJ-435107RS/Same+Sky/view-part/?ref=eda" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/SJ-435107RS/Same+Sky/view-part/?ref=snap" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "SJ-435107RS" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "AVAILABILITY" "Good" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            3.5 mm, Stereo, Right Angle, Through Hole, Spring Tabs, Ring Switch, Shielded, 4 Conductors, 0 Internal Switches, Audio Jack Connector\n                        \n" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "SJ-435107RS_0_0"
+      (polyline
+        (pts (xy -6.096 6.223) (xy -6.096 -1.143)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -6.096 -1.143) (xy -4.064 -1.143)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -4.064 -1.143) (xy -4.064 6.223)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -4.064 6.223) (xy -6.096 6.223)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 2.54) (xy 1.27 1.016)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 1.016) (xy 2.54 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 2.54) (xy 7.62 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 2.54) (xy 7.62 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 0.0) (xy 7.62 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 -2.54) (xy 7.62 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 -5.08) (xy 7.62 -10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 -10.16) (xy -7.62 -10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -7.62 -10.16) (xy -7.62 10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -7.62 10.16) (xy 7.62 10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.635 0.0) (xy 7.62 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.905 0.0) (xy -0.635 1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.635 1.524) (xy 0.635 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.635 5.08) (xy -1.905 3.556)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.905 3.556) (xy -3.175 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 5.08) (xy -0.635 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 6.35) (xy -5.08 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 7.62) (xy 7.62 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 7.62) (xy 7.62 10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 7.62) (xy 7.62 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 5.08) (xy 7.62 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.032 -4.318) (xy 2.54 -4.318)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -4.318) (xy 3.048 -4.318)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 -5.08) (xy 2.54 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -5.08) (xy 2.54 -4.318)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 -2.54) (xy 1.27 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -2.54) (xy 1.27 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 0.0) (xy 0.508 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.508 0.0) (xy 0.508 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.508 -2.54) (xy 1.27 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.032 -4.318) (xy 2.54 -3.175)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -3.175) (xy 3.048 -4.318)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts
+          (xy 2.159 -4.318)
+          (xy 3.048 -4.318)
+          (xy 2.54 -3.175)
+          (xy 2.032 -4.318)
+          (xy 2.159 -4.318)
+        )
+        (stroke (width 0.254)) (fill (type outline))
+      )
+      (pin passive line (at 10.16 7.62 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 2.54 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 -7.62 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "SH1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 -7.62 180.0) (length 2.54) hide
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "SH2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 -2.54 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 -5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

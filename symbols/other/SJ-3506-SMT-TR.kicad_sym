@@ -1,0 +1,221 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "SJ-3506-SMT-TR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (id 0) (at -17.78 23.495 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "SJ-3506-SMT-TR" (id 1) (at -17.78 -25.4 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "MIKILAB_SJ_3506_SMT_TR:CUI_SJ-3506-SMT-TR" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Same Sky" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "2.76mm" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/SJ-3506-SMT-TR/Same+Sky/view-part/?ref=eda" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer Recommendations" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "1.04" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/SJ-3506-SMT-TR/Same+Sky/view-part/?ref=snap" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "SJ-3506-SMT-TR" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            3.5 mm, Stereo, Right Angle, Mid Mount (SMT), Dual Switches, Shielded, 3 Conductors, Normally Open Switch, Audio Jack Connector\n                        \n" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Cui Devices" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "SJ-3506-SMT-TR_0_0"
+      (polyline
+        (pts (xy -12.7 0.0) (xy -12.7 -15.24)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -12.7 -15.24) (xy -7.62 -15.24)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -7.62 -15.24) (xy -7.62 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -7.62 0.0) (xy -10.16 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -10.16 0.0) (xy -12.7 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -10.16 0.0) (xy -10.16 20.32)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -10.16 20.32) (xy 7.62 20.32)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 20.32) (xy 15.24 20.32)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 7.62) (xy 0.0 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 2.54 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 7.62) (xy 15.24 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 2.54) (xy 15.24 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 -5.08) (xy -2.54 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -2.54) (xy 0.0 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -5.08) (xy 1.27 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -5.08) (xy 15.24 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -12.7) (xy 1.27 -12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -12.7) (xy 15.24 -12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 -20.32) (xy 15.24 -20.32)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -5.08) (xy 0.0 -12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.27 -5.08) (xy 1.27 -12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 -20.32) (xy 5.08 -17.78)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -7.62 12.7) (xy -5.08 10.16)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 10.16) (xy -2.54 12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 12.7) (xy 15.24 12.7)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts
+          (xy 6.35 3.81)
+          (xy 8.89 3.81)
+          (xy 7.62 7.62)
+          (xy 6.35 3.81)
+        )
+        (stroke (width 0.254)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 7.62 2.54) (xy 7.62 3.81)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts
+          (xy 3.81 -17.78)
+          (xy 6.35 -17.78)
+          (xy 5.08 -14.605)
+          (xy 3.81 -17.78)
+        )
+        (stroke (width 0.254)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 15.24 17.78) (xy 7.62 17.78)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 7.62 17.78) (xy 7.62 20.32)) (stroke (width 0.254))
+      )
+      (rectangle (start -17.78 -22.86) (end 15.24 22.86)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin passive line (at 20.32 12.7 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 7.62 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 -5.08 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 -12.7 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 -20.32 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 2.54 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 20.32 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "SH1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 20.32 17.78 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "SH2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

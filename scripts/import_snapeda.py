@@ -66,6 +66,7 @@ def main() -> int:
     parser.add_argument("--zip", required=True, help="Path to the SnapEDA .zip download")
     parser.add_argument("--name", help="Component name (default: taken from the symbol's own name)")
     parser.add_argument("--category", choices=lc.CATEGORIES, help="MIKILAB category (default: auto-detected)")
+    parser.add_argument("--update", action="store_true", help="Replace an existing component's symbol/footprint in place instead of refusing")
     args = parser.parse_args()
 
     zip_path = Path(args.zip).expanduser().resolve()
@@ -103,14 +104,14 @@ def main() -> int:
             report.append(f"  found {label}: {path.relative_to(tmp_dir) if path else '(none)'}")
 
         try:
-            ic.import_symbol(name, category, symbol, manifest_rows, report)
+            ic.import_symbol(name, category, symbol, manifest_rows, report, update=args.update)
         except ic.ImportError_ as e:
             print(f"ERROR: {e}")
             lc.append_manifest_rows(ROOT, [["symbol", str(zip_path), "", "ERROR", "", str(e)]])
             return 1
 
         if footprint is not None:
-            fp_path, fp_nick, fp_name, _ = ic.import_footprint(name, category, footprint, manifest_rows, report)
+            fp_path, fp_nick, fp_name, _ = ic.import_footprint(name, category, footprint, manifest_rows, report, update=args.update)
 
             if model is not None:
                 ic.import_model(name, category, model, fp_path, manifest_rows, report)

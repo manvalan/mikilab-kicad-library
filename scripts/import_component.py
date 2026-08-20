@@ -67,14 +67,21 @@ def validate_args(args) -> None:
         )
 
 
-def import_symbol(name: str, category: str, src: Path, manifest_rows: list, report: list) -> Path:
+def import_symbol(name: str, category: str, src: Path, manifest_rows: list, report: list, update: bool = False) -> Path:
     existing = lc.find_symbol_by_name(ROOT, name)
     if existing is not None:
-        raise ImportError_(
-            f"A component named '{name}' already exists: {existing.relative_to(ROOT)}. "
-            f"Refusing to overwrite -- choose a different --name or remove the existing "
-            f"component first."
-        )
+        if not update:
+            raise ImportError_(
+                f"A component named '{name}' already exists: {existing.relative_to(ROOT)}. "
+                f"Refusing to overwrite -- choose a different --name, pass --update to "
+                f"replace it in place, or remove the existing component first."
+            )
+
+        digest = lc.sha256_file(src)
+        shutil.copy2(src, existing)
+        manifest_rows.append(["symbol", str(src), str(existing.relative_to(ROOT)), "UPDATED", digest, f"category={category}"])
+        report.append(f"  SYMBOL   UPDATED    {existing.relative_to(ROOT)}")
+        return existing
 
     dst = ROOT / "symbols" / category / f"{name}.kicad_sym"
     dst.parent.mkdir(parents=True, exist_ok=True)
@@ -87,9 +94,24 @@ def import_symbol(name: str, category: str, src: Path, manifest_rows: list, repo
     return dst
 
 
-def import_footprint(name: str, category: str, src: Path, manifest_rows: list, report: list):
+def import_footprint(name: str, category: str, src: Path, manifest_rows: list, report: list, update: bool = False):
     """Returns (footprint_path_or_None_if_reused, fp_nickname, fp_name, status)."""
     digest = lc.sha256_file(src)
+    pretty_dir = ROOT / "footprints" / category / f"{name}.pretty"
+    basename = src.name
+
+    if update and pretty_dir.is_dir():
+        stale = [p for p in pretty_dir.glob("*.kicad_mod") if p.name != basename]
+        for p in stale:
+            p.unlink()
+            report.append(f"  FOOTPRINT REMOVED    stale variant {p.relative_to(ROOT)}")
+
+        target = pretty_dir / basename
+        pretty_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, target)
+        manifest_rows.append(["footprint", str(src), str(target.relative_to(ROOT)), "UPDATED", digest, f"category={category}"])
+        report.append(f"  FOOTPRINT UPDATED    {target.relative_to(ROOT)}")
+        return target, lc.fp_nickname(pretty_dir), target.stem, "UPDATED"
 
     existing = lc.find_footprint_by_hash(ROOT, digest)
     if existing is not None:
@@ -101,9 +123,6 @@ def import_footprint(name: str, category: str, src: Path, manifest_rows: list, r
         ])
         report.append(f"  FOOTPRINT DUPLICATE  reused {existing.relative_to(ROOT)}")
         return None, nickname, existing.stem, "DUPLICATE"
-
-    pretty_dir = ROOT / "footprints" / category / f"{name}.pretty"
-    basename = src.name
 
     colliding = lc.find_footprints_by_basename(ROOT, basename)
     if colliding:
@@ -182,6 +201,7 @@ def main() -> int:
     parser.add_argument("--symbol", required=True, help="Path to the source .kicad_sym file")
     parser.add_argument("--footprint", help="Path to the source .kicad_mod file")
     parser.add_argument("--model", help="Path to the source 3D model (.step/.stp/.wrl/.wrz)")
+    parser.add_argument("--update", action="store_true", help="Replace an existing component's symbol/footprint in place instead of refusing")
     args = parser.parse_args()
 
     try:
@@ -196,7 +216,7 @@ def main() -> int:
     report: list[str] = [f"Importing '{name}' into category '{category}'"]
 
     try:
-        import_symbol(name, category, Path(args.symbol).expanduser().resolve(), manifest_rows, report)
+        import_symbol(name, category, Path(args.symbol).expanduser().resolve(), manifest_rows, report, update=args.update)
     except ImportError_ as e:
         print(f"ERROR: {e}")
         lc.append_manifest_rows(ROOT, [["symbol", args.symbol, "", "ERROR", "", str(e)]])
@@ -205,7 +225,7 @@ def main() -> int:
     fp_path = None
     if args.footprint:
         fp_path, fp_nick, fp_name, _ = import_footprint(
-            name, category, Path(args.footprint).expanduser().resolve(), manifest_rows, report
+            name, category, Path(args.footprint).expanduser().resolve(), manifest_rows, report, update=args.update
         )
 
         if args.model:

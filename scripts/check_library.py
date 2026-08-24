@@ -111,6 +111,10 @@ def check_symbols(report: Report) -> list[tuple[str, Path]]:
     for path in files:
         basenames[path.name.lower()].append(path)
 
+        bad_name = lc.check_component_name(path.stem)
+        if bad_name:
+            report.error(f"[SYM] {path.relative_to(ROOT)}: {bad_name}")
+
         text = path.read_text(encoding="utf-8", errors="replace")
 
         if not text.lstrip().startswith("(kicad_symbol_lib"):
@@ -193,6 +197,10 @@ def check_footprints(report: Report) -> dict[str, Path]:
 
     for pretty in pretty_dirs:
         nickname = lc.fp_nickname(pretty)
+
+        bad_name = lc.check_component_name(pretty.name[: -len(".pretty")])
+        if bad_name:
+            report.error(f"[FP] {pretty.relative_to(ROOT)}: {bad_name}")
 
         for mod in sorted(pretty.glob("*.kicad_mod")):
             basenames[mod.name.lower()].append(mod)

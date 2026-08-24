@@ -89,6 +89,28 @@ def norm(value: str) -> str:
     return re.sub(r"[^a-zA-Z0-9]+", "_", value).strip("_")
 
 
+_MIKILAB_PREFIX_RE = re.compile(r"(?i)^mikilab[_\-]?")
+
+
+def check_component_name(name: str) -> str | None:
+    """Every library nickname gets 'MIKILAB_' prepended automatically by
+    sym_nickname()/fp_nickname() when the lib-tables are generated. A
+    --name that already starts with 'MIKILAB' therefore does not collide
+    with the existing component (so it's invisible to duplicate/collision
+    checks) -- it silently creates a second, double-prefixed orphan
+    library (e.g. MIKILAB_MIKILAB_FOO) alongside the real one. Returns an
+    error message if `name` should be rejected, else None."""
+    if _MIKILAB_PREFIX_RE.match(name):
+        return (
+            f"--name '{name}' must not start with 'MIKILAB' -- that prefix is added "
+            f"automatically to every library nickname when sym-lib-table/fp-lib-table "
+            f"are generated. Baking it into the component name creates a double-"
+            f"prefixed, orphaned duplicate library instead of updating the existing "
+            f"one. Use the bare part name (e.g. 'FOO', not 'MIKILAB_FOO')."
+        )
+    return None
+
+
 def classify(name: str) -> str:
     """Classify a component/library name into a MIKILAB category."""
     text = norm(name).lower()

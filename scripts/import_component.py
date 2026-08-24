@@ -19,6 +19,14 @@ symbol+footprint+3D model. --category is optional; if omitted it is
 inferred from --name using the same classification rules used elsewhere
 in this library.
 
+To remove a component instead:
+    python3 scripts/import_component.py --name TPS7A2018PDBVR --remove
+
+This deletes its symbol, its footprint library (if any) and its 3D
+model(s) (if any), logs the removal to MANIFEST.csv, and regenerates
+sym-lib-table/fp-lib-table. Only --name is required; every other option
+is ignored in --remove mode.
+
 Never overwrites an existing component. Never silently duplicates a
 footprint that already exists byte-for-byte elsewhere in the library --
 it is reused instead. A footprint with a colliding filename but different
@@ -68,6 +76,10 @@ def validate_args(args) -> None:
 
 
 def import_symbol(name: str, category: str, src: Path, manifest_rows: list, report: list, update: bool = False) -> Path:
+    bad_name = lc.check_component_name(name)
+    if bad_name:
+        raise ImportError_(bad_name)
+
     existing = lc.find_symbol_by_name(ROOT, name)
     if existing is not None:
         if not update:
@@ -96,6 +108,10 @@ def import_symbol(name: str, category: str, src: Path, manifest_rows: list, repo
 
 def import_footprint(name: str, category: str, src: Path, manifest_rows: list, report: list, update: bool = False):
     """Returns (footprint_path_or_None_if_reused, fp_nickname, fp_name, status)."""
+    bad_name = lc.check_component_name(name)
+    if bad_name:
+        raise ImportError_(bad_name)
+
     digest = lc.sha256_file(src)
     pretty_dir = ROOT / "footprints" / category / f"{name}.pretty"
     basename = src.name
@@ -148,6 +164,41 @@ def import_footprint(name: str, category: str, src: Path, manifest_rows: list, r
     return target, nickname, target.stem, status
 
 
+def remove_component(name: str, manifest_rows: list, report: list) -> None:
+    """Remove a component's symbol, its footprint library, and its 3D
+    model(s). Category is taken from where the symbol currently lives, so
+    the caller only needs --name."""
+    sym_path = lc.find_symbol_by_name(ROOT, name)
+    if sym_path is None:
+        raise ImportError_(f"No component named '{name}' found under symbols/ -- nothing to remove.")
+
+    category = sym_path.parent.name
+
+    digest = lc.sha256_file(sym_path)
+    sym_path.unlink()
+    manifest_rows.append(["symbol", str(sym_path.relative_to(ROOT)), "", "REMOVED", digest, f"category={category}"])
+    report.append(f"  SYMBOL   REMOVED    {sym_path.relative_to(ROOT)}")
+
+    pretty_dir = ROOT / "footprints" / category / f"{name}.pretty"
+    if pretty_dir.is_dir():
+        for mod in sorted(pretty_dir.glob("*.kicad_mod")):
+            digest = lc.sha256_file(mod)
+            manifest_rows.append(["footprint", str(mod.relative_to(ROOT)), "", "REMOVED", digest, f"category={category}"])
+            report.append(f"  FOOTPRINT REMOVED    {mod.relative_to(ROOT)}")
+        shutil.rmtree(pretty_dir)
+        report.append(f"  Removed directory {pretty_dir.relative_to(ROOT)}")
+
+    models_dir = ROOT / "3dmodels" / category
+    if models_dir.is_dir():
+        for model in sorted(models_dir.glob(f"{name}.*")):
+            if model.suffix.lower() not in lc.MODEL_EXTENSIONS:
+                continue
+            digest = lc.sha256_file(model)
+            model.unlink()
+            manifest_rows.append(["3d-model", str(model.relative_to(ROOT)), "", "REMOVED", digest, f"category={category}"])
+            report.append(f"  3D MODEL  REMOVED    {model.relative_to(ROOT)}")
+
+
 def import_model(name: str, category: str, src: Path, footprint_path: Path | None, manifest_rows: list, report: list):
     dst = ROOT / "3dmodels" / category / f"{name}{src.suffix.lower()}"
     dst.parent.mkdir(parents=True, exist_ok=True)
@@ -198,11 +249,39 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Import a single component into the MIKILAB library.")
     parser.add_argument("--name", required=True, help="Component name (used as the symbol/footprint base name)")
     parser.add_argument("--category", choices=lc.CATEGORIES, help="MIKILAB category (auto-detected from --name if omitted)")
-    parser.add_argument("--symbol", required=True, help="Path to the source .kicad_sym file")
+    parser.add_argument("--symbol", help="Path to the source .kicad_sym file (required unless --remove)")
     parser.add_argument("--footprint", help="Path to the source .kicad_mod file")
     parser.add_argument("--model", help="Path to the source 3D model (.step/.stp/.wrl/.wrz)")
     parser.add_argument("--update", action="store_true", help="Replace an existing component's symbol/footprint in place instead of refusing")
+    parser.add_argument("--remove", action="store_true", help="Remove an existing component (symbol + its footprint library + its 3D model(s)) and regenerate the lib-tables; only --name is required, every other option is ignored")
     args = parser.parse_args()
+
+    name = args.name.strip()
+    if not name:
+        print("ERROR: --name must not be empty")
+        return 1
+
+    if args.remove:
+        manifest_rows = []
+        report = [f"Removing '{name}'"]
+        try:
+            remove_component(name, manifest_rows, report)
+        except ImportError_ as e:
+            print(f"ERROR: {e}")
+            return 1
+
+        lc.append_manifest_rows(ROOT, manifest_rows)
+        sym_entries = lc.write_sym_lib_table(ROOT)
+        fp_entries = lc.write_fp_lib_table(ROOT)
+        report.append(f"Regenerated sym-lib-table ({len(sym_entries)} libraries) and fp-lib-table ({len(fp_entries)} libraries)")
+
+        print("\n".join(report))
+        print("\nOK.")
+        return 0
+
+    if not args.symbol:
+        print("ERROR: --symbol is required unless --remove is given")
+        return 1
 
     try:
         validate_args(args)
@@ -210,7 +289,6 @@ def main() -> int:
         print(f"ERROR: {e}")
         return 1
 
-    name = args.name.strip()
     category = args.category or lc.classify(name)
     manifest_rows: list[list[str]] = []
     report: list[str] = [f"Importing '{name}' into category '{category}'"]

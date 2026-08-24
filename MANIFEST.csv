@@ -610,3 +610,6 @@ footprint,footprints/other/MIKILAB_FSC-BT1058.pretty/FSC-BT1058.kicad_mod,footpr
 3d-model,3dmodels/other/MIKILAB_FSC-BT1058.step,(removed),REMOVED,cea88ca65e7f9b06ce5cb4949fce0614f2f21414267b4cc1655f1037cc54c1aa,"byte-identical duplicate of 3dmodels/other/FSC-BT1058.step, removed; category=other"
 symbol,/private/tmp/rmtest/TESTPART.kicad_sym,symbols/other/TESTPART.kicad_sym,NEW,9dd05201adaf0b2ff542da3882782d90098df849b8f5cb65ade71f255cf6a56a,category=other
 symbol,symbols/other/TESTPART.kicad_sym,,REMOVED,9dd05201adaf0b2ff542da3882782d90098df849b8f5cb65ade71f255cf6a56a,category=other
+symbol,symbols/other/FSC-BT1058.kicad_sym,symbols/rf/FSC-BT1058.kicad_sym,MOVED,ffd04c13db32c7bea4b500f235da29aa3f105eb512afb3d7d84fca442e3c8244,recategorized other -> rf; category=rf
+footprint,footprints/other/FSC-BT1058.pretty/FSC-BT1058.kicad_mod,footprints/rf/FSC-BT1058.pretty/FSC-BT1058.kicad_mod,REPLACED_AND_MOVED,cc0a2f7e5359e2ab87d5cf2226d668ffafb4c89246518fd31a61d4195d305086,geometry replaced with FSC-BT1035 pad layout (physically identical package); recategorized other -> rf; category=rf
+3d-model,3dmodels/other/FSC-BT1058.step,3dmodels/rf/FSC-BT1058.step,MOVED,cea88ca65e7f9b06ce5cb4949fce0614f2f21414267b4cc1655f1037cc54c1aa,recategorized other -> rf; category=rf

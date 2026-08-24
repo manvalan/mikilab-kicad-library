@@ -52,7 +52,7 @@ CATEGORY_RULES = [
         "ina218", "tca9555",
     ]),
     ("rf", [
-        "bluetooth", "bt1035", "wifi", "wlan", "antenna",
+        "bluetooth", "bt1035", "bt1058", "wifi", "wlan", "antenna",
         "gps", "gnss", "nfc", "transceiver", "phy", "ethernet",
         "rf",
     ]),

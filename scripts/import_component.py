@@ -273,7 +273,14 @@ def main() -> int:
         lc.append_manifest_rows(ROOT, manifest_rows)
         sym_entries = lc.write_sym_lib_table(ROOT)
         fp_entries = lc.write_fp_lib_table(ROOT)
+        lc.write_global_tables(ROOT)
         report.append(f"Regenerated sym-lib-table ({len(sym_entries)} libraries) and fp-lib-table ({len(fp_entries)} libraries)")
+        report.append("Regenerated sym-lib-table.global and fp-lib-table.global")
+        report.append(
+            "NOTE: if this library is registered globally in KiCad (README.md section 1), "
+            "also re-run the merge step to update ~/Library/Preferences/kicad/*/sym-lib-table "
+            "and fp-lib-table, or the removed component will still resolve there."
+        )
 
         print("\n".join(report))
         print("\nOK.")
@@ -327,7 +334,14 @@ def main() -> int:
 
     sym_entries = lc.write_sym_lib_table(ROOT)
     fp_entries = lc.write_fp_lib_table(ROOT)
+    lc.write_global_tables(ROOT)
     report.append(f"Regenerated sym-lib-table ({len(sym_entries)} libraries) and fp-lib-table ({len(fp_entries)} libraries)")
+    report.append("Regenerated sym-lib-table.global and fp-lib-table.global")
+    report.append(
+        "NOTE: if this library is registered globally in KiCad (README.md section 1), "
+        "also re-run the merge step to update ~/Library/Preferences/kicad/*/sym-lib-table "
+        "and fp-lib-table, or the new component will not show up there."
+    )
 
     print("\n".join(report))
     print("\nOK.")

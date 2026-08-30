@@ -307,6 +307,77 @@ bottom-to-top) identical to the datasheet's own Table 3-2 pin order, so
 straight lines in the silkscreen (cosmetic only, no pad geometry
 affected). No 3D model is included.
 
+## 7. Programmatic API (for integrating into other apps)
+
+For apps that want to add/update/remove/query components without
+shelling out to `add_component.py` and parsing its human-readable
+report, there are two entry points on top of the exact same
+`import_component.py` core logic (same validation, collision handling,
+and lib-table regeneration as every path in section 5):
+
+- **`scripts/mikilab_lib.py`** — a typed Python API, for Python apps to
+  import directly:
+
+  ```python
+  import sys
+  sys.path.insert(0, "/path/to/mikylab_kikad_library/scripts")
+  import mikilab_lib as mikilab
+
+  result = mikilab.add_component(
+      name="TPS7A2018PDBVR",
+      symbol="/path/TPS7A2018PDBVR.kicad_sym",
+      footprint="/path/SOT95P280X145-5N.kicad_mod",   # optional
+      model="/path/TPS7A2018PDBVR.step",               # optional
+      category="power",                                 # optional, auto-detected if omitted
+  )
+  # -> ComponentResult(name=..., category=..., action="add", symbol_path=..., ...)
+
+  mikilab.update_component(name="TPS7A2018PDBVR", symbol=..., footprint=...)  # upsert: replaces in place
+  mikilab.remove_component(name="TPS7A2018PDBVR")
+
+  mikilab.get_component("TPS7A2018PDBVR")        # -> ComponentInfo | None
+  mikilab.list_components(category="power")       # -> list[ComponentInfo]
+  mikilab.find_components("tps22")                # -> list[ComponentInfo], substring match
+  ```
+
+  Failures raise `mikilab.MikilabError` (a single exception type, message
+  safe to show to a user or log as-is) instead of printing and exiting.
+
+- **`scripts/mikilab_cli.py`** — the same operations exposed as a stable
+  JSON-over-stdout CLI, for apps in Swift, C++, or anything else that
+  can spawn a subprocess:
+
+  ```
+  python3 scripts/mikilab_cli.py add --name TPS7A2018PDBVR \
+      --symbol /path/TPS7A2018PDBVR.kicad_sym \
+      --footprint /path/SOT95P280X145-5N.kicad_mod --category power
+
+  python3 scripts/mikilab_cli.py update --name TPS7A2018PDBVR --symbol /path/...
+  python3 scripts/mikilab_cli.py remove --name TPS7A2018PDBVR
+  python3 scripts/mikilab_cli.py get    --name TPS7A2018PDBVR
+  python3 scripts/mikilab_cli.py list   [--category power]
+  python3 scripts/mikilab_cli.py find   --query tps22 [--category power]
+  ```
+
+  Every invocation prints exactly one JSON object to stdout —
+  `{"ok": true, "data": ...}` or `{"ok": false, "error": "..."}` — and
+  exits 0 iff `"ok"` is `true`. From Swift: run it via `Process`, decode
+  stdout with `JSONDecoder`. From C++: `popen`/`posix_spawn` plus any
+  JSON library (e.g. `nlohmann::json`).
+
+Both entry points regenerate `sym-lib-table`, `fp-lib-table`,
+`sym-lib-table.global` and `fp-lib-table.global`, and append to
+`MANIFEST.csv`, on every mutating call — same guarantees as
+`add_component.py`. Neither touches KiCad's real global tables under
+`~/Library/Preferences/kicad/*/` — if this library is registered
+globally (section 1), merging new entries there is still a separate,
+deliberate step (section 1, step 3), so that an app driving this API
+never silently rewrites your live KiCad configuration.
+
+`update_component()`/`update` does not move a component between
+categories — recategorizing means `remove` + `add` under the new
+category.
+
 ## Provenance
 
 `MANIFEST.csv` has one row per file in the library (`type`, `source`,

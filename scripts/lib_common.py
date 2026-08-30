@@ -239,6 +239,25 @@ def write_fp_lib_table(root: Path) -> list[LibEntry]:
     return entries
 
 
+def write_global_tables(root: Path, env_var: str = "MIKILAB") -> tuple[list[LibEntry], list[LibEntry]]:
+    """Regenerate sym-lib-table.global / fp-lib-table.global (the
+    ${MIKILAB}-based variants used when this library is registered
+    globally in KiCad, across every project). Mirrors write_sym_lib_table
+    / write_fp_lib_table, which only cover the ${KIPRJMOD} project
+    tables -- those alone are not enough for components to show up in
+    KiCad when this library is used globally (see README.md section 1)."""
+    sym_entries = build_sym_table_entries(root, env_var=env_var)
+    fp_entries = build_fp_table_entries(root, env_var=env_var)
+
+    (root / "sym-lib-table.global").write_text(
+        render_lib_table("sym_lib_table", sym_entries), encoding="utf-8"
+    )
+    (root / "fp-lib-table.global").write_text(
+        render_lib_table("fp_lib_table", fp_entries), encoding="utf-8"
+    )
+    return sym_entries, fp_entries
+
+
 LIB_ENTRY_RE = re.compile(
     r'\(lib\s*\(name\s*"([^"]*)"\)\s*\(type\s*"([^"]*)"\)\s*'
     r'\(uri\s*"([^"]*)"\)\s*\(options\s*"([^"]*)"\)\s*'

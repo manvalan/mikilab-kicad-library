@@ -219,8 +219,8 @@ def check_footprints(report: Report) -> dict[str, Path]:
             key = f"{nickname}:{mod.stem}"
             footprint_owner[key] = mod
 
-            for model_m in re.finditer(r'\(model\s+([^\s)]+)', text):
-                model_ref = model_m.group(1)
+            for model_m in re.finditer(r'\(model\s+"([^"]+)"|\(model\s+([^\s)]+)', text):
+                model_ref = model_m.group(1) or model_m.group(2)
                 check_model_reference(report, mod, model_ref)
 
     for digest, paths in seen_hash.items():

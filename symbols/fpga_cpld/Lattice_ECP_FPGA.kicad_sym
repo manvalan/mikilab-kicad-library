@@ -4837,7 +4837,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LFE5U-45F-8BG381I"
+		(property "Value" "LFE5U-45F-8BG381C"
 			(at 3.81 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4883,7 +4883,7 @@
 				)
 			)
 		)
-		(property "manf#" "LFE5U-45F-8BG381I"
+		(property "manf#" "LFE5U-45F-8BG381C"
 			(at 3.81 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)

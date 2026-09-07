@@ -202,6 +202,8 @@
   (lib (name "MIKILAB_74xGxx")(type "KiCad")(uri "${MIKILAB}/symbols/other/74xGxx.kicad_sym")(options "")(descr "74xGxx"))
   (lib (name "MIKILAB_ADG936BCPZ")(type "KiCad")(uri "${MIKILAB}/symbols/other/ADG936BCPZ.kicad_sym")(options "")(descr "ADG936BCPZ"))
   (lib (name "MIKILAB_ADG936BRUZ")(type "KiCad")(uri "${MIKILAB}/symbols/other/ADG936BRUZ.kicad_sym")(options "")(descr "ADG936BRUZ"))
+  (lib (name "MIKILAB_AS4C32M16SA_7TCNTR")(type "KiCad")(uri "${MIKILAB}/symbols/other/AS4C32M16SA-7TCNTR.kicad_sym")(options "")(descr "AS4C32M16SA-7TCNTR"))
+  (lib (name "MIKILAB_AS4C32M16SB_7BIN")(type "KiCad")(uri "${MIKILAB}/symbols/other/AS4C32M16SB-7BIN.kicad_sym")(options "")(descr "AS4C32M16SB-7BIN"))
   (lib (name "MIKILAB_Amplifier_Current")(type "KiCad")(uri "${MIKILAB}/symbols/other/Amplifier_Current.kicad_sym")(options "")(descr "Amplifier_Current"))
   (lib (name "MIKILAB_Amplifier_Difference")(type "KiCad")(uri "${MIKILAB}/symbols/other/Amplifier_Difference.kicad_sym")(options "")(descr "Amplifier_Difference"))
   (lib (name "MIKILAB_Amplifier_Instrumentation")(type "KiCad")(uri "${MIKILAB}/symbols/other/Amplifier_Instrumentation.kicad_sym")(options "")(descr "Amplifier_Instrumentation"))

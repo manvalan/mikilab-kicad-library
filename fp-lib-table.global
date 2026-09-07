@@ -65,6 +65,7 @@
   (lib (name "MIKILAB_bel_fuse")(type "KiCad")(uri "${MIKILAB}/footprints/other/bel_fuse.pretty")(options "")(descr "bel_fuse.pretty"))
   (lib (name "MIKILAB_bourns")(type "KiCad")(uri "${MIKILAB}/footprints/other/bourns.pretty")(options "")(descr "bourns.pretty"))
   (lib (name "MIKILAB_castellated_breakouts")(type "KiCad")(uri "${MIKILAB}/footprints/other/castellated_breakouts.pretty")(options "")(descr "castellated_breakouts.pretty"))
+  (lib (name "MIKILAB_castellated_edge")(type "KiCad")(uri "${MIKILAB}/footprints/other/castellated_edge.pretty")(options "")(descr "castellated_edge.pretty"))
   (lib (name "MIKILAB_ck")(type "KiCad")(uri "${MIKILAB}/footprints/other/ck.pretty")(options "")(descr "ck.pretty"))
   (lib (name "MIKILAB_coilcraft")(type "KiCad")(uri "${MIKILAB}/footprints/other/coilcraft.pretty")(options "")(descr "coilcraft.pretty"))
   (lib (name "MIKILAB_cts")(type "KiCad")(uri "${MIKILAB}/footprints/other/cts.pretty")(options "")(descr "cts.pretty"))

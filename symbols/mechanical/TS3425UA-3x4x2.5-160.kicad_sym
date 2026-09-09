@@ -17,11 +17,23 @@
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C51927439.pdf"
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)
-		(property "Description" "SMD tactile switch, 4-pin, 1-2 common and 3-4 common, 160gf"
+		(property "Description" "SMD tactile switch, oval actuator, 4-pin (1-2 common, 3-4 common), 160gf. Verified against the official SHOUHAN/CAX mechanical drawing and against the LCSC/EasyEDA part data for LCSC C51927439 (exact MPN match); previous revision was traced from an unverified fabricated EasyEDA project."
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "Manufacturer" "CAX (Shenzhen ShouHan Technology Co., Ltd. / 深圳市首韩科技有限公司)"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "MPN" "TS3425UA-3x4x2.5-160"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) hide)
+		)
+		(property "LCSC Part" "C51927439"
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) hide)
 		)

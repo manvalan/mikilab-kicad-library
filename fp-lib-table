@@ -14,6 +14,7 @@
   (lib (name "MIKILAB_hdmi")(type "KiCad")(uri "${KIPRJMOD}/footprints/interface/hdmi.pretty")(options "")(descr "hdmi.pretty"))
   (lib (name "MIKILAB_usb3_esd_son50_10")(type "KiCad")(uri "${KIPRJMOD}/footprints/interface/usb3_esd_son50-10.pretty")(options "")(descr "usb3_esd_son50-10.pretty"))
   (lib (name "MIKILAB_usb3_micro_ab")(type "KiCad")(uri "${KIPRJMOD}/footprints/interface/usb3_micro_ab.pretty")(options "")(descr "usb3_micro_ab.pretty"))
+  (lib (name "MIKILAB_Keebio_Parts")(type "KiCad")(uri "${KIPRJMOD}/footprints/mechanical/Keebio-Parts.pretty")(options "")(descr "Keebio-Parts.pretty"))
   (lib (name "MIKILAB_TS3425UA_3x4x2_5_160")(type "KiCad")(uri "${KIPRJMOD}/footprints/mechanical/TS3425UA-3x4x2.5-160.pretty")(options "")(descr "TS3425UA-3x4x2.5-160.pretty"))
   (lib (name "MIKILAB_IS66WVE4M16EBLL_70BLI")(type "KiCad")(uri "${KIPRJMOD}/footprints/memory/IS66WVE4M16EBLL-70BLI.pretty")(options "")(descr "IS66WVE4M16EBLL-70BLI.pretty"))
   (lib (name "MIKILAB_ESP32_C3_MINI_1")(type "KiCad")(uri "${KIPRJMOD}/footprints/microcontrollers/ESP32-C3-MINI-1.pretty")(options "")(descr "ESP32-C3-MINI-1.pretty"))

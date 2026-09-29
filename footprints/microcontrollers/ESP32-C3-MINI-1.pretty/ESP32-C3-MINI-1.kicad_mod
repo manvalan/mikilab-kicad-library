@@ -159,7 +159,7 @@
       )
     )
   )
-  (model ${KIPRJMOD}/3dmodels/microcontrollers/ESP32-C3-MINI-1.step
+  (model ${MIKILAB}/3dmodels/microcontrollers/ESP32-C3-MINI-1.step
     (offset (xyz -6.6 -8.37 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

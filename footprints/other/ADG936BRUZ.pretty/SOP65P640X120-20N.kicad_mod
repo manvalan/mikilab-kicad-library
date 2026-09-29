@@ -129,7 +129,7 @@
   (fp_line (start -0.3048 -3.302) (end -2.2352 -3.302) (layer F.Fab) (width 0.1524))
   (fp_line (start -2.2352 -3.302) (end -2.2352 3.302) (layer F.Fab) (width 0.1524))
   (fp_arc (start 0.0 -3.302) (end -0.3048 -3.302) (angle -180.0) (layer F.Fab) (width 0.1524))
-  (model ${KIPRJMOD}/3dmodels/other/ADG936BRUZ.step
+  (model ${MIKILAB}/3dmodels/other/ADG936BRUZ.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

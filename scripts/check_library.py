@@ -261,7 +261,7 @@ def check_model_reference(report: Report, footprint_path: Path, model_ref: str):
         )
         return
 
-    if "${KIPRJMOD}" in model_ref:
+    if "${KIPRJMOD}" in model_ref or "${MIKILAB}" in model_ref:
         resolved = lc.resolve_uri(model_ref, ROOT)
         if not resolved.exists():
             report.error(

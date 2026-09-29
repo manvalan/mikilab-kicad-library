@@ -39,7 +39,7 @@
   (fp_line (start -1.605 1.25) (end 1.605 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.605 -1.25) (end -1.605 1.25) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.605 -1.25) (end 1.605 1.25) (layer F.CrtYd) (width 0.05))
-  (model ${KIPRJMOD}/3dmodels/other/TPS22965DSGR.step
+  (model ${MIKILAB}/3dmodels/other/TPS22965DSGR.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

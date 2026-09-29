@@ -112,7 +112,7 @@
       )
     )
   )
-  (model ${KIPRJMOD}/3dmodels/microcontrollers/ESP32-WROVER-E.step
+  (model ${MIKILAB}/3dmodels/microcontrollers/ESP32-WROVER-E.step
     (offset (xyz -9 -15.7 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

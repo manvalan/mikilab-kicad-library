@@ -26,7 +26,7 @@
 	(fp_line (start 0.7632 -0.6345) (end 0.762 0.6349) (stroke (width 0.254) (type default)) (layer "F.SilkS"))
 	(fp_line (start -0.7608 0.6355) (end -0.762 -0.6351) (stroke (width 0.254) (type default)) (layer "F.SilkS"))
 	(fp_rect (start -2.85 -1.925) (end 2.85 1.925) (stroke (width 0.05) (type default)) (layer "F.CrtYd"))
-  (model ${KIPRJMOD}/3dmodels/mechanical/TS3425UA-3x4x2.5-160.step
+  (model ${MIKILAB}/3dmodels/mechanical/TS3425UA-3x4x2.5-160.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

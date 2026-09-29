@@ -143,9 +143,11 @@ In the footprint assignment tool / PCB editor, footprints are available as
 
 ## 4. How 3D models are resolved
 
-Footprints reference 3D models with `${KIPRJMOD}/3dmodels/<category>/<Name>.step`,
-resolved relative to this library — portable by construction, no
-absolute paths anywhere.
+Footprints reference 3D models with `${MIKILAB}/3dmodels/<category>/<Name>.step`.
+`MIKILAB` is the path variable defined in KiCad → Preferences → Configure
+Paths (see §1, Option B), so models resolve from any project — no absolute
+paths anywhere. (`${KIPRJMOD}` is *not* used for 3D models: it resolves to
+the currently open project's folder, not to this library.)
 
 **Known gap (pre-existing, not introduced by this cleanup):** a set of
 vendor-imported footprints (`footprints/other/*.pretty` and a few others —
@@ -453,29 +455,95 @@ before finalizing a schematic around this part.
 
 ### Espressif modules
 
-19 module symbols (each with footprint + 3D model) were imported from
-the official [espressif/kicad-libraries](https://github.com/espressif/kicad-libraries)
-repository: `ESP32-C3-MINI-1`, `ESP32-C3-WROOM-02`, `ESP32-C5-WROOM-1`,
-`ESP32-C5-WROOM-1U`, `ESP32-C6-MINI-1/U`, `ESP32-C6-WROOM-1`,
-`ESP32-H2-MINI-1`, `ESP32-MINI-1`, `ESP32-S2-MINI-1`, `ESP32-S2-SOLO`,
-`ESP32-S2-WROOM`, `ESP32-S2-WROVER`, `ESP32-S3-MINI-1`,
-`ESP32-S3-WROOM-1`, `ESP32-S3-WROOM-2`, `ESP32-S31-WROOM-3`,
-`ESP32-WROOM-E`, `ESP32-WROVER-E`, `ESP8684-WROOM-02C/U`. Bare SoC/die
-symbols (`ESP32`, `ESP32-C3`, `ESP32-S3`, `ESP8266`, ...) and DevKit
-board symbols were skipped -- they have no footprint of their own (dies)
-or aren't components you'd place on your own board (dev boards).
+The **complete** official
+[espressif/kicad-libraries](https://github.com/espressif/kicad-libraries)
+library (snapshot `Espressif.kicad_sym` version `20251024`) is mirrored
+here: all 49 symbols, all 54 footprints, and every 3D model any of
+those footprints references (29 of upstream's 30 STEP files -- see
+"3D model references" below). Following this library's
+one-library-per-part architecture, the
+single upstream `Espressif.kicad_sym` was split into 49 independent
+`symbols/microcontrollers/<part>.kicad_sym` files rather than imported
+whole. Parts whose name contains a `/` upstream use `_` on disk
+(`ESP32-C6-MINI-1/U` -> `ESP32-C6-MINI-1_U.kicad_sym`).
+
+The import covers three kinds of part:
+
+- **Modules** (`ESP32-S3-WROOM-1`, `ESP32-C6-MINI-1/U`, `ESP32-P4`,
+  `ESP32-PICO-MINI-02`, `ESP8685-WROOM-06`, ...) -- symbol + its own
+  footprint library, plus a STEP model where upstream provides one.
+- **DevKit boards** (`ESP32-DevKitC`, `ESP32-S3-DevKitC`,
+  `ESP32-S2-Saola-1`, ...) -- symbol + the board-outline/header
+  footprint you'd use to carry the devkit on a motherboard. Upstream
+  ships no 3D models for these.
+- **Bare SoCs/dies** (`ESP32`, `ESP32-C3`, `ESP8266`, `ESP32-C6FH4`,
+  ...) -- symbol only. These 12 deliberately keep their upstream
+  `Package_DFN_QFN:QFN-...` footprint reference, which resolves against
+  the *stock* KiCad footprint library that ships with every install;
+  duplicating those QFN footprints into MIKILAB would serve no purpose
+  (see the note in section 6 about external library references).
+
+Two details worth knowing:
+
+- `ESP32-P4X` shares `ESP32-P4`'s footprint byte-for-byte, so the
+  importer's content-hash deduplication reused it: both symbols point at
+  `MIKILAB_ESP32_P4:ESP32-P4` and there is no `ESP32-P4X.pretty`.
+- `ESP8685-Wroom-05` is a footprint with no symbol upstream. It is kept
+  as a footprint-only library, `MIKILAB_ESP8685_WROOM_05`.
+
 `ESP32-S31-WROOM-3` **replaces** an earlier `easyeda2kicad.py`-exported
 version that had a fatal unquoted-URL syntax error in `(generator ...)`
 (see the earlier commit fixing that bug) -- the official symbol/footprint
 is used now instead.
 
-All 19 footprints originally referenced their 3D model via
-`${KICAD8_3RD_PARTY}` / `${KICAD9_3RD_PARTY}` (the path KiCad's Plugin
-and Content Manager uses when a library is installed through it). Since
-this library is not PCM-installed, that variable is never defined here;
-the references were repointed to `${KIPRJMOD}/3dmodels/microcontrollers/`
-using the STEP files copied in alongside each part, so every model
-resolves without needing PCM or any extra KiCad configuration.
+#### Footprint variants
+
+Upstream ships several footprints per module family, not just one. All
+of them are present, sitting together in the `.pretty` of the part they
+belong to (a `.pretty` is a footprint *library*, so it holds as many
+footprints as the part has variants):
+
+- **`...U` antenna variants** -- the U-suffixed part number (external
+  antenna connector instead of a PCB antenna), e.g.
+  `MIKILAB_ESP32_C3_MINI_1` contains both `ESP32-C3-MINI-1` and
+  `ESP32-C3-MINI-1U`.
+- **`..._HandSoldering`** -- same part, pads lengthened for hand
+  assembly (`ESP32-C3-MINI-1`, `ESP32-S2-MINI-1`, `ESP32-PICO-MINI-02`).
+- **`ESP32-WROVER-E_ThermalVias`** -- WROVER-E with the thermal via
+  array under the module.
+- **`ESP32-S2-SOLO-2U`** and **`ESP32-WROOM-32UE`** -- the U variants of
+  `ESP32-S2-SOLO` / `ESP32-WROOM-E`, which live in those parts'
+  libraries.
+
+#### 3D model references
+
+Every upstream footprint references its 3D model via
+`${KICAD8_3RD_PARTY}` / `${KICAD9_3RD_PARTY}` -- the path KiCad's Plugin
+and Content Manager uses when a library is installed through it. This
+library is not PCM-installed, so that variable is never defined here and
+every such reference was repointed to
+`${KIPRJMOD}/3dmodels/microcontrollers/` alongside the STEP files copied
+in, so models resolve with no PCM and no extra KiCad configuration.
+Models shared between variants (e.g. a HandSoldering footprint uses the
+same body as its normal-pad sibling) are stored once and reused, not
+duplicated.
+
+The one exception is `ESP32-H2`, whose upstream footprint is a copy of
+the generic `QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm` package and points at
+KiCad's own bundled model. That reference was rewritten to
+`${KISYS3DMOD}/Package_DFN_QFN.3dshapes/...`, the standard KiCad
+variable for stock 3D models, rather than copying a stock asset in.
+
+Two upstream 3D assets are deliberately **not** mirrored, because no
+footprint references them and every model in `3dmodels/` is otherwise
+guaranteed to be reachable from a footprint:
+
+- `ESP32-WROOM-32E_No-Cover.STEP` -- a cutaway render of the WROOM-32E
+  with its shield lid removed, for illustration rather than assembly.
+- the 8 `.wrl` files, which are lower-fidelity duplicates of STEP bodies
+  already imported (upstream's own footprints point at the `.STEP`).
+
+Copy either in by hand and add the `(model ...)` line if you want them.
 
 ## Source safety
 

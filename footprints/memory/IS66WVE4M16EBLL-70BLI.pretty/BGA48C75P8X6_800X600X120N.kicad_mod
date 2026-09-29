@@ -74,7 +74,7 @@
   (fp_line (start -4.0 -5.0) (end 4.0 -5.0) (layer F.CrtYd) (width 0.05))
   (fp_line (start -4.0 5.0) (end -4.0 -5.0) (layer F.CrtYd) (width 0.05))
   (fp_line (start 4.0 5.0) (end 4.0 -5.0) (layer F.CrtYd) (width 0.05))
-  (model ${KIPRJMOD}/3dmodels/memory/IS66WVE4M16EBLL-70BLI.step
+  (model ${MIKILAB}/3dmodels/memory/IS66WVE4M16EBLL-70BLI.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

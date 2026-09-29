@@ -241,7 +241,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "9700fc9b-b921-4996-98a1-719f6d04e3d3")
 	)
-	(model "${KIPRJMOD}/3dmodels/mechanical/Keebio-Parts/SK6812MINI-E v1.step"
+	(model "${MIKILAB}/3dmodels/mechanical/Keebio-Parts/SK6812MINI-E v1.step"
 		(offset
 			(xyz 0 0 0)
 		)

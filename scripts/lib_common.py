@@ -308,8 +308,8 @@ def parse_lib_table(path: Path) -> tuple[list[LibEntry], int]:
 
 
 def resolve_uri(uri: str, root: Path) -> Path:
-    """Resolve a lib-table URI (using ${KIPRJMOD}) to an absolute path."""
-    resolved = uri.replace("${KIPRJMOD}", str(root))
+    """Resolve a lib-table / 3D model URI (using ${KIPRJMOD} or ${MIKILAB}) to an absolute path."""
+    resolved = uri.replace("${KIPRJMOD}", str(root)).replace("${MIKILAB}", str(root))
     return Path(resolved)
 
 

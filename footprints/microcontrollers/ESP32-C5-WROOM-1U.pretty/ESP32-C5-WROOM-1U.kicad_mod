@@ -444,7 +444,7 @@
 		(uuid "eae6d9b8-1a72-412b-aa2f-4b9b05244464")
 	)
 	(embedded_fonts no)
-	(model ${KIPRJMOD}/3dmodels/microcontrollers/ESP32-C5-WROOM-1U.step
+	(model ${MIKILAB}/3dmodels/microcontrollers/ESP32-C5-WROOM-1U.step
 		(offset
 			(xyz -8.75 -10.6 0)
 		)

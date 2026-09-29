@@ -116,7 +116,7 @@
       (xy 0.170138 1.39113)
     ) (layer F.Paste) (width 0.01)
   )
-  (model ${KIPRJMOD}/3dmodels/audio/TLV320AIC3104IRHBR.step
+  (model ${MIKILAB}/3dmodels/audio/TLV320AIC3104IRHBR.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

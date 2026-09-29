@@ -122,7 +122,7 @@
       )
     )
   )
-  (model ${KIPRJMOD}/3dmodels/microcontrollers/ESP32-S3-WROOM-1.step
+  (model ${MIKILAB}/3dmodels/microcontrollers/ESP32-S3-WROOM-1.step
     (opacity 0.7500)    (offset (xyz -9 -9.75 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -80,7 +80,7 @@
   (fp_line (start -5.0 -5.0) (end 5.0 -5.0) (layer F.CrtYd) (width 0.05))
   (fp_line (start -5.0 5.0) (end -5.0 -5.0) (layer F.CrtYd) (width 0.05))
   (fp_line (start 5.0 5.0) (end 5.0 -5.0) (layer F.CrtYd) (width 0.05))
-  (model ${KIPRJMOD}/3dmodels/other/AS4C32M16SB-7BIN.step
+  (model ${MIKILAB}/3dmodels/other/AS4C32M16SB-7BIN.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -88,7 +88,7 @@
 	(fp_line (start -3.0 -16.5) (end -5.5 -16.5) (stroke (width 0.4) (type default)) (layer "F.SilkS"))
 	(fp_rect (start -6.5 -17.5) (end 6.5 10.0) (stroke (width 0.05) (type default)) (layer "F.Fab"))
 	(fp_rect (start -6.75 -17.75) (end 6.75 10.25) (stroke (width 0.05) (type default)) (layer "F.CrtYd"))
-	(model ${KIPRJMOD}/3dmodels/rf/FSC-BT1058.step
+	(model ${MIKILAB}/3dmodels/rf/FSC-BT1058.step
 		(offset (xyz 0 0 0))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

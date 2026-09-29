@@ -28,7 +28,7 @@
   (fp_line (start -3.905 1.75) (end 3.905 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.905 -1.75) (end -3.905 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.905 -1.75) (end 3.905 1.75) (layer F.CrtYd) (width 0.05))
-  (model ${KIPRJMOD}/3dmodels/other/CDCLVC1102PW.step
+  (model ${MIKILAB}/3dmodels/other/CDCLVC1102PW.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -375,7 +375,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model ${KIPRJMOD}/3dmodels/microcontrollers/ESP8684-WROOM-02C_U.step
+	(model ${MIKILAB}/3dmodels/microcontrollers/ESP8684-WROOM-02C_U.step
 		(offset
 			(xyz -8.53 -9.575 0)
 		)

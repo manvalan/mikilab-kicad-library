@@ -20,7 +20,7 @@
   (pad "C" thru_hole circle (at 0 1.25) (size 2 2) (drill 1) (layers *.Cu *.Mask) (tstamp 2c45b371-9b8e-42c8-bdd5-4f6d474df10e))
   (pad "S1" thru_hole circle (at -2.5 -1.25) (size 2 2) (drill 1) (layers *.Cu *.Mask) (tstamp 91515bce-ae49-46f6-a6d4-251d8dfb69f6))
   (pad "S2" thru_hole circle (at 2.5 -1.25) (size 2 2) (drill 1) (layers *.Cu *.Mask) (tstamp fd129759-59b7-4afc-9202-6c07ff008728))
-  (model "${KIPRJMOD}/3dmodels/mechanical/Keebio-Parts/EC11B-SW-Horiz-15K-blue.step"
+  (model "${MIKILAB}/3dmodels/mechanical/Keebio-Parts/EC11B-SW-Horiz-15K-blue.step"
     (offset (xyz 0 -5 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

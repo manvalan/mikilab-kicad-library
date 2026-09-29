@@ -353,7 +353,7 @@
 		(uuid "7753422b-2717-467c-b158-a83eea20aa5d")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3dmodels/other/SJ-3506-SMT-TR.step"
+	(model "${MIKILAB}/3dmodels/other/SJ-3506-SMT-TR.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -971,7 +971,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model ${KIPRJMOD}/3dmodels/microcontrollers/ESP32-S31-WROOM-3.step
+	(model ${MIKILAB}/3dmodels/microcontrollers/ESP32-S31-WROOM-3.step
 		(offset
 			(xyz -11 -12 0)
 		)

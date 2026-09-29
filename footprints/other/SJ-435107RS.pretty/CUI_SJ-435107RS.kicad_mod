@@ -54,7 +54,7 @@
   (fp_line (start -6.25 -3.25) (end -6.25 -5.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -6.25 -5.5) (end -5.0 -5.5) (layer F.CrtYd) (width 0.05))
   (fp_line (start -2.0 -5.2) (end 3.4 -5.2) (layer F.SilkS) (width 0.127))
-  (model ${KIPRJMOD}/3dmodels/other/SJ-435107RS.step
+  (model ${MIKILAB}/3dmodels/other/SJ-435107RS.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

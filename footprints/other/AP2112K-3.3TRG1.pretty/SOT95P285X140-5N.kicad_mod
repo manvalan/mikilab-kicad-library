@@ -37,7 +37,7 @@
   (fp_line (start 1.1 -1.5) (end 1.1 -1.8) (layer F.CrtYd) (width 0.05))
   (fp_circle (center -2.469 -0.95) (end -2.369 -0.95) (layer F.SilkS) (width 0.2))
   (fp_circle (center -0.469 -0.95) (end -0.369 -0.95) (layer F.Fab) (width 0.2))
-  (model ${KIPRJMOD}/3dmodels/other/AP2112K-3.3TRG1.step
+  (model ${MIKILAB}/3dmodels/other/AP2112K-3.3TRG1.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

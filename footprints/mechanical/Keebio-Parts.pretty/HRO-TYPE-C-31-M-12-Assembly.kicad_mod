@@ -314,7 +314,7 @@
 		(remove_unused_layers no)
 		(uuid "77731ec8-612d-4a87-a63a-2943f8b60861")
 	)
-	(model "${KIPRJMOD}/3dmodels/mechanical/Keebio-Parts/HRO  TYPE-C-31-M-12.step"
+	(model "${MIKILAB}/3dmodels/mechanical/Keebio-Parts/HRO  TYPE-C-31-M-12.step"
 		(offset
 			(xyz -4.45 -3.65 0)
 		)

@@ -26,7 +26,7 @@
   (fp_line (start -2.105 -1.75) (end 2.105 -1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.105 -1.75) (end 2.105 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 2.105 1.75) (end -2.105 1.75) (layer F.CrtYd) (width 0.05))
-  (model ${KIPRJMOD}/3dmodels/other/MT3608.step
+  (model ${MIKILAB}/3dmodels/other/MT3608.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

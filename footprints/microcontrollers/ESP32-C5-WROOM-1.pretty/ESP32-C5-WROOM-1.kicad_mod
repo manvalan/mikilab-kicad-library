@@ -516,7 +516,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model ${KIPRJMOD}/3dmodels/microcontrollers/ESP32-C5-WROOM-1.step
+	(model ${MIKILAB}/3dmodels/microcontrollers/ESP32-C5-WROOM-1.step
 		(offset
 			(xyz -8.75 -13.75 0)
 		)

@@ -415,7 +415,7 @@
   (fp_text user "Stencil thickness 0.1 mm " (at -2.5 4.5) (layer F.Fab)
     (effects (font (size 0.32 0.32) (thickness 0.15)))
   )
-  (model ${KIPRJMOD}/3dmodels/other/TPS22994RUKT.step
+  (model ${MIKILAB}/3dmodels/other/TPS22994RUKT.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

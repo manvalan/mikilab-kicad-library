@@ -73,7 +73,7 @@
   (pad 46 smd rect (at -1.75 -4.238) (size 0.3 1.475) (layers F.Cu F.Paste F.Mask))
   (pad 47 smd rect (at -2.25 -4.238) (size 0.3 1.475) (layers F.Cu F.Paste F.Mask))
   (pad 48 smd rect (at -2.75 -4.238) (size 0.3 1.475) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/3dmodels/audio/PCM9211PTR.stp
+  (model ${MIKILAB}/3dmodels/audio/PCM9211PTR.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -41,7 +41,7 @@
   (fp_line (start 18.15 -8.75) (end -2.35 -8.75) (layer F.CrtYd) (width 0.05))
   (fp_circle (center 0.0 2.2) (end 0.1 2.2) (layer F.SilkS) (width 0.2))
   (fp_circle (center 0.0 2.2) (end 0.1 2.2) (layer F.Fab) (width 0.2))
-  (model ${KIPRJMOD}/3dmodels/other/SJ-43515TS-SMT-TR.step
+  (model ${MIKILAB}/3dmodels/other/SJ-43515TS-SMT-TR.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

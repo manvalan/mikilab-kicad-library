@@ -33,7 +33,7 @@
       (xy 2.5 1.5)
     ) (layer F.Fab) (width 0.01)
   )
-  (model ${KIPRJMOD}/3dmodels/other/SK6812.step
+  (model ${MIKILAB}/3dmodels/other/SK6812.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

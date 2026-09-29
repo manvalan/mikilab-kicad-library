@@ -222,7 +222,7 @@ def import_model(name: str, category: str, src: Path, footprint_path: Path | Non
         return
 
     text = footprint_path.read_text(encoding="utf-8")
-    model_uri = "${KIPRJMOD}/" + str(final.relative_to(ROOT))
+    model_uri = "${MIKILAB}/" + str(final.relative_to(ROOT))
 
     if "(model " in text:
         report.append(

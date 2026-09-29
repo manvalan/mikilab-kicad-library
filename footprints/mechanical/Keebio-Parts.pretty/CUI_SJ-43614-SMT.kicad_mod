@@ -73,7 +73,7 @@
   (pad "2" smd rect (at -3.975 10.2 90) (size 1.8 1.65) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b30a18fe-6e59-44a5-af77-a5f205210551))
   (pad "3" smd rect (at -3.975 6 90) (size 1.8 1.65) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 505cd4e1-e8fc-42bd-801b-863b031c645d))
   (pad "4" smd rect (at -3.975 3 90) (size 1.8 1.65) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp caeff63f-e328-490f-aa92-553d14ad8933))
-  (model "${KIPRJMOD}/3dmodels/mechanical/Keebio-Parts/CUI_SJ-43614-SMT-TR.step"
+  (model "${MIKILAB}/3dmodels/mechanical/Keebio-Parts/CUI_SJ-43614-SMT-TR.step"
     (offset (xyz -6.2 0 1.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 -90))

@@ -121,7 +121,7 @@
   (pad 87 smd rect (at -4.75 -5.8) (size 0.25 0.4) (layers F.Cu F.Paste F.Mask))
   (pad 88 smd rect (at -5.25 -5.8) (size 0.25 0.4) (layers F.Cu F.Paste F.Mask))
   (pad 89 smd rect (at 0 0 90) (size 5.3 5.3) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/3dmodels/audio/ADAU1467WBCPZ300RL.stp
+  (model ${MIKILAB}/3dmodels/audio/ADAU1467WBCPZ300RL.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

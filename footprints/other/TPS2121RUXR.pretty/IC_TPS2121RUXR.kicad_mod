@@ -130,7 +130,7 @@
       (xy 0.1 0.6)
     ) (layer F.Mask) (width 0.01)
   )
-  (model ${KIPRJMOD}/3dmodels/other/TPS2121RUXR.step
+  (model ${MIKILAB}/3dmodels/other/TPS2121RUXR.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -99,7 +99,7 @@
   (fp_line (start 3.095 -3.095) (end -3.095 -3.095) (layer F.CrtYd) (width 0.05))
   (fp_circle (center -3.86 -1.8) (end -3.76 -1.8) (layer F.SilkS) (width 0.2))
   (fp_circle (center -3.86 -1.8) (end -3.76 -1.8) (layer F.Fab) (width 0.2))
-  (model ${KIPRJMOD}/3dmodels/rf/RTL8211F-CG.step
+  (model ${MIKILAB}/3dmodels/rf/RTL8211F-CG.step
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

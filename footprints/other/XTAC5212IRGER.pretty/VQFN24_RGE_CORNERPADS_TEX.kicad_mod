@@ -185,4 +185,9 @@
   (pad "A3" smd rect (at 1.726 1.726057) (size 0.254 0.254) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "A4" smd rect (at 1.726 -1.726057) (size 0.254 0.254) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "29" smd rect (at 0 0) (size 2.2098 2.2098) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

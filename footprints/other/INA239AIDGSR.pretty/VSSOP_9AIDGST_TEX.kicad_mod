@@ -102,4 +102,9 @@
   (pad "8" smd rect (at 2.21615 0) (size 1.3335 0.2794) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "9" smd rect (at 2.21615 -0.500126) (size 1.3335 0.2794) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "10" smd rect (at 2.21615 -1.000252) (size 1.3335 0.2794) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-10_3x3mm_P0.5mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

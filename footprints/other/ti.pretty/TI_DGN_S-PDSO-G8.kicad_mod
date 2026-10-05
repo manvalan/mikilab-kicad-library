@@ -24,4 +24,9 @@
   (pad 9 thru_hole circle (at 0 0) (size 0.45 0.45) (drill 0.2032) (layers *.Cu *.Mask F.SilkS))
   (pad 9 thru_hole circle (at -0.45 0.6) (size 0.45 0.45) (drill 0.2032) (layers *.Cu *.Mask F.SilkS))
   (pad 9 thru_hole circle (at 0.45 0.6) (size 0.45 0.45) (drill 0.2032) (layers *.Cu *.Mask F.SilkS))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

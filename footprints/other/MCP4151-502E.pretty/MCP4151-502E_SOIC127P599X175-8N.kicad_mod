@@ -28,4 +28,9 @@
   (fp_line (start -3.71 2.75) (end 3.71 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -3.71 -2.75) (end -3.71 2.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.71 -2.75) (end 3.71 2.75) (layer F.CrtYd) (width 0.05))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

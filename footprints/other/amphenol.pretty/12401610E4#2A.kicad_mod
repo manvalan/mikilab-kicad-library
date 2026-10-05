@@ -48,4 +48,9 @@
   (pad SH thru_hole circle (at 4.13 -3.09) (size 1.4 1.4) (drill 1.1) (layers *.Cu *.Mask))
   (pad SH thru_hole circle (at -4.49 2.86) (size 1.4 1.4) (drill 1.1) (layers *.Cu *.Mask))
   (pad SH thru_hole circle (at 4.49 2.86) (size 1.4 1.4) (drill 1.1) (layers *.Cu *.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_Amphenol_12401610E4-2A.step"
+    (offset (xyz 0 -0.02 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

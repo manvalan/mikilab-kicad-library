@@ -41,4 +41,9 @@
   (pad "7" smd rect (at 1.397 -0.25) (size 0.7112 0.254) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "8" smd rect (at 1.397 -0.750001) (size 0.7112 0.254) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "9" smd rect (at 0 0) (size 0.254 1.651) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

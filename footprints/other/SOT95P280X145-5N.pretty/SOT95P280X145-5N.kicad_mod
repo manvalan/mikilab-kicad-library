@@ -26,4 +26,9 @@
   (fp_line (start -0.33 -1.45) (end 0.33 -1.45) (layer F.SilkS) (width 0.127))
   (fp_line (start -0.33 1.45) (end 0.33 1.45) (layer F.SilkS) (width 0.127))
   (fp_line (start 0.8 -0.335) (end 0.8 0.335) (layer F.SilkS) (width 0.127))
+  (model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    (offset (xyz -0.0235 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

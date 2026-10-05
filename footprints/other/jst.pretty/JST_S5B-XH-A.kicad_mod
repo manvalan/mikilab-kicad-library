@@ -14,4 +14,9 @@
   (pad 3 thru_hole circle (at 0 0) (size 1.5 1.5) (drill 0.9) (layers *.Cu *.SilkS *.Mask))
   (pad 4 thru_hole circle (at 0 -2.5) (size 1.5 1.5) (drill 0.9) (layers *.Cu *.SilkS *.Mask))
   (pad 5 thru_hole circle (at 0 -5) (size 1.5 1.5) (drill 0.9) (layers *.Cu *.SilkS *.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_XH_S5B-XH-A_1x05_P2.50mm_Horizontal.step"
+    (offset (xyz 0 -5 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 270))
+  )
 )

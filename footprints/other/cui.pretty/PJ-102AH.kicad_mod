@@ -26,4 +26,9 @@
   (pad 1 thru_hole circle (at 0.000000 6.500000) (size 2.90 2.90) (drill 1.900000) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 0.000000 0.500000) (size 2.90 2.90) (drill 1.900000) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at -4.700000 3.500000) (size 2.90 2.90) (drill 1.900000) (layers *.Cu *.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/BarrelJack_Horizontal.step"
+    (offset (xyz 0 -6.5 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )

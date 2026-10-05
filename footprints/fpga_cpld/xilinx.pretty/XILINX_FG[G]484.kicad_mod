@@ -506,4 +506,9 @@
   (pad AB20 smd circle (at 8.500000 10.500000 0.0) (size 0.500000 0.500000) (layers F.Cu F.Paste F.Mask))
   (pad AB21 smd circle (at 9.500000 10.500000 0.0) (size 0.500000 0.500000) (layers F.Cu F.Paste F.Mask))
   (pad AB22 smd circle (at 10.500000 10.500000 0.0) (size 0.500000 0.500000) (layers F.Cu F.Paste F.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-484_23.0x23.0mm_Layout22x22_P1.0mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

@@ -346,4 +346,9 @@
   (pad V16 smd circle (at 5.200000 6.800000 0.0) (size 0.410000 0.410000) (layers F.Cu F.Paste F.Mask))
   (pad V17 smd circle (at 6.000000 6.800000 0.0) (size 0.410000 0.410000) (layers F.Cu F.Paste F.Mask))
   (pad V18 smd circle (at 6.800000 6.800000 0.0) (size 0.410000 0.410000) (layers F.Cu F.Paste F.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/BGA-324_15.0x15.0mm_Layout18x18_P0.8mm_Ball0.5mm_Pad0.4mm_NSMD.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

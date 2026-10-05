@@ -160,6 +160,17 @@ obsolete KiCad 5 folder names (`Housings_QFP`, `Socket_Strips`, ...) were
 repointed at the current equivalent model -- these may need a small
 offset/rotation tweak in the 3D viewer.
 
+**Standard models matched by pad geometry:** 78 vendor footprints that
+had no 3D model were given a body from KiCad's bundled library. Each
+match was found by fitting the footprint's pads (number + position,
+0/90/180/270° rotation) against KiCad's own footprints; only same-package
+matches whose model file actually ships with KiCad were kept, with the
+offset/rotation computed from the fit and checked visually with
+`kicad-cli pcb render`. A few use a near-equivalent body (e.g. Altera
+EQFP-144 → LQFP-144, TI DGN → MSOP-8-EP, Taiyo NR6028 → FNR6028S,
+Coilcraft LPS4018 → TechFuse SL0420). The remaining footprints without a
+model are listed in `docs/footprint_senza_modello_3d.csv`.
+
 **Removed dead 3D references:** a set of vendor-imported footprints
 referenced 3D files that were never present locally (`${KISBLIB}/...`,
 `${KICAD8_3RD_PARTY}/...`, relative paths, or models no longer shipped

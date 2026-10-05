@@ -56,4 +56,9 @@
     (die_length 10.53846) (zone_connect 2))
   (pad 0 thru_hole circle (at 0.5 0.75) (size 0.5842 0.5842) (drill 0.3302) (layers *.Cu *.Mask)
     (die_length -2147.483648) (zone_connect 2))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

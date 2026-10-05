@@ -34,4 +34,9 @@
   (pad 7 smd roundrect (at -0.250000 -1.385000 180.0) (size 0.27 0.76) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 8 smd roundrect (at -0.750000 -1.385000 180.0) (size 0.27 0.76) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 9 smd rect (at 0.000000 0.000000 0.0) (size 2.44 1.60) (layers F.Cu F.Paste F.Mask) (solder_paste_margin -0.2) (solder_mask_margin -0.2))
+  (model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 270))
+  )
 )

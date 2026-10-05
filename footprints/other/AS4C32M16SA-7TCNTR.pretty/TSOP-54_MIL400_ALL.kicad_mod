@@ -346,4 +346,9 @@
   (pad "52" smd rect (at 5.7404 -8.799998) (size 1.1938 0.508) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "53" smd rect (at 5.7404 -9.599999) (size 1.1938 0.508) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "54" smd rect (at 5.7404 -10.4) (size 1.1938 0.508) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSOP-II-54_22.2x10.16mm_P0.8mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

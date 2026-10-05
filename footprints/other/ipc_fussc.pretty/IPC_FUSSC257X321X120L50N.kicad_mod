@@ -21,4 +21,9 @@
   (fp_line (start -2.28 1.57) (end -2.28 -1.57) (layer F.CrtYd) (width 0.05))
   (pad 1 smd roundrect (at -1.495000 0.000000 0.0) (size 1.16 2.73) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2155))
   (pad 2 smd roundrect (at 1.495000 0.000000 0.0) (size 1.16 2.73) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2155))
+  (model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1210_3225Metric.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

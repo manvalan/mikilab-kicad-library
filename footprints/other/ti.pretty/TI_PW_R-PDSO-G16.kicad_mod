@@ -31,4 +31,9 @@
   (pad 14 smd rect (at 2.8 -0.975) (size 1.6 0.35) (layers F.Cu F.Paste F.Mask))
   (pad 15 smd rect (at 2.8 -1.625) (size 1.6 0.35) (layers F.Cu F.Paste F.Mask))
   (pad 16 smd rect (at 2.8 -2.275) (size 1.6 0.35) (layers F.Cu F.Paste F.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

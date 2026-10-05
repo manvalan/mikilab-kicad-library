@@ -7,4 +7,9 @@
   )
   (pad 1 thru_hole circle (at -3.81 5.08) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.SilkS *.Mask))
   (pad 2 thru_hole rect (at 3.81 5.08) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.SilkS *.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.step"
+    (offset (xyz -3.81 -5.08 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

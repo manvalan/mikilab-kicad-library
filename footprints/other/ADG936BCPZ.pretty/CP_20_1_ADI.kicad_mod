@@ -173,4 +173,9 @@
   (pad "19" smd rect (at -0.499999 -1.7653) (size 0.254 1.0668) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "20" smd rect (at -1.000001 -1.7653) (size 0.254 1.0668) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "21" smd rect (at 0 0) (size 2.2606 2.2606) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD10_3DMODEL_DIR}/Package_CSP.3dshapes/LFCSP-20-1EP_4x4mm_P0.5mm_EP2.1x2.1mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

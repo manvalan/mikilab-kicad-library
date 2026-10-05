@@ -19,4 +19,9 @@
   (fp_line (start -4.24942 3.2512) (end -4.24942 -3.2512) (layer F.SilkS) (width 0.2032))
   (pad 1 smd rect (at -2.25044 0) (size 2.99974 1.6002) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.25044 0) (size 2.99974 1.6002) (layers F.Cu F.Paste F.Mask))
+  (model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.4.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

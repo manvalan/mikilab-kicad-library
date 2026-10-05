@@ -66,4 +66,9 @@
   (pad "3" smd rect (at -0.6985 0.499999) (size 1.016 0.2286) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "4" smd rect (at 0.6985 0.499999) (size 1.016 0.3302) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "5" smd rect (at 0.6985 -0.499999) (size 1.016 0.3302) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-665.step"
+    (offset (xyz 0.0463 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

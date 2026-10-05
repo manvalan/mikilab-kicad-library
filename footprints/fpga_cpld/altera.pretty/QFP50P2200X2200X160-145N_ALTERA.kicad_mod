@@ -177,4 +177,9 @@
     (zone_connect 2))
   (pad PAD thru_hole circle (at 2 2) (size 0.7366 0.7366) (drill 0.381) (layers *.Cu *.Mask F.SilkS)
     (zone_connect 2))
+  (model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-144_20x20mm_P0.5mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

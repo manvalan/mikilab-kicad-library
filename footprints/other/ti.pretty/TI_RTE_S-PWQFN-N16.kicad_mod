@@ -37,4 +37,9 @@
     (zone_connect 2))
   (pad 17 thru_hole circle (at 0.5 0.5) (size 0.45 0.45) (drill 0.2032) (layers *.Cu *.Mask F.SilkS)
     (zone_connect 2))
+  (model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

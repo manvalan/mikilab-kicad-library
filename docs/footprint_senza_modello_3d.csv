@@ -1,92 +1,74 @@
 libreria,footprint,file,stato,riferimento_modello,dettaglio
 lcd_kingtech,KINGTECH_DW0240A2BZ,footprints/display/lcd_kingtech.pretty/KINGTECH_DW0240A2BZ.kicad_mod,nessun_modello,,
 lcd_kingtech,KINGTECH_DW0240A2BZ_PANEL,footprints/display/lcd_kingtech.pretty/KINGTECH_DW0240A2BZ_PANEL.kicad_mod,nessun_modello,,
-lcd_kingtech,PV043WV-BICA3001_DSI,footprints/display/lcd_kingtech.pretty/PV043WV-BICA3001_DSI.kicad_mod,variabile_non_definita,${KISBLIB}/lcd_kingtech.pretty/DF40C-30DS.stp,${KISBLIB} non è definita in KiCad
-altera,QFP50P2200X2200X160-145N_ALTERA,footprints/fpga_cpld/altera.pretty/QFP50P2200X2200X160-145N_ALTERA.kicad_mod,nessun_modello,,
+lcd_kingtech,PV043WV-BICA3001_DSI,footprints/display/lcd_kingtech.pretty/PV043WV-BICA3001_DSI.kicad_mod,nessun_modello,,
 lattice,ECP5EVB_VERSA,footprints/fpga_cpld/lattice.pretty/ECP5EVB_VERSA.kicad_mod,nessun_modello,,
-lattice,LATTICE_BGA_CABGA381,footprints/fpga_cpld/lattice.pretty/LATTICE_BGA_CABGA381.kicad_mod,variabile_non_definita,${KISBLIB}/lattice.pretty/LATTICE_BGA_CABGA381.step,${KISBLIB} non è definita in KiCad
+lattice,LATTICE_BGA_CABGA381,footprints/fpga_cpld/lattice.pretty/LATTICE_BGA_CABGA381.kicad_mod,nessun_modello,,
 lattice,LATTICE_BGA_CSFBGA285,footprints/fpga_cpld/lattice.pretty/LATTICE_BGA_CSFBGA285.kicad_mod,nessun_modello,,
 xilinx,XILINX_CP[G]236,footprints/fpga_cpld/xilinx.pretty/XILINX_CP[G]236.kicad_mod,nessun_modello,,
-xilinx,XILINX_CS[G]32[45],footprints/fpga_cpld/xilinx.pretty/XILINX_CS[G]32[45].kicad_mod,nessun_modello,,
-xilinx,XILINX_FG[G]484,footprints/fpga_cpld/xilinx.pretty/XILINX_FG[G]484.kicad_mod,nessun_modello,,
+PCIexpress,PCIexpress_x1,footprints/interface/PCIexpress.pretty/PCIexpress_x1.kicad_mod,nessun_modello,,
+PCIexpress,PCIexpress_x16,footprints/interface/PCIexpress.pretty/PCIexpress_x16.kicad_mod,nessun_modello,,
+PCIexpress,PCIexpress_x4,footprints/interface/PCIexpress.pretty/PCIexpress_x4.kicad_mod,nessun_modello,,
+PCIexpress,PCIexpress_x8,footprints/interface/PCIexpress.pretty/PCIexpress_x8.kicad_mod,nessun_modello,,
 hdmi,FCI_10029449-11[13]RLF,footprints/interface/hdmi.pretty/FCI_10029449-11[13]RLF.kicad_mod,nessun_modello,,
 usb3_esd_son50-10,USB3_ESD_SON50-10,footprints/interface/usb3_esd_son50-10.pretty/USB3_ESD_SON50-10.kicad_mod,nessun_modello,,
 usb3_micro_ab,USB3_MICRO_AB,footprints/interface/usb3_micro_ab.pretty/USB3_MICRO_AB.kicad_mod,nessun_modello,,
+TMUX1112RSVR,RSV0016A-MFG,footprints/logic/TMUX1112RSVR.pretty/RSV0016A-MFG.kicad_mod,nessun_modello,,
 Keebio-Parts,3_Pin_Jumper,footprints/mechanical/Keebio-Parts.pretty/3_Pin_Jumper.kicad_mod,nessun_modello,,
-Keebio-Parts,4pin35mmAudio,footprints/mechanical/Keebio-Parts.pretty/4pin35mmAudio.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/sj-43514.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,AT90USB1286_TQFP_14mm,footprints/mechanical/Keebio-Parts.pretty/AT90USB1286_TQFP_14mm.kicad_mod,file_non_trovato,Housings_QFP.3dshapes/TQFP-64_14x14mm_Pitch0.8mm.wrl,<KiCad 3dmodels>/Housings_QFP.3dshapes/TQFP-64_14x14mm_Pitch0.8mm.wrl
-Keebio-Parts,ATMEGA32U4-AU,footprints/mechanical/Keebio-Parts.pretty/ATMEGA32U4-AU.kicad_mod,nessun_modello,,
-Keebio-Parts,ArduinoProMicro-BackSide,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-BackSide.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
+Keebio-Parts,4pin35mmAudio,footprints/mechanical/Keebio-Parts.pretty/4pin35mmAudio.kicad_mod,nessun_modello,,
+Keebio-Parts,ArduinoProMicro-BackSide,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-BackSide.kicad_mod,nessun_modello,,
 Keebio-Parts,ArduinoProMicro-Mini-USB-No-Text,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-Mini-USB-No-Text.kicad_mod,nessun_modello,,
 Keebio-Parts,ArduinoProMicro-Mini-USB-ZigZag,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-Mini-USB-ZigZag.kicad_mod,nessun_modello,,
 Keebio-Parts,ArduinoProMicro-Mini-USB,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-Mini-USB.kicad_mod,nessun_modello,,
-Keebio-Parts,ArduinoProMicro-TopSide,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-TopSide.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/Pro_Micro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,ArduinoProMicro-ZigZag,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-ZigZag.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,ArduinoProMicro,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,C_0402,footprints/mechanical/Keebio-Parts.pretty/C_0402.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl,esiste C_0402_1005Metric.step
+Keebio-Parts,ArduinoProMicro-TopSide,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-TopSide.kicad_mod,nessun_modello,,
+Keebio-Parts,ArduinoProMicro-ZigZag,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro-ZigZag.kicad_mod,nessun_modello,,
+Keebio-Parts,ArduinoProMicro,footprints/mechanical/Keebio-Parts.pretty/ArduinoProMicro.kicad_mod,nessun_modello,,
 Keebio-Parts,Cherry-MX-Low-Profile,footprints/mechanical/Keebio-Parts.pretty/Cherry-MX-Low-Profile.kicad_mod,nessun_modello,,
-Keebio-Parts,Crystal_SMD_3225-4pin_3.2x2.5mm,footprints/mechanical/Keebio-Parts.pretty/Crystal_SMD_3225-4pin_3.2x2.5mm.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.wrl,esiste Crystal_SMD_3225-4Pin_3.2x2.5mm.step
-Keebio-Parts,DFN1006-2,footprints/mechanical/Keebio-Parts.pretty/DFN1006-2.kicad_mod,estensione_diversa,${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-882.wrl,esiste D_SOD-882.step
-Keebio-Parts,D_SOD-323,footprints/mechanical/Keebio-Parts.pretty/D_SOD-323.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl,esiste D_SOD-323.step
-Keebio-Parts,D_SOD123,footprints/mechanical/Keebio-Parts.pretty/D_SOD123.kicad_mod,nessun_modello,,
-Keebio-Parts,Diode-Hybrid-Back,footprints/mechanical/Keebio-Parts.pretty/Diode-Hybrid-Back.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Diodes_SMD.3dshapes/D_SOD-123.step,<KiCad 3dmodels>/Diodes_SMD.3dshapes/D_SOD-123.step
-Keebio-Parts,Diode-dual,footprints/mechanical/Keebio-Parts.pretty/Diode-dual.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Diodes_SMD.3dshapes/D_SOD-123.step,<KiCad 3dmodels>/Diodes_SMD.3dshapes/D_SOD-123.step
 Keebio-Parts,Diode-hybrid-3pad,footprints/mechanical/Keebio-Parts.pretty/Diode-hybrid-3pad.kicad_mod,nessun_modello,,
-Keebio-Parts,Diode,footprints/mechanical/Keebio-Parts.pretty/Diode.kicad_mod,nessun_modello,,
-Keebio-Parts,Diode_Long,footprints/mechanical/Keebio-Parts.pretty/Diode_Long.kicad_mod,file_non_trovato,Diodes_THT.3dshapes/D_DO-35_SOD27_P10.16mm_Horizontal.wrl,<KiCad 3dmodels>/Diodes_THT.3dshapes/D_DO-35_SOD27_P10.16mm_Horizontal.wrl
 Keebio-Parts,Elite-AF-staggered,footprints/mechanical/Keebio-Parts.pretty/Elite-AF-staggered.kicad_mod,nessun_modello,,
 Keebio-Parts,Elite-AF-wide,footprints/mechanical/Keebio-Parts.pretty/Elite-AF-wide.kicad_mod,nessun_modello,,
 Keebio-Parts,Elite-AF,footprints/mechanical/Keebio-Parts.pretty/Elite-AF.kicad_mod,nessun_modello,,
-Keebio-Parts,Elite-C-ZigZag,footprints/mechanical/Keebio-Parts.pretty/Elite-C-ZigZag.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-C-castellated-24pin-holes,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-24pin-holes.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-C-castellated-24pin,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-24pin.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-C-castellated-29pin-holes,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-29pin-holes.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-C-castellated-29pin,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-29pin.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-C,footprints/mechanical/Keebio-Parts.pretty/Elite-C.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-G-ZigZag-Bare-Flip,footprints/mechanical/Keebio-Parts.pretty/Elite-G-ZigZag-Bare-Flip.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-G-ZigZag-Bare,footprints/mechanical/Keebio-Parts.pretty/Elite-G-ZigZag-Bare.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Elite-G-ZigZag,footprints/mechanical/Keebio-Parts.pretty/Elite-G-ZigZag.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl,${KISBLIB} non è definita in KiCad
+Keebio-Parts,Elite-C-ZigZag,footprints/mechanical/Keebio-Parts.pretty/Elite-C-ZigZag.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-C-castellated-24pin-holes,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-24pin-holes.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-C-castellated-24pin,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-24pin.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-C-castellated-29pin-holes,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-29pin-holes.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-C-castellated-29pin,footprints/mechanical/Keebio-Parts.pretty/Elite-C-castellated-29pin.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-C,footprints/mechanical/Keebio-Parts.pretty/Elite-C.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-G-ZigZag-Bare-Flip,footprints/mechanical/Keebio-Parts.pretty/Elite-G-ZigZag-Bare-Flip.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-G-ZigZag-Bare,footprints/mechanical/Keebio-Parts.pretty/Elite-G-ZigZag-Bare.kicad_mod,nessun_modello,,
+Keebio-Parts,Elite-G-ZigZag,footprints/mechanical/Keebio-Parts.pretty/Elite-G-ZigZag.kicad_mod,nessun_modello,,
 Keebio-Parts,Epson_TSX-3225,footprints/mechanical/Keebio-Parts.pretty/Epson_TSX-3225.kicad_mod,nessun_modello,,
-Keebio-Parts,Fuse_0805,footprints/mechanical/Keebio-Parts.pretty/Fuse_0805.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl,esiste R_0805_2012Metric.step
-Keebio-Parts,Gateron-KS33-2u-Stabilizer-Cutout,footprints/mechanical/Keebio-Parts.pretty/Gateron-KS33-2u-Stabilizer-Cutout.kicad_mod,file_non_trovato,./Gateron-KS33-Socket.step,<KiCad 3dmodels>/./Gateron-KS33-Socket.step
-Keebio-Parts,Header-12-Pin-ZigZag-Square,footprints/mechanical/Keebio-Parts.pretty/Header-12-Pin-ZigZag-Square.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl,<KiCad 3dmodels>/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl
-Keebio-Parts,Header-12-Pin-ZigZag,footprints/mechanical/Keebio-Parts.pretty/Header-12-Pin-ZigZag.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl,<KiCad 3dmodels>/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl
-Keebio-Parts,Header-6-Pin-ZigZag,footprints/mechanical/Keebio-Parts.pretty/Header-6-Pin-ZigZag.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl,<KiCad 3dmodels>/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl
+Keebio-Parts,Gateron-KS33-2u-Stabilizer-Cutout,footprints/mechanical/Keebio-Parts.pretty/Gateron-KS33-2u-Stabilizer-Cutout.kicad_mod,nessun_modello,,
 Keebio-Parts,I2C_Breakout,footprints/mechanical/Keebio-Parts.pretty/I2C_Breakout.kicad_mod,nessun_modello,,
-Keebio-Parts,ICSP-Header-ZigZag,footprints/mechanical/Keebio-Parts.pretty/ICSP-Header-ZigZag.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl,<KiCad 3dmodels>/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl
-Keebio-Parts,ICSP-Header,footprints/mechanical/Keebio-Parts.pretty/ICSP-Header.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl,<KiCad 3dmodels>/Socket_Strips.3dshapes/Socket_Strip_Straight_1x06_Pitch2.54mm.wrl
-Keebio-Parts,ICSP_1.27mm,footprints/mechanical/Keebio-Parts.pretty/ICSP_1.27mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch1.27mm.wrl,<KiCad 3dmodels>/Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch1.27mm.wrl
 Keebio-Parts,JUMPER_SMD_2DUB,footprints/mechanical/Keebio-Parts.pretty/JUMPER_SMD_2DUB.kicad_mod,nessun_modello,,
 Keebio-Parts,KLJ-1102,footprints/mechanical/Keebio-Parts.pretty/KLJ-1102.kicad_mod,nessun_modello,,
-Keebio-Parts,Kailh-Choc-V2-2u-Stabilizer-CPG1353G24D01-Cutout,footprints/mechanical/Keebio-Parts.pretty/Kailh-Choc-V2-2u-Stabilizer-CPG1353G24D01-Cutout.kicad_mod,file_non_trovato,./Gateron-KS33-Socket.step,<KiCad 3dmodels>/./Gateron-KS33-Socket.step
-Keebio-Parts,Kailh-PG1350-1.25u-LED-flip,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u-LED-flip.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.25u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.25u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.25u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.5u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.5u-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.5u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.5u-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.5u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.5u.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.75u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.75u-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1.75u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.75u-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1u-reversible-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-reversible-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1u-reversible-flip,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-reversible-flip.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1u-reversible,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-reversible.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-1u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2.25u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.25u-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2.25u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.25u-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2.25u-NoSwitch,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.25u-NoSwitch.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2.5u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.5u.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u-No-Clickhole.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2u-Vert-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u-Vert-NoLED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Kailh-PG1350-2u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
+Keebio-Parts,Kailh-Choc-V2-2u-Stabilizer-CPG1353G24D01-Cutout,footprints/mechanical/Keebio-Parts.pretty/Kailh-Choc-V2-2u-Stabilizer-CPG1353G24D01-Cutout.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.25u-LED-flip,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u-LED-flip.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.25u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.25u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.25u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.25u.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.5u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.5u-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.5u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.5u-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.5u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.5u.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.75u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.75u-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1.75u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1.75u-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1u-reversible-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-reversible-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1u-reversible-flip,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-reversible-flip.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1u-reversible,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u-reversible.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-1u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-1u.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2.25u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.25u-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2.25u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.25u-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2.25u-NoSwitch,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.25u-NoSwitch.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2.5u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2.5u.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2u-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u-No-Clickhole.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2u-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2u-Vert-NoLED,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u-Vert-NoLED.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh-PG1350-2u,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-2u.kicad_mod,nessun_modello,,
 Keebio-Parts,Kailh-PG1350-Stab-Cutout,footprints/mechanical/Keebio-Parts.pretty/Kailh-PG1350-Stab-Cutout.kicad_mod,nessun_modello,,
-Keebio-Parts,Kailh_MX_Socket-compat,footprints/mechanical/Keebio-Parts.pretty/Kailh_MX_Socket-compat.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/cherrymx.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,LED_3mm,footprints/mechanical/Keebio-Parts.pretty/LED_3mm.kicad_mod,nessun_modello,,
+Keebio-Parts,Kailh_MX_Socket-compat,footprints/mechanical/Keebio-Parts.pretty/Kailh_MX_Socket-compat.kicad_mod,nessun_modello,,
 Keebio-Parts,Low-Profile-Choc-MX,footprints/mechanical/Keebio-Parts.pretty/Low-Profile-Choc-MX.kicad_mod,nessun_modello,,
-Keebio-Parts,MD_Diode,footprints/mechanical/Keebio-Parts.pretty/MD_Diode.kicad_mod,nessun_modello,,
 Keebio-Parts,MX-1u-Flex,footprints/mechanical/Keebio-Parts.pretty/MX-1u-Flex.kicad_mod,nessun_modello,,
 Keebio-Parts,MX-Alps-Choc-1U-No-Clickhole-NoLED,footprints/mechanical/Keebio-Parts.pretty/MX-Alps-Choc-1U-No-Clickhole-NoLED.kicad_mod,nessun_modello,,
 Keebio-Parts,MX-Alps-Choc-1U-No-Clickhole,footprints/mechanical/Keebio-Parts.pretty/MX-Alps-Choc-1U-No-Clickhole.kicad_mod,nessun_modello,,
@@ -122,39 +104,25 @@ Keebio-Parts,Mini-USB,footprints/mechanical/Keebio-Parts.pretty/Mini-USB.kicad_m
 Keebio-Parts,MountingHole,footprints/mechanical/Keebio-Parts.pretty/MountingHole.kicad_mod,nessun_modello,,
 Keebio-Parts,MountingHole_3.2mm_M3_ISO14580_Pad,footprints/mechanical/Keebio-Parts.pretty/MountingHole_3.2mm_M3_ISO14580_Pad.kicad_mod,nessun_modello,,
 Keebio-Parts,NovelKeys_Kailh_Big_Series_Switch,footprints/mechanical/Keebio-Parts.pretty/NovelKeys_Kailh_Big_Series_Switch.kicad_mod,nessun_modello,,
-Keebio-Parts,Pin_Header_Straight_2x03_Pitch1.00mm,footprints/mechanical/Keebio-Parts.pretty/Pin_Header_Straight_2x03_Pitch1.00mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch1.00mm.wrl,<KiCad 3dmodels>/Pin_Headers.3dshapes/Pin_Header_Straight_2x03_Pitch1.00mm.wrl
-Keebio-Parts,QFN-44-1EP_7x7mm_Pitch0.5mm,footprints/mechanical/Keebio-Parts.pretty/QFN-44-1EP_7x7mm_Pitch0.5mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm.step,<KiCad 3dmodels>/Package_DFN_QFN.3dshapes/QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm.step
 Keebio-Parts,RGB-6028,footprints/mechanical/Keebio-Parts.pretty/RGB-6028.kicad_mod,nessun_modello,,
 Keebio-Parts,RGB_3528_Blue_Notch-MX-Flip,footprints/mechanical/Keebio-Parts.pretty/RGB_3528_Blue_Notch-MX-Flip.kicad_mod,nessun_modello,,
 Keebio-Parts,RGB_3528_Blue_Notch-MX,footprints/mechanical/Keebio-Parts.pretty/RGB_3528_Blue_Notch-MX.kicad_mod,nessun_modello,,
 Keebio-Parts,RGB_3528_Blue_Notch,footprints/mechanical/Keebio-Parts.pretty/RGB_3528_Blue_Notch.kicad_mod,nessun_modello,,
-Keebio-Parts,R_0402,footprints/mechanical/Keebio-Parts.pretty/R_0402.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl,esiste R_0402_1005Metric.step
-Keebio-Parts,R_0805,footprints/mechanical/Keebio-Parts.pretty/R_0805.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl,esiste R_0805_2012Metric.step
 Keebio-Parts,Reset_Breakout,footprints/mechanical/Keebio-Parts.pretty/Reset_Breakout.kicad_mod,nessun_modello,,
 Keebio-Parts,Resistor-Compact-1-side,footprints/mechanical/Keebio-Parts.pretty/Resistor-Compact-1-side.kicad_mod,nessun_modello,,
-Keebio-Parts,Resistor-Compact,footprints/mechanical/Keebio-Parts.pretty/Resistor-Compact.kicad_mod,nessun_modello,,
-Keebio-Parts,Resistor-Hybrid-Back,footprints/mechanical/Keebio-Parts.pretty/Resistor-Hybrid-Back.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Resistors_SMD.3dshapes/R_0805.step,<KiCad 3dmodels>/Resistors_SMD.3dshapes/R_0805.step
-Keebio-Parts,Resistor-Hybrid,footprints/mechanical/Keebio-Parts.pretty/Resistor-Hybrid.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Resistors_SMD.3dshapes/R_0805.step,<KiCad 3dmodels>/Resistors_SMD.3dshapes/R_0805.step
-Keebio-Parts,Resistor,footprints/mechanical/Keebio-Parts.pretty/Resistor.kicad_mod,file_non_trovato,Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl,<KiCad 3dmodels>/Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl
-Keebio-Parts,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl,<KiCad 3dmodels>/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl
-Keebio-Parts,RotaryEncoder_EC11-no-legs,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_EC11-no-legs.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl,<KiCad 3dmodels>/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl
-Keebio-Parts,RotaryEncoder_EC11,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_EC11.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl,<KiCad 3dmodels>/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl
-Keebio-Parts,RotaryEncoder_EC11_Nonplated,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_EC11_Nonplated.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl,<KiCad 3dmodels>/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl
-Keebio-Parts,SM0805D,footprints/mechanical/Keebio-Parts.pretty/SM0805D.kicad_mod,file_non_trovato,smd/chip_cms.wrl,<KiCad 3dmodels>/smd/chip_cms.wrl
-Keebio-Parts,SOIC-8_3.9x4.9mm_Pitch1.27mm,footprints/mechanical/Keebio-Parts.pretty/SOIC-8_3.9x4.9mm_Pitch1.27mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl,<KiCad 3dmodels>/Housings_SOIC.3dshapes/SOIC-8_3.9x4.9mm_Pitch1.27mm.wrl
-Keebio-Parts,SOIC-8_5.23x5.23mm_P1.27mm,footprints/mechanical/Keebio-Parts.pretty/SOIC-8_5.23x5.23mm_P1.27mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.275x5.275mm_P1.27mm.step,<KiCad 3dmodels>/Package_SO.3dshapes/SOIC-8_5.275x5.275mm_P1.27mm.step
-Keebio-Parts,SOIC-USON-8,footprints/mechanical/Keebio-Parts.pretty/SOIC-USON-8.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.275x5.275mm_P1.27mm.step,<KiCad 3dmodels>/Package_SO.3dshapes/SOIC-8_5.275x5.275mm_P1.27mm.step
+Keebio-Parts,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.kicad_mod,nessun_modello,,
+Keebio-Parts,RotaryEncoder_EC11-no-legs,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_EC11-no-legs.kicad_mod,nessun_modello,,
+Keebio-Parts,RotaryEncoder_EC11,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_EC11.kicad_mod,nessun_modello,,
+Keebio-Parts,RotaryEncoder_EC11_Nonplated,footprints/mechanical/Keebio-Parts.pretty/RotaryEncoder_EC11_Nonplated.kicad_mod,nessun_modello,,
+Keebio-Parts,SM0805D,footprints/mechanical/Keebio-Parts.pretty/SM0805D.kicad_mod,nessun_modello,,
 Keebio-Parts,SWD_Breakout,footprints/mechanical/Keebio-Parts.pretty/SWD_Breakout.kicad_mod,nessun_modello,,
-Keebio-Parts,SW_SPST_3x3,footprints/mechanical/Keebio-Parts.pretty/SW_SPST_3x3.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS645.step,<KiCad 3dmodels>/Button_Switch_SMD.3dshapes/SW_SPST_PTS645.step
-Keebio-Parts,SW_Tactile_SPST_Angled_MJTP1117-no-mount,footprints/mechanical/Keebio-Parts.pretty/SW_Tactile_SPST_Angled_MJTP1117-no-mount.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Buttons_Switches_THT.3dshapes/SW_Tactile_SPST_Angled_PTS645Vx39-2LFS.wrl,<KiCad 3dmodels>/Buttons_Switches_THT.3dshapes/SW_Tactile_SPST_Angled_PTS645Vx39-2LFS.wrl
-Keebio-Parts,SW_Tactile_SPST_Angled_MJTP1117,footprints/mechanical/Keebio-Parts.pretty/SW_Tactile_SPST_Angled_MJTP1117.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Buttons_Switches_THT.3dshapes/SW_Tactile_SPST_Angled_PTS645Vx39-2LFS.wrl,<KiCad 3dmodels>/Buttons_Switches_THT.3dshapes/SW_Tactile_SPST_Angled_PTS645Vx39-2LFS.wrl
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1.25u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1.25u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1.5u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1.5u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1.75u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1.75u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_2.25u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_2.25u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_2.75u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_2.75u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
-Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_2u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_2u.kicad_mod,variabile_non_definita,${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step,${KICAD8_3RD_PARTY} non è definita in KiCad
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1.25u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1.25u.kicad_mod,nessun_modello,,
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1.5u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1.5u.kicad_mod,nessun_modello,,
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1.75u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1.75u.kicad_mod,nessun_modello,,
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_1u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_1u.kicad_mod,nessun_modello,,
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_2.25u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_2.25u.kicad_mod,nessun_modello,,
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_2.75u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_2.75u.kicad_mod,nessun_modello,,
+Keebio-Parts,SW_choc_v1+v2_HS_CPG135001S30_2u,footprints/mechanical/Keebio-Parts.pretty/SW_choc_v1+v2_HS_CPG135001S30_2u.kicad_mod,nessun_modello,,
 Keebio-Parts,SinglePad,footprints/mechanical/Keebio-Parts.pretty/SinglePad.kicad_mod,nessun_modello,,
 Keebio-Parts,SolderJumper,footprints/mechanical/Keebio-Parts.pretty/SolderJumper.kicad_mod,nessun_modello,,
 Keebio-Parts,SolderJumperLeft,footprints/mechanical/Keebio-Parts.pretty/SolderJumperLeft.kicad_mod,nessun_modello,,
@@ -163,10 +131,6 @@ Keebio-Parts,SolderJumperRight,footprints/mechanical/Keebio-Parts.pretty/SolderJ
 Keebio-Parts,SolderJumperSet,footprints/mechanical/Keebio-Parts.pretty/SolderJumperSet.kicad_mod,nessun_modello,,
 Keebio-Parts,SolderJumperSets,footprints/mechanical/Keebio-Parts.pretty/SolderJumperSets.kicad_mod,nessun_modello,,
 Keebio-Parts,SolidCopper,footprints/mechanical/Keebio-Parts.pretty/SolidCopper.kicad_mod,nessun_modello,,
-Keebio-Parts,TQFP-44_10x10mm_Pitch0.8mm,footprints/mechanical/Keebio-Parts.pretty/TQFP-44_10x10mm_Pitch0.8mm.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.wrl,esiste TQFP-44_10x10mm_P0.8mm.step
-Keebio-Parts,TQFP-48_7x7mm_Pitch0.5mm,footprints/mechanical/Keebio-Parts.pretty/TQFP-48_7x7mm_Pitch0.5mm.kicad_mod,file_non_trovato,${KICAD6_3DMODEL_DIR}/Housings_QFP.3dshapes/TQFP-48_7x7mm_Pitch0.5mm.wrl,<KiCad 3dmodels>/Housings_QFP.3dshapes/TQFP-48_7x7mm_Pitch0.5mm.wrl
-Keebio-Parts,TQFP-QFN-44_Combined,footprints/mechanical/Keebio-Parts.pretty/TQFP-QFN-44_Combined.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.wrl,esiste TQFP-44_10x10mm_P0.8mm.step
-Keebio-Parts,TQFP44+QFN44,footprints/mechanical/Keebio-Parts.pretty/TQFP44+QFN44.kicad_mod,estensione_diversa,${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.wrl,esiste TQFP-44_10x10mm_P0.8mm.step
 Keebio-Parts,TRRS-PJ-3013,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-3013.kicad_mod,nessun_modello,,
 Keebio-Parts,TRRS-PJ-320A-dual,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-320A-dual.kicad_mod,nessun_modello,,
 Keebio-Parts,TRRS-PJ-320A-no-Fmask,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-320A-no-Fmask.kicad_mod,nessun_modello,,
@@ -175,22 +139,18 @@ Keebio-Parts,TRRS-PJ-605,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-605.k
 Keebio-Parts,TRRS-PJ-606-6A,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-606-6A.kicad_mod,nessun_modello,,
 Keebio-Parts,TRRS-PJ-606-Mod,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-606-Mod.kicad_mod,nessun_modello,,
 Keebio-Parts,TRRS-PJ-606,footprints/mechanical/Keebio-Parts.pretty/TRRS-PJ-606.kicad_mod,nessun_modello,,
-Keebio-Parts,TRRS_Jack-one-sided,footprints/mechanical/Keebio-Parts.pretty/TRRS_Jack-one-sided.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/sj-43514.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,TRRS_Jack,footprints/mechanical/Keebio-Parts.pretty/TRRS_Jack.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/sj-43514.wrl,${KISBLIB} non è definita in KiCad
+Keebio-Parts,TRRS_Jack-one-sided,footprints/mechanical/Keebio-Parts.pretty/TRRS_Jack-one-sided.kicad_mod,nessun_modello,,
+Keebio-Parts,TRRS_Jack,footprints/mechanical/Keebio-Parts.pretty/TRRS_Jack.kicad_mod,nessun_modello,,
 Keebio-Parts,TRRS_Jumper,footprints/mechanical/Keebio-Parts.pretty/TRRS_Jumper.kicad_mod,nessun_modello,,
 Keebio-Parts,Teensy_2.0,footprints/mechanical/Keebio-Parts.pretty/Teensy_2.0.kicad_mod,nessun_modello,,
-Keebio-Parts,Triple-Dual-1u-LED-flip,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-1u-LED-flip.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Triple-Dual-1u-LED,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-1u-LED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Triple-Dual-2u-LED-stab-flip,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-2u-LED-stab-flip.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,Triple-Dual-2u-LED,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-2u-LED.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl,${KISBLIB} non è definita in KiCad
-Keebio-Parts,USB-C-12-Pin-MidMount,footprints/mechanical/Keebio-Parts.pretty/USB-C-12-Pin-MidMount.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/USB4510-03-1-A.stp,${KISBLIB} non è definita in KiCad
+Keebio-Parts,Triple-Dual-1u-LED-flip,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-1u-LED-flip.kicad_mod,nessun_modello,,
+Keebio-Parts,Triple-Dual-1u-LED,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-1u-LED.kicad_mod,nessun_modello,,
+Keebio-Parts,Triple-Dual-2u-LED-stab-flip,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-2u-LED-stab-flip.kicad_mod,nessun_modello,,
+Keebio-Parts,Triple-Dual-2u-LED,footprints/mechanical/Keebio-Parts.pretty/Triple-Dual-2u-LED.kicad_mod,nessun_modello,,
+Keebio-Parts,USB-C-12-Pin-MidMount,footprints/mechanical/Keebio-Parts.pretty/USB-C-12-Pin-MidMount.kicad_mod,nessun_modello,,
 Keebio-Parts,USB-Mini-B_ LCSC-C46398,footprints/mechanical/Keebio-Parts.pretty/USB-Mini-B_ LCSC-C46398.kicad_mod,nessun_modello,,
 Keebio-Parts,USB-Mini-B_2leg,footprints/mechanical/Keebio-Parts.pretty/USB-Mini-B_2leg.kicad_mod,nessun_modello,,
-Keebio-Parts,USB_C_Receptacle_TYPE-C-16P-CB1-6-073,footprints/mechanical/Keebio-Parts.pretty/USB_C_Receptacle_TYPE-C-16P-CB1-6-073.kicad_mod,variabile_non_definita,${KISBLIB}/Keebio-Parts.pretty/USB4510-03-1-A.stp,${KISBLIB} non è definita in KiCad
 Keebio-Parts,USB_miniB_HandSolder,footprints/mechanical/Keebio-Parts.pretty/USB_miniB_HandSolder.kicad_mod,nessun_modello,,
-Keebio-Parts,USON-8_UX_2x3x0p6_WIN-L,footprints/mechanical/Keebio-Parts.pretty/USON-8_UX_2x3x0p6_WIN-L.kicad_mod,nessun_modello,,
-Keebio-Parts,USON-8_UX_2x3x0p6_WIN-M,footprints/mechanical/Keebio-Parts.pretty/USON-8_UX_2x3x0p6_WIN-M.kicad_mod,nessun_modello,,
-Keebio-Parts,USON-8_UX_2x3x0p6_WIN,footprints/mechanical/Keebio-Parts.pretty/USON-8_UX_2x3x0p6_WIN.kicad_mod,nessun_modello,,
 Keebio-Parts,VIA-0.6mm,footprints/mechanical/Keebio-Parts.pretty/VIA-0.6mm.kicad_mod,nessun_modello,,
 Keebio-Parts,breakaway-hole-big,footprints/mechanical/Keebio-Parts.pretty/breakaway-hole-big.kicad_mod,nessun_modello,,
 Keebio-Parts,breakaway-hole,footprints/mechanical/Keebio-Parts.pretty/breakaway-hole.kicad_mod,nessun_modello,,
@@ -204,7 +164,6 @@ ESP32-C6-DevKitC-1,ESP32-C6-DevKitC-1,footprints/microcontrollers/ESP32-C6-DevKi
 ESP32-C6-DevKitM-1,ESP32-C6-DevKitM-1,footprints/microcontrollers/ESP32-C6-DevKitM-1.pretty/ESP32-C6-DevKitM-1.kicad_mod,nessun_modello,,
 ESP32-DevKitC,ESP32-DevKitC,footprints/microcontrollers/ESP32-DevKitC.pretty/ESP32-DevKitC.kicad_mod,nessun_modello,,
 ESP32-DevKitM-1,ESP32-DevKitM-1,footprints/microcontrollers/ESP32-DevKitM-1.pretty/ESP32-DevKitM-1.kicad_mod,nessun_modello,,
-ESP32-H2,QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm,footprints/microcontrollers/ESP32-H2.pretty/QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm.kicad_mod,estensione_diversa,${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm.wrl,esiste QFN-32-1EP_4x4mm_P0.4mm_EP2.9x2.9mm.step
 ESP32-MINI-1,ESP32-MINI-1U,footprints/microcontrollers/ESP32-MINI-1.pretty/ESP32-MINI-1U.kicad_mod,nessun_modello,,
 ESP32-P4,ESP32-P4,footprints/microcontrollers/ESP32-P4.pretty/ESP32-P4.kicad_mod,nessun_modello,,
 ESP32-PICO-MINI-02,ESP32-PICO-MINI-02,footprints/microcontrollers/ESP32-PICO-MINI-02.pretty/ESP32-PICO-MINI-02.kicad_mod,nessun_modello,,
@@ -216,28 +175,19 @@ ESP32-S3-DevKitC,ESP32-S3-DevKitC,footprints/microcontrollers/ESP32-S3-DevKitC.p
 ESP32-WROOM-DA,ESP32-WROOM-DA,footprints/microcontrollers/ESP32-WROOM-DA.pretty/ESP32-WROOM-DA.kicad_mod,nessun_modello,,
 ESP8685-WROOM-05,ESP8685-Wroom-05,footprints/microcontrollers/ESP8685-WROOM-05.pretty/ESP8685-Wroom-05.kicad_mod,nessun_modello,,
 ESP8685-WROOM-06,ESP8685-WROOM-06,footprints/microcontrollers/ESP8685-WROOM-06.pretty/ESP8685-WROOM-06.kicad_mod,nessun_modello,,
-ADG936BCPZ,CP_20_1_ADI,footprints/other/ADG936BCPZ.pretty/CP_20_1_ADI.kicad_mod,nessun_modello,,
-AS4C32M16SA-7TCNTR,TSOP-54_MIL400_ALL,footprints/other/AS4C32M16SA-7TCNTR.pretty/TSOP-54_MIL400_ALL.kicad_mod,nessun_modello,,
+BGSA142GN12E6327XTSA1,PG-TSNP-12-1,footprints/other/BGSA142GN12E6327XTSA1.pretty/PG-TSNP-12-1.kicad_mod,nessun_modello,,
 DMT6007LFG-7,TRANS_DMT6007LFG-7_DIO,footprints/other/DMT6007LFG-7.pretty/TRANS_DMT6007LFG-7_DIO.kicad_mod,nessun_modello,,
-PESD5V0L4UW,SOT665_NXP,footprints/other/PESD5V0L4UW.pretty/SOT665_NXP.kicad_mod,nessun_modello,,
-SOT95P280X145-5N,SOT95P280X145-5N,footprints/other/SOT95P280X145-5N.pretty/SOT95P280X145-5N.kicad_mod,nessun_modello,,
-XTAC5212IRGER,VQFN24_RGE_CORNERPADS_TEX,footprints/other/XTAC5212IRGER.pretty/VQFN24_RGE_CORNERPADS_TEX.kicad_mod,nessun_modello,,
-abracon,ASVMB,footprints/other/abracon.pretty/ASVMB.kicad_mod,variabile_non_definita,${KISBLIB}/abracon.pretty/ASVMB.STEP,${KISBLIB} non è definita in KiCad
+abracon,ASVMB,footprints/other/abracon.pretty/ASVMB.kicad_mod,nessun_modello,,
 alps,ALPS_SCHA4B0100,footprints/other/alps.pretty/ALPS_SCHA4B0100.kicad_mod,nessun_modello,,
 alps,ALPS_SCHA4B0400,footprints/other/alps.pretty/ALPS_SCHA4B0400.kicad_mod,nessun_modello,,
-alps,ALPS_SCHA4B0419,footprints/other/alps.pretty/ALPS_SCHA4B0419.kicad_mod,variabile_non_definita,${KISBLIB}/alps.pretty/SCHA4B0419.STEP,${KISBLIB} non è definita in KiCad
-amp_te,1775838-2,footprints/other/amp_te.pretty/1775838-2.kicad_mod,variabile_non_definita,${KISBLIB}/amp_te.pretty/c-1775838-2-g-3d.stp,${KISBLIB} non è definita in KiCad
-amp_te,1909763-1,footprints/other/amp_te.pretty/1909763-1.kicad_mod,variabile_non_definita,${KISBLIB}/amp_te.pretty/c-1909763-1-b-3d.stp,${KISBLIB} non è definita in KiCad
-amp_te,2013289,footprints/other/amp_te.pretty/2013289.kicad_mod,variabile_non_definita,${KISBLIB}/amp_te.pretty/c-2-2013289-1-b-3d.stp,${KISBLIB} non è definita in KiCad
-amphenol,12401610E4#2A,footprints/other/amphenol.pretty/12401610E4#2A.kicad_mod,variabile_non_definita,${KISBLIB}/amphenol.pretty/M-12401610E4#2A-REVT2.stp,${KISBLIB} non è definita in KiCad
-amphenol,AMPHENOL_RJHSE5080,footprints/other/amphenol.pretty/AMPHENOL_RJHSE5080.kicad_mod,variabile_non_definita,${KISBLIB}/amphenol.pretty/M-RJHSE-5080-REVT1.STEP,${KISBLIB} non è definita in KiCad
+alps,ALPS_SCHA4B0419,footprints/other/alps.pretty/ALPS_SCHA4B0419.kicad_mod,nessun_modello,,
+amp_te,1775838-2,footprints/other/amp_te.pretty/1775838-2.kicad_mod,nessun_modello,,
+amp_te,2013289,footprints/other/amp_te.pretty/2013289.kicad_mod,nessun_modello,,
 amphenol,AMPHENOL_RJHSE508004,footprints/other/amphenol.pretty/AMPHENOL_RJHSE508004.kicad_mod,nessun_modello,,
-amphenol,ICD15S13E4GX,footprints/other/amphenol.pretty/ICD15S13E4GX.kicad_mod,variabile_non_definita,${KISBLIB}/amphenol.pretty/sicd15s13e4gx00lf.stp,${KISBLIB} non è definita in KiCad
-bat_coin,MPD_BU2032SM-BT-G,footprints/other/bat_coin.pretty/MPD_BU2032SM-BT-G.kicad_mod,variabile_non_definita,${KISBLIB}/bat_coin.pretty/BU2032SM-BT-GTR.STEP,${KISBLIB} non è definita in KiCad
+amphenol,ICD15S13E4GX,footprints/other/amphenol.pretty/ICD15S13E4GX.kicad_mod,nessun_modello,,
+bat_coin,MPD_BU2032SM-BT-G,footprints/other/bat_coin.pretty/MPD_BU2032SM-BT-G.kicad_mod,nessun_modello,,
 beaglebone_black,beaglebone_black,footprints/other/beaglebone_black.pretty/beaglebone_black.kicad_mod,nessun_modello,,
-bel_fuse,SS-51000-003,footprints/other/bel_fuse.pretty/SS-51000-003.kicad_mod,variabile_non_definita,${KISBLIB}/bel_fuse.pretty/SS-51000-003.stp,${KISBLIB} non è definita in KiCad
-bourns,BOURNS_SRN6045,footprints/other/bourns.pretty/BOURNS_SRN6045.kicad_mod,nessun_modello,,
-bourns,BOURNS_SRR1260,footprints/other/bourns.pretty/BOURNS_SRR1260.kicad_mod,nessun_modello,,
+bel_fuse,SS-51000-003,footprints/other/bel_fuse.pretty/SS-51000-003.kicad_mod,nessun_modello,,
 bourns,BOURNS_SRR1280,footprints/other/bourns.pretty/BOURNS_SRR1280.kicad_mod,nessun_modello,,
 bourns,MF-LSMF,footprints/other/bourns.pretty/MF-LSMF.kicad_mod,nessun_modello,,
 castellated_breakouts,QFP48-1.27MM-CASTELLATED,footprints/other/castellated_breakouts.pretty/QFP48-1.27MM-CASTELLATED.kicad_mod,nessun_modello,,
@@ -246,91 +196,49 @@ castellated_breakouts,SSOP8-1.27MM-CASTELLATED,footprints/other/castellated_brea
 castellated_edge,CASTELLATED_EDGE_1x20_P1.27MM,footprints/other/castellated_edge.pretty/CASTELLATED_EDGE_1x20_P1.27MM.kicad_mod,nessun_modello,,
 ck,CK_TPA511G,footprints/other/ck.pretty/CK_TPA511G.kicad_mod,nessun_modello,,
 ck,CK_TSWB-3N-CB222_LFS,footprints/other/ck.pretty/CK_TSWB-3N-CB222_LFS.kicad_mod,nessun_modello,,
-coilcraft,LPS4018,footprints/other/coilcraft.pretty/LPS4018.kicad_mod,variabile_non_definita,${KISBLIB}/coilcraft.pretty/Coilcraft-LPS4018.STEP,${KISBLIB} non è definita in KiCad
 coilcraft,LPS5010,footprints/other/coilcraft.pretty/LPS5010.kicad_mod,nessun_modello,,
-coilcraft,SER1590,footprints/other/coilcraft.pretty/SER1590.kicad_mod,variabile_non_definita,${KISBLIB}/coilcraft.pretty/SER1590.STEP,${KISBLIB} non è definita in KiCad
+coilcraft,SER1590,footprints/other/coilcraft.pretty/SER1590.kicad_mod,nessun_modello,,
 cts,219-2MST,footprints/other/cts.pretty/219-2MST.kicad_mod,nessun_modello,,
 cui,CUI_CMA-4544PF-W,footprints/other/cui.pretty/CUI_CMA-4544PF-W.kicad_mod,nessun_modello,,
-cui,CUI_PJ-102[AB]H,footprints/other/cui.pretty/CUI_PJ-102[AB]H.kicad_mod,nessun_modello,,
 cui,CUI_SJ-3524-SMT,footprints/other/cui.pretty/CUI_SJ-3524-SMT.kicad_mod,nessun_modello,,
-cui,CUI_SJ-43516-SMT,footprints/other/cui.pretty/CUI_SJ-43516-SMT.kicad_mod,variabile_non_definita,${KISBLIB}/cui.pretty/sj-43514-smt.stp,${KISBLIB} non è definita in KiCad
+cui,CUI_SJ-43516-SMT,footprints/other/cui.pretty/CUI_SJ-43516-SMT.kicad_mod,nessun_modello,,
 cui,CUI_SJ1-352XN,footprints/other/cui.pretty/CUI_SJ1-352XN.kicad_mod,nessun_modello,,
-cui,MD-40SMK,footprints/other/cui.pretty/MD-40SMK.kicad_mod,variabile_non_definita,${KISBLIB}/cui.pretty/CUI_MD-40S.step,${KISBLIB} non è definita in KiCad
-cui,PJ-102AH,footprints/other/cui.pretty/PJ-102AH.kicad_mod,variabile_non_definita,${KISBLIB}/cui.pretty/CUI_PJ-102AH.step,${KISBLIB} non è definita in KiCad
-eastrising,ER-CON06HT-1,footprints/other/eastrising.pretty/ER-CON06HT-1.kicad_mod,variabile_non_definita,${KISBLIB}/eastrising.pretty/ER-CON06HT-1.wrl,${KISBLIB} non è definita in KiCad
-eastrising,ER-CON24HT-1,footprints/other/eastrising.pretty/ER-CON24HT-1.kicad_mod,variabile_non_definita,${KISBLIB}/eastrising.pretty/ER-CON24HT-1.wrl,${KISBLIB} non è definita in KiCad
-eastrising,ER-CON50HT-1,footprints/other/eastrising.pretty/ER-CON50HT-1.kicad_mod,variabile_non_definita,${KISBLIB}/eastrising.pretty/ER-CON50HT-1.wrl,${KISBLIB} non è definita in KiCad
-eastrising,ER-TFT024-3,footprints/other/eastrising.pretty/ER-TFT024-3.kicad_mod,variabile_non_definita,${KISBLIB}/eastrising.pretty/ER-TFT024-3.wrl,${KISBLIB} non è definita in KiCad
+cui,MD-40SMK,footprints/other/cui.pretty/MD-40SMK.kicad_mod,nessun_modello,,
+eastrising,ER-CON06HT-1,footprints/other/eastrising.pretty/ER-CON06HT-1.kicad_mod,nessun_modello,,
+eastrising,ER-CON24HT-1,footprints/other/eastrising.pretty/ER-CON24HT-1.kicad_mod,nessun_modello,,
+eastrising,ER-CON50HT-1,footprints/other/eastrising.pretty/ER-CON50HT-1.kicad_mod,nessun_modello,,
+eastrising,ER-TFT024-3,footprints/other/eastrising.pretty/ER-TFT024-3.kicad_mod,nessun_modello,,
 epcos,EPCOS_DCC6C,footprints/other/epcos.pretty/EPCOS_DCC6C.kicad_mod,nessun_modello,,
 fiducial,FIDUCIAL_65MIL,footprints/other/fiducial.pretty/FIDUCIAL_65MIL.kicad_mod,nessun_modello,,
 harwin,HARWIN_M20-9960645,footprints/other/harwin.pretty/HARWIN_M20-9960645.kicad_mod,nessun_modello,,
-header,HEADER_10X1_TH_254,footprints/other/header.pretty/HEADER_10X1_TH_254.kicad_mod,nessun_modello,,
 header,HEADER_11X2_REV_SM_254,footprints/other/header.pretty/HEADER_11X2_REV_SM_254.kicad_mod,nessun_modello,,
-header,HEADER_11X2_REV_SM_254_AP,footprints/other/header.pretty/HEADER_11X2_REV_SM_254_AP.kicad_mod,variabile_non_definita,${KISBLIB}/header.pretty/TSM-111-01-L-DV-A-P-TR.stp,${KISBLIB} non è definita in KiCad
-header,HEADER_11X2_SM_254,footprints/other/header.pretty/HEADER_11X2_SM_254.kicad_mod,nessun_modello,,
-header,HEADER_11X2_TH_254,footprints/other/header.pretty/HEADER_11X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_12X2_TH_254,footprints/other/header.pretty/HEADER_12X2_TH_254.kicad_mod,nessun_modello,,
+header,HEADER_11X2_REV_SM_254_AP,footprints/other/header.pretty/HEADER_11X2_REV_SM_254_AP.kicad_mod,nessun_modello,,
 header,HEADER_13X2_REV_SM_254,footprints/other/header.pretty/HEADER_13X2_REV_SM_254.kicad_mod,nessun_modello,,
-header,HEADER_13X2_REV_SM_254_AP,footprints/other/header.pretty/HEADER_13X2_REV_SM_254_AP.kicad_mod,variabile_non_definita,${KISBLIB}/header.pretty/TSM-113-01-L-DV-A-P-TR.stp,${KISBLIB} non è definita in KiCad
-header,HEADER_13X2_SM_254,footprints/other/header.pretty/HEADER_13X2_SM_254.kicad_mod,nessun_modello,,
-header,HEADER_13X2_TH_254,footprints/other/header.pretty/HEADER_13X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_16X2_TH_254,footprints/other/header.pretty/HEADER_16X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_1X8_TH_254,footprints/other/header.pretty/HEADER_1X8_TH_254.kicad_mod,nessun_modello,,
+header,HEADER_13X2_REV_SM_254_AP,footprints/other/header.pretty/HEADER_13X2_REV_SM_254_AP.kicad_mod,nessun_modello,,
 header,HEADER_20X2_SM_254_AP,footprints/other/header.pretty/HEADER_20X2_SM_254_AP.kicad_mod,nessun_modello,,
-header,HEADER_20X2_TH_254,footprints/other/header.pretty/HEADER_20X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_2X2_TH_254,footprints/other/header.pretty/HEADER_2X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_3X2_TH_254,footprints/other/header.pretty/HEADER_3X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_4X2_TH_254,footprints/other/header.pretty/HEADER_4X2_TH_254.kicad_mod,nessun_modello,,
-header,HEADER_5X2_SM_127,footprints/other/header.pretty/HEADER_5X2_SM_127.kicad_mod,nessun_modello,,
-header,HEADER_5X2_TH_254,footprints/other/header.pretty/HEADER_5X2_TH_254.kicad_mod,nessun_modello,,
-hirose,HIROSE_DF9-41S,footprints/other/hirose.pretty/HIROSE_DF9-41S.kicad_mod,variabile_non_definita,${KISBLIB}/hirose.pretty/DF9B-41S-1V.stp,${KISBLIB} non è definita in KiCad
-hirose,HIROSE_DM3D,footprints/other/hirose.pretty/HIROSE_DM3D.kicad_mod,nessun_modello,,
+hirose,HIROSE_DF9-41S,footprints/other/hirose.pretty/HIROSE_DF9-41S.kicad_mod,nessun_modello,,
 hole,HOLE_3200UM,footprints/other/hole.pretty/HOLE_3200UM.kicad_mod,nessun_modello,,
 hole,HOLE_3200UM_VIAS,footprints/other/hole.pretty/HOLE_3200UM_VIAS.kicad_mod,nessun_modello,,
 hole,HOLE_3P2MM,footprints/other/hole.pretty/HOLE_3P2MM.kicad_mod,nessun_modello,,
 idi,R-100,footprints/other/idi.pretty/R-100.kicad_mod,nessun_modello,,
 ipc_bga,IPC_BGA196CP65_14X14_1000X1000X143B30N,footprints/other/ipc_bga.pretty/IPC_BGA196CP65_14X14_1000X1000X143B30N.kicad_mod,nessun_modello,,
 ipc_bga,IPC_BGA196CP80_14X14_1200X1200X152B43N,footprints/other/ipc_bga.pretty/IPC_BGA196CP80_14X14_1200X1200X152B43N.kicad_mod,nessun_modello,,
-ipc_bga,IPC_BGA20CP40_5X4_201X161X62B26N,footprints/other/ipc_bga.pretty/IPC_BGA20CP40_5X4_201X161X62B26N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_bga.pretty/BGA20CP40_5X4_201X161X62B26.step,${KISBLIB} non è definita in KiCad
+ipc_bga,IPC_BGA20CP40_5X4_201X161X62B26N,footprints/other/ipc_bga.pretty/IPC_BGA20CP40_5X4_201X161X62B26N.kicad_mod,nessun_modello,,
 ipc_bga,IPC_BGA256CP50_16X16_900X900X100B30N,footprints/other/ipc_bga.pretty/IPC_BGA256CP50_16X16_900X900X100B30N.kicad_mod,nessun_modello,,
-ipc_bga,IPC_BGA256CP80_16X16_1400X1400X170B45N,footprints/other/ipc_bga.pretty/IPC_BGA256CP80_16X16_1400X1400X170B45N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_bga.pretty/BGA256CP80_16X16_1400X1400X170B45.STEP,${KISBLIB} non è definita in KiCad
-ipc_bga,IPC_BGA400CP127_20X20_2700X2700X260B75N,footprints/other/ipc_bga.pretty/IPC_BGA400CP127_20X20_2700X2700X260B75N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_bga.pretty/BGA400CP127_20X20_2700X2700X260B75.STEP,${KISBLIB} non è definita in KiCad
-ipc_bga,IPC_BGA4CP35_2X2_71X71X40B20N,footprints/other/ipc_bga.pretty/IPC_BGA4CP35_2X2_71X71X40B20N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_bga.pretty/BGA4CP35_2X2_71X71X40B20.step,${KISBLIB} non è definita in KiCad
+ipc_bga,IPC_BGA400CP127_20X20_2700X2700X260B75N,footprints/other/ipc_bga.pretty/IPC_BGA400CP127_20X20_2700X2700X260B75N.kicad_mod,nessun_modello,,
+ipc_bga,IPC_BGA4CP35_2X2_71X71X40B20N,footprints/other/ipc_bga.pretty/IPC_BGA4CP35_2X2_71X71X40B20N.kicad_mod,nessun_modello,,
 ipc_bga,IPC_BGA8CP50_2X4_86X186X50B23N,footprints/other/ipc_bga.pretty/IPC_BGA8CP50_2X4_86X186X50B23N.kicad_mod,nessun_modello,,
-ipc_capae,IPC_CAPAE530X540N,footprints/other/ipc_capae.pretty/IPC_CAPAE530X540N.kicad_mod,nessun_modello,,
-ipc_capae,IPC_CAPAE660X790N,footprints/other/ipc_capae.pretty/IPC_CAPAE660X790N.kicad_mod,nessun_modello,,
-ipc_capae,IPC_CAPAE830X620N,footprints/other/ipc_capae.pretty/IPC_CAPAE830X620N.kicad_mod,nessun_modello,,
-ipc_capmp,IPC_CAPMP7343X310N,footprints/other/ipc_capmp.pretty/IPC_CAPMP7343X310N.kicad_mod,nessun_modello,,
-ipc_diom,IPC_DIOM5127X229N,footprints/other/ipc_diom.pretty/IPC_DIOM5127X229N.kicad_mod,nessun_modello,,
-ipc_diom,IPC_DIOM5226X203N,footprints/other/ipc_diom.pretty/IPC_DIOM5226X203N.kicad_mod,nessun_modello,,
-ipc_fussc,IPC_FUSSC257X321X120L50N,footprints/other/ipc_fussc.pretty/IPC_FUSSC257X321X120L50N.kicad_mod,nessun_modello,,
-ipc_indc,IPC_INDC200X160X100L50N,footprints/other/ipc_indc.pretty/IPC_INDC200X160X100L50N.kicad_mod,nessun_modello,,
-ipc_osccc,IPC_OSCCC320X250X110L75X100N,footprints/other/ipc_osccc.pretty/IPC_OSCCC320X250X110L75X100N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_osccc.pretty/ASTX-H11.STEP,${KISBLIB} non è definita in KiCad
-ipc_osccc,IPC_OSCCC320X250X120L75X100N,footprints/other/ipc_osccc.pretty/IPC_OSCCC320X250X120L75X100N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_osccc.pretty/OSCCC320X250X120L75X100.STEP,${KISBLIB} non è definita in KiCad
-ipc_osccc,IPC_OSCCC320X250X80L90X100N,footprints/other/ipc_osccc.pretty/IPC_OSCCC320X250X80L90X100N.kicad_mod,nessun_modello,,
 ipc_osccc,IPC_OSCCC320X500X105-4N,footprints/other/ipc_osccc.pretty/IPC_OSCCC320X500X105-4N.kicad_mod,nessun_modello,,
-ipc_oscsc,IPC_OSCSC4P254_500X320X140L100X120N,footprints/other/ipc_oscsc.pretty/IPC_OSCSC4P254_500X320X140L100X120N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_oscsc.pretty/OSCSC4P254_500X320X140L100X120.STEP,${KISBLIB} non è definita in KiCad
+ipc_oscsc,IPC_OSCSC4P254_500X320X140L100X120N,footprints/other/ipc_oscsc.pretty/IPC_OSCSC4P254_500X320X140L100X120N.kicad_mod,nessun_modello,,
 ipc_oscsc,OSCSC508P500X700X180-4N,footprints/other/ipc_oscsc.pretty/OSCSC508P500X700X180-4N.kicad_mod,nessun_modello,,
 ipc_qfn,IPC_QFN25P50_450X350X80L42X24T300X200N_nonstd_pins,footprints/other/ipc_qfn.pretty/IPC_QFN25P50_450X350X80L42X24T300X200N_nonstd_pins.kicad_mod,nessun_modello,,
-ipc_qfn,IPC_QFN44P50_700X700X90L40X24N,footprints/other/ipc_qfn.pretty/IPC_QFN44P50_700X700X90L40X24N.kicad_mod,file_non_trovato,${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm.step,<KiCad 3dmodels>/Package_DFN_QFN.3dshapes/QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm.step
-ipc_qfn,IPC_QFN45P40_600X500X80L40X21T450X350N,footprints/other/ipc_qfn.pretty/IPC_QFN45P40_600X500X80L40X21T450X350N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_qfn.pretty/QFN45P40_600X500X80L40X21T450X350.STEP,${KISBLIB} non è definita in KiCad
-ipc_qfn,IPC_QFN65P50_900X900X80L40X25T715N,footprints/other/ipc_qfn.pretty/IPC_QFN65P50_900X900X80L40X25T715N.kicad_mod,file_non_trovato,${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.25x7.25mm.step,<KiCad 3dmodels>/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.25x7.25mm.step
-ipc_soic,IPC_SOIC127P1030X265-16N,footprints/other/ipc_soic.pretty/IPC_SOIC127P1030X265-16N.kicad_mod,nessun_modello,,
-ipc_soic,IPC_SOIC127P600X175-16N,footprints/other/ipc_soic.pretty/IPC_SOIC127P600X175-16N.kicad_mod,nessun_modello,,
-ipc_soic,IPC_SOIC127P600X175-8N,footprints/other/ipc_soic.pretty/IPC_SOIC127P600X175-8N.kicad_mod,nessun_modello,,
-ipc_soic,IPC_SOIC127P780X205-8N,footprints/other/ipc_soic.pretty/IPC_SOIC127P780X205-8N.kicad_mod,nessun_modello,,
-ipc_soic,IPC_SOIC8P127_528X790X216L65X41N,footprints/other/ipc_soic.pretty/IPC_SOIC8P127_528X790X216L65X41N.kicad_mod,file_non_trovato,${KISYS3DMOD}/Package_SO.3dshapes/SOIJ-8_5.3x5.3mm_P1.27mm.step,<KiCad 3dmodels>/Package_SO.3dshapes/SOIJ-8_5.3x5.3mm_P1.27mm.step
-ipc_son,IPC_SON11P50_260X260X65L35X25T215X126N,footprints/other/ipc_son.pretty/IPC_SON11P50_260X260X65L35X25T215X126N.kicad_mod,nessun_modello,,
-ipc_son,IPC_SON23P50_600X500X150L50X27T547X324N,footprints/other/ipc_son.pretty/IPC_SON23P50_600X500X150L50X27T547X324N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_son.pretty/DQP0022A.stp,${KISBLIB} non è definita in KiCad
-ipc_son,IPC_SON6P35_100X100X40L40X17N,footprints/other/ipc_son.pretty/IPC_SON6P35_100X100X40L40X17N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_son.pretty/DSF6.stp,${KISBLIB} non è definita in KiCad
-ipc_son,IPC_SON8P50_200X150X100L35X25N,footprints/other/ipc_son.pretty/IPC_SON8P50_200X150X100L35X25N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_son.pretty/DLC0008A.stp,${KISBLIB} non è definita in KiCad
-ipc_son,IPC_SON9P50_300X300X80L40X25T244X160N,footprints/other/ipc_son.pretty/IPC_SON9P50_300X300X80L40X25T244X160N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_son.pretty/CP_8_21.step,${KISBLIB} non è definita in KiCad
-ipc_sop,IPC_SOP32P50_800X1400X120L60X22N,footprints/other/ipc_sop.pretty/IPC_SOP32P50_800X1400X120L60X22N.kicad_mod,nessun_modello,,
-ipc_sot,IPC_SOT23-5P95_280X100L45X40N,footprints/other/ipc_sot.pretty/IPC_SOT23-5P95_280X100L45X40N.kicad_mod,variabile_non_definita,${KISBLIB}/ipc_sot.pretty/UJ_5.step,${KISBLIB} non è definita in KiCad
+ipc_qfn,IPC_QFN45P40_600X500X80L40X21T450X350N,footprints/other/ipc_qfn.pretty/IPC_QFN45P40_600X500X80L40X21T450X350N.kicad_mod,nessun_modello,,
+ipc_son,IPC_SON23P50_600X500X150L50X27T547X324N,footprints/other/ipc_son.pretty/IPC_SON23P50_600X500X150L50X27T547X324N.kicad_mod,nessun_modello,,
+ipc_son,IPC_SON6P35_100X100X40L40X17N,footprints/other/ipc_son.pretty/IPC_SON6P35_100X100X40L40X17N.kicad_mod,nessun_modello,,
+ipc_son,IPC_SON8P50_200X150X100L35X25N,footprints/other/ipc_son.pretty/IPC_SON8P50_200X150X100L35X25N.kicad_mod,nessun_modello,,
 ipc_xtalsc,IPC_XTALSC320X500X135L130N,footprints/other/ipc_xtalsc.pretty/IPC_XTALSC320X500X135L130N.kicad_mod,nessun_modello,,
-jst,JST_S2B-PH-SM4-TB,footprints/other/jst.pretty/JST_S2B-PH-SM4-TB.kicad_mod,variabile_non_definita,${KISBLIB}/jst.pretty/S2B-PH-SM4-TB.STEP,${KISBLIB} non è definita in KiCad
-jst,JST_S3B-PH-SM4-TB,footprints/other/jst.pretty/JST_S3B-PH-SM4-TB.kicad_mod,variabile_non_definita,${KISBLIB}/jst.pretty/S3B-PH-SM4-TB.STEP,${KISBLIB} non è definita in KiCad
-jst,JST_S5B-XH-A,footprints/other/jst.pretty/JST_S5B-XH-A.kicad_mod,nessun_modello,,
+jst,JST_S2B-PH-SM4-TB,footprints/other/jst.pretty/JST_S2B-PH-SM4-TB.kicad_mod,nessun_modello,,
+jst,JST_S3B-PH-SM4-TB,footprints/other/jst.pretty/JST_S3B-PH-SM4-TB.kicad_mod,nessun_modello,,
 led_strip,LED_STRIP_WS2812,footprints/other/led_strip.pretty/LED_STRIP_WS2812.kicad_mod,nessun_modello,,
 littelfuse,461,footprints/other/littelfuse.pretty/461.kicad_mod,nessun_modello,,
 minicircuits,AT224-1A,footprints/other/minicircuits.pretty/AT224-1A.kicad_mod,nessun_modello,,
@@ -340,38 +248,26 @@ molex,MOLEX_0015244441,footprints/other/molex.pretty/MOLEX_0015244441.kicad_mod,
 molex,MOLEX_54132-40XX_LR,footprints/other/molex.pretty/MOLEX_54132-40XX_LR.kicad_mod,nessun_modello,,
 molex,MOLEX_54132-40XX_RL,footprints/other/molex.pretty/MOLEX_54132-40XX_RL.kicad_mod,nessun_modello,,
 newhaven,NHD-2.4-240320SF-CTXI-FT1,footprints/other/newhaven.pretty/NHD-2.4-240320SF-CTXI-FT1.kicad_mod,nessun_modello,,
-ohmite,OHMITE_LVK12,footprints/other/ohmite.pretty/OHMITE_LVK12.kicad_mod,nessun_modello,,
 onshore,ONSHORE_OSTYK55102030,footprints/other/onshore.pretty/ONSHORE_OSTYK55102030.kicad_mod,nessun_modello,,
 phoenix,1990009,footprints/other/phoenix.pretty/1990009.kicad_mod,nessun_modello,,
 phoenix,1990067,footprints/other/phoenix.pretty/1990067.kicad_mod,nessun_modello,,
-pot,NIDEC_ST-4EA,footprints/other/pot.pretty/NIDEC_ST-4EA.kicad_mod,variabile_non_definita,${KISBLIB}/pot.pretty/ST-4EA10_100.stp,${KISBLIB} non è definita in KiCad
-pulse,BH,footprints/other/pulse.pretty/BH.kicad_mod,variabile_non_definita,${KISBLIB}/pulse.pretty//T1094NL_3D.STEP,${KISBLIB} non è definita in KiCad
+pot,NIDEC_ST-4EA,footprints/other/pot.pretty/NIDEC_ST-4EA.kicad_mod,nessun_modello,,
+pulse,BH,footprints/other/pulse.pretty/BH.kicad_mod,nessun_modello,,
 pulse,TOU,footprints/other/pulse.pretty/TOU.kicad_mod,nessun_modello,,
 samtec,SAMTEC_QTH-090-01-F-D-A,footprints/other/samtec.pretty/SAMTEC_QTH-090-01-F-D-A.kicad_mod,nessun_modello,,
 sullins,SULLINS_GRPB041VWTC,footprints/other/sullins.pretty/SULLINS_GRPB041VWTC.kicad_mod,nessun_modello,,
 sullins,SULLINS_GRPB042VWQS,footprints/other/sullins.pretty/SULLINS_GRPB042VWQS.kicad_mod,nessun_modello,,
 sullins,SULLINS_GRPB052VWQS,footprints/other/sullins.pretty/SULLINS_GRPB052VWQS.kicad_mod,nessun_modello,,
-sullins,SULLINS_SBH11-PBPC-D08-RA,footprints/other/sullins.pretty/SULLINS_SBH11-PBPC-D08-RA.kicad_mod,nessun_modello,,
-taiyo_yuden,NR6028,footprints/other/taiyo_yuden.pretty/NR6028.kicad_mod,nessun_modello,,
-taiyo_yuden,NRS6028,footprints/other/taiyo_yuden.pretty/NRS6028.kicad_mod,nessun_modello,,
 terminal_block,ED100_3DS,footprints/other/terminal_block.pretty/ED100_3DS.kicad_mod,nessun_modello,,
-ti,TI_DBV_SOT-23-5,footprints/other/ti.pretty/TI_DBV_SOT-23-5.kicad_mod,variabile_non_definita,${KISBLIB}/ti.pretty/DBV0005A.stp,${KISBLIB} non è definita in KiCad
-ti,TI_DGN_S-PDSO-G8,footprints/other/ti.pretty/TI_DGN_S-PDSO-G8.kicad_mod,nessun_modello,,
-ti,TI_DQA_R-PSON-N10,footprints/other/ti.pretty/TI_DQA_R-PSON-N10.kicad_mod,variabile_non_definita,${KISBLIB}/ti.pretty/DQA0010A.stp,${KISBLIB} non è definita in KiCad
 ti,TI_DRB_S-PVSON-N8,footprints/other/ti.pretty/TI_DRB_S-PVSON-N8.kicad_mod,nessun_modello,,
-ti,TI_DRC_S-PVSON-N10,footprints/other/ti.pretty/TI_DRC_S-PVSON-N10.kicad_mod,nessun_modello,,
-ti,TI_PW_R-PDSO-G16,footprints/other/ti.pretty/TI_PW_R-PDSO-G16.kicad_mod,nessun_modello,,
-ti,TI_RKG_QFN-39,footprints/other/ti.pretty/TI_RKG_QFN-39.kicad_mod,variabile_non_definita,${KISBLIB}/ti.pretty/RKG0039A.stp,${KISBLIB} non è definita in KiCad
-ti,TI_RTE_S-PWQFN-N16,footprints/other/ti.pretty/TI_RTE_S-PWQFN-N16.kicad_mod,nessun_modello,,
-ti,TI_RWB_X2QFN-12,footprints/other/ti.pretty/TI_RWB_X2QFN-12.kicad_mod,variabile_non_definita,${KISBLIB}/ti.pretty/RWB0012A.stp,${KISBLIB} non è definita in KiCad
+ti,TI_RKG_QFN-39,footprints/other/ti.pretty/TI_RKG_QFN-39.kicad_mod,nessun_modello,,
+ti,TI_RWB_X2QFN-12,footprints/other/ti.pretty/TI_RWB_X2QFN-12.kicad_mod,nessun_modello,,
 tp,TP_1MM,footprints/other/tp.pretty/TP_1MM.kicad_mod,nessun_modello,,
 tp,TP_2MM,footprints/other/tp.pretty/TP_2MM.kicad_mod,nessun_modello,,
-ublox,MAX-M8,footprints/other/ublox.pretty/MAX-M8.kicad_mod,variabile_non_definita,${KISBLIB}/ublox.pretty/max_ap214.step,${KISBLIB} non è definita in KiCad
-wurth,WE-HCI_7050,footprints/other/wurth.pretty/WE-HCI_7050.kicad_mod,variabile_non_definita,${KISBLIB}/wurth.pretty/WE-HCI-7050_rev1.stp,${KISBLIB} non è definita in KiCad
+ublox,MAX-M8,footprints/other/ublox.pretty/MAX-M8.kicad_mod,nessun_modello,,
 wurth,WE-TPC_4818,footprints/other/wurth.pretty/WE-TPC_4818.kicad_mod,nessun_modello,,
-wurth,WE-TPC_5828,footprints/other/wurth.pretty/WE-TPC_5828.kicad_mod,variabile_non_definita,${KISBLIB}/wurth.pretty/WE-TPC-5828-rev1.stp,${KISBLIB} non è definita in KiCad
+wurth,WE-TPC_5828,footprints/other/wurth.pretty/WE-TPC_5828.kicad_mod,nessun_modello,,
 zif,DIP-32_W15.24mm_ZIF,footprints/other/zif.pretty/DIP-32_W15.24mm_ZIF.kicad_mod,nessun_modello,,
-AXP2101,QFN-40_L5.0-W5.0-P0.40-TL-EP3.4,footprints/power/AXP2101.pretty/QFN-40_L5.0-W5.0-P0.40-TL-EP3.4.kicad_mod,nessun_modello,,
 FSC-BT1035,FSC-BT1035,footprints/rf/FSC-BT1035.pretty/FSC-BT1035.kicad_mod,nessun_modello,,
 antenna,TAOGLAS_IP.1621.25.4.A.02,footprints/rf/antenna.pretty/TAOGLAS_IP.1621.25.4.A.02.kicad_mod,nessun_modello,,
 hackrf_expansion,HACKRF_ONE_EXPANSION,footprints/rf/hackrf_expansion.pretty/HACKRF_ONE_EXPANSION.kicad_mod,nessun_modello,,

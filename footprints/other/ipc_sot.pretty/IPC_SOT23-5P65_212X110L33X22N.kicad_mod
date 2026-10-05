@@ -31,5 +31,5 @@
   (pad 3 smd rect (at -0.925000 0.650000 270.0) (size 0.38 0.92) (layers F.Cu F.Paste F.Mask))
   (pad 4 smd rect (at 0.925000 0.650000 90.0) (size 0.38 0.92) (layers F.Cu F.Paste F.Mask))
   (pad 5 smd rect (at 0.925000 -0.650000 90.0) (size 0.38 0.92) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+  (model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

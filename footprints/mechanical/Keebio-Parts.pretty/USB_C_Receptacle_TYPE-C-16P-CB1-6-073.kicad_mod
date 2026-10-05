@@ -339,15 +339,4 @@
 		(remove_unused_layers no)
 		(uuid "d08c16d6-5bf1-4c01-89b6-029bd09060e8")
 	)
-	(model "${KISBLIB}/Keebio-Parts.pretty/USB4510-03-1-A.stp"
-		(offset
-			(xyz 0 -6.43 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz -90 0 0)
-		)
-	)
 )

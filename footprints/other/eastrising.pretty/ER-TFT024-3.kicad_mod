@@ -35,9 +35,4 @@
   (fp_line (start 21.36 -26.98) (end 21.36 32.28) (layer F.SilkS) (width 0.12))
   (fp_line (start -21.36 -26.98) (end 21.36 -26.98) (layer F.SilkS) (width 0.12))
   (fp_line (start -12.75 12.78) (end 12.75 12.78) (layer B.CrtYd) (width 0.12))
-  (model ${KISBLIB}/eastrising.pretty/ER-TFT024-3.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
 )

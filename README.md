@@ -149,21 +149,25 @@ Paths (see §1, Option B), so models resolve from any project — no absolute
 paths anywhere. (`${KIPRJMOD}` is *not* used for 3D models: it resolves to
 the currently open project's folder, not to this library.)
 
-**Known gap (pre-existing, not introduced by this cleanup):** a set of
-vendor-imported footprints (`footprints/other/*.pretty` and a few others —
-see `check_library.py` warnings) reference 3D models via
-`${KISBLIB}/...`, an environment variable that is not defined by this
-library or by a stock KiCad install, and the corresponding 3D files were
-never present locally to begin with. These footprints are fully usable
-for schematic/PCB work (pads, courtyard, silkscreen are all correct and
-complete) — they simply won't show a 3D body until you either supply the
-matching STEP/WRL file and update the reference, or define `KISBLIB` in
-KiCad pointing at wherever you keep those vendor 3D models. `run
-scripts/check_library.py` lists every affected file.
+**Standard KiCad 3D models:** footprints that use a body from KiCad's own
+bundled 3D library reference it via `${KICAD10_3DMODEL_DIR}/...`, the
+variable every KiCad 10 install defines. `check_library.py` verifies each
+of those references against the local KiCad install
+(`/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels`) when
+it is present. References inherited from vendor libraries that used
+obsolete variables (`${KICAD6_3DMODEL_DIR}`, `${KISYS3DMOD}`, ...) or
+obsolete KiCad 5 folder names (`Housings_QFP`, `Socket_Strips`, ...) were
+repointed at the current equivalent model -- these may need a small
+offset/rotation tweak in the 3D viewer.
 
-Some IPC-generated footprints reference the *standard* KiCad 3D model
-library via `${KISYS3DMOD}`, which is defined automatically by every
-KiCad installation — those resolve normally and need no action.
+**Removed dead 3D references:** a set of vendor-imported footprints
+referenced 3D files that were never present locally (`${KISBLIB}/...`,
+`${KICAD8_3RD_PARTY}/...`, relative paths, or models no longer shipped
+with KiCad). Those `(model ...)` entries were removed, since they could
+never resolve; the footprints themselves (pads, courtyard, silkscreen)
+are unchanged and fully usable. The original references are listed in
+`docs/removed_3d_model_refs.csv` should you want to source the models
+and re-add them.
 
 **Special case — shared footprint, distinct 3D bodies:** `SOT95P280X145-5N`
 is used by both `MIKILAB_TPS7A2012PDBVR` and `MIKILAB_TPS7A2018PDBVR`.

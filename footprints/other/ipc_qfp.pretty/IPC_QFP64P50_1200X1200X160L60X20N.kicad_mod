@@ -91,5 +91,5 @@
   (pad 62 smd roundrect (at -2.750000 -5.630000 180.0) (size 0.28 1.26) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 63 smd roundrect (at -3.250000 -5.630000 180.0) (size 0.28 1.26) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 64 smd roundrect (at -3.750000 -5.630000 180.0) (size 0.28 1.26) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISYS3DMOD}/Package_QFP.3dshapes/LQFP-64_10x10mm_P0.5mm.step (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+  (model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-64_10x10mm_P0.5mm.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

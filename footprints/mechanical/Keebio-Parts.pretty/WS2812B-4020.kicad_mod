@@ -16,7 +16,7 @@
   (pad "2" smd rect (at -0.3 0.375) (size 0.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 18b35488-bc15-432a-b54c-48ea3e9e0625))
   (pad "3" smd rect (at 0.575 0.375) (size 0.45 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 22e58cb3-9bdd-4725-8b50-e1c9e728c8e2))
   (pad "4" smd rect (at 1.4 0.375) (size 0.6 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ac5ecb2f-19ae-42f2-a5dd-409b77771917))
-  (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_RGB_5050-6.step"
+  (model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_RGB_5050-6.step"
     (offset (xyz 0 0 0))
     (scale (xyz 0.7 0.25 1))
     (rotate (xyz 0 0 180))

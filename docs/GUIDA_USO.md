@@ -55,12 +55,11 @@ Nessuna configurazione extra.
 - PCB / footprint assignment: `MIKILAB_<Libreria>:<Footprint>`, es.
   `MIKILAB_SOT95P280X145_5N:SOT95P280X145-5N`.
 
-Se un footprint non mostra il corpo 3D, quasi sempre è uno dei ~48 casi
-noti "`${KISBLIB}` gap" (footprint importati da fornitori il cui file
-STEP originale non era incluso nell'export) — vedi la sezione checkup o
-`python3 scripts/check_library.py` per l'elenco. Non è un errore da
-correggere subito: pad, courtyard e serigrafia restano corretti, manca
-solo la resa 3D.
+Se un footprint non mostra il corpo 3D, è uno dei footprint importati da
+fornitori il cui file STEP originale non è mai stato disponibile: il
+riferimento morto è stato rimosso e l'originale è annotato in
+`docs/removed_3d_model_refs.csv`. Pad, courtyard e serigrafia restano
+corretti, manca solo la resa 3D.
 
 ## 3. Aggiungere un componente nuovo
 
@@ -153,8 +152,10 @@ Verifica: struttura delle cartelle, sintassi di simboli/footprint,
 duplicati reali (per hash, non per nome), validità e portabilità dei
 riferimenti ai modelli 3D, sintassi e coerenza di
 `sym-lib-table`/`fp-lib-table`, e che ogni simbolo MIKILAB punti a un
-footprint esistente. Esce con `RESULT: OK` se non ci sono errori (i
-warning sono lacune note e documentate, non bloccanti — vedi README §4).
+footprint esistente (i modelli 3D standard `${KICAD10_3DMODEL_DIR}`
+vengono verificati contro l'installazione locale di KiCad). Esce con
+`RESULT: OK` se non ci sono errori; ogni warning è un nuovo problema da
+guardare.
 
 Per un elenco mirato dei componenti senza modello 3D (con link rapidi a
 SnapEDA/Octopart/UltraLibrarian per cercarlo):

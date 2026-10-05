@@ -149,5 +149,5 @@
   (pad 65 thru_hole circle (at 0.000000 2.383333) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
   (pad 65 thru_hole circle (at 1.191667 2.383333) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
   (pad 65 thru_hole circle (at 2.383333 2.383333) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
-  (model ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.25x7.25mm.step (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+  (model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-64-1EP_9x9mm_P0.5mm_EP7.35x7.35mm.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

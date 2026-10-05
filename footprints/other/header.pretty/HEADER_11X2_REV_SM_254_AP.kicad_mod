@@ -71,9 +71,4 @@
     (clearance 0.4))
   (pad "" np_thru_hole circle (at 0 11.43) (size 1.95 1.95) (drill 1.95) (layers *.Cu *.Mask)
     (clearance 0.4))
-  (model ${KISBLIB}/header.pretty/TSM-111-01-L-DV-A-P-TR.stp
-    (offset (xyz 0 0 2.54))
-    (scale (xyz 1 1 1))
-    (rotate (xyz -90 0 90))
-  )
 )

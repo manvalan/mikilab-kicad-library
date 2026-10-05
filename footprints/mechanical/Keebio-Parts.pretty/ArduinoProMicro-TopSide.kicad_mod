@@ -47,9 +47,4 @@
   (pad 23 thru_hole circle (at -11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask))
   (pad 12 thru_hole circle (at 13.97 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask))
   (pad 24 thru_hole circle (at -13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask))
-  (model "${KISBLIB}/Keebio-Parts.pretty/Pro_Micro.wrl"
-    (at (xyz 0.6 -0.35 0.05))
-    (scale (xyz 0.395 0.395 0.395))
-    (rotate (xyz 0 0 270))
-  )
 )

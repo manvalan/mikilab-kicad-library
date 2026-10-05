@@ -79,22 +79,17 @@
   (pad "" np_thru_hole circle (at -0.5 -58.5) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -0.5 5) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 24.5 5) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x10_P2.54mm_Vertical.step
+  (model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x10_P2.54mm_Vertical.step"
     (offset (xyz 0 0 -13))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))
   )
-  (model ${KISYS3DMOD}/Connectors.3dshapes/USB_B.wrl
-    (offset (xyz 11 56 -14))
-    (scale (xyz 0.4 0.385 0.4))
-    (rotate (xyz 0 0 -180))
-  )
-  (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x10_P2.54mm_Vertical.step
+  (model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x10_P2.54mm_Vertical.step"
     (offset (xyz 0 0 -2))
     (scale (xyz 1 1 1))
     (rotate (xyz 180 0 90))
   )
-  (model ${KISYS3DMOD}/Inductors_SMD.3dshapes/L_Wuerth_MAPI-4030.step
+  (model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Wuerth_MAPI-4030.step"
     (offset (xyz 12 27 -15))
     (scale (xyz 9.9 17.1 0.6))
     (rotate (xyz 0 0 0))

@@ -70,5 +70,4 @@
   (pad 23 thru_hole circle (at -0.547900 0.540000) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
   (pad 23 thru_hole circle (at 0.547900 0.540000) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
   (pad 23 thru_hole circle (at 1.643700 0.540000) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
-  (model ${KISBLIB}/ipc_son.pretty/DQP0022A.stp (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 -90)))
 )

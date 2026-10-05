@@ -73,9 +73,4 @@
   (pad 39 smd rect (at -9 2.25) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask))
   (pad 40 smd rect (at -9.5 -2.25) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask))
   (pad 41 smd rect (at -10 2.25) (size 0.7 1.5) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/hirose.pretty/DF9B-41S-1V.stp
-    (offset (xyz -25.95 -45.55 3.3))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
 )

@@ -86,5 +86,4 @@
   (pad 45 thru_hole circle (at 0.583333 0.000000) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
   (pad 45 thru_hole circle (at -0.583333 1.125000) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
   (pad 45 thru_hole circle (at 0.583333 1.125000) (size 0.60 0.60) (drill 0.300000) (layers *.Cu) (zone_connect 2))
-  (model ${KISBLIB}/ipc_qfn.pretty/QFN45P40_600X500X80L40X21T450X350.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 90)))
 )

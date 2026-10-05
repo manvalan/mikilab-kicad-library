@@ -206,9 +206,4 @@
   (pad "22" thru_hole circle (at -8.89 -7.8486) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (tstamp 8540db05-4911-4fef-a948-055792f5a191))
   (pad "23" thru_hole circle (at -11.43 -7.3914) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (tstamp ce548323-1f58-4200-9363-4eb368c59324))
   (pad "24" thru_hole circle (at -13.97 -7.8486) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.SilkS *.Mask) (tstamp 1c1ca748-5bd0-4903-803d-a2a3d32e7cc3))
-  (model "${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl"
-    (offset (xyz -13.96999979019165 -7.619999885559082 -5.841999912261963))
-    (scale (xyz 0.395 0.395 0.395))
-    (rotate (xyz 90 180 180))
-  )
 )

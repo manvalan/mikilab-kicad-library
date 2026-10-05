@@ -55,5 +55,4 @@
   (pad 14 smd roundrect (at 4.165000 -1.905000 90.0) (size 0.74 1.91) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 15 smd roundrect (at 4.165000 -3.175000 90.0) (size 0.74 1.91) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 16 smd roundrect (at 4.165000 -4.445000 90.0) (size 0.74 1.91) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISBLIB}/pulse.pretty//T1094NL_3D.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

@@ -30,5 +30,4 @@
   (pad 4 smd roundrect (at 0.350000 -0.410000 180.0) (size 0.19 0.67) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 5 smd roundrect (at 0.000000 -0.410000 180.0) (size 0.19 0.67) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 6 smd roundrect (at -0.350000 -0.410000 180.0) (size 0.19 0.67) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISBLIB}/ipc_son.pretty/DSF6.stp (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 -90)))
 )

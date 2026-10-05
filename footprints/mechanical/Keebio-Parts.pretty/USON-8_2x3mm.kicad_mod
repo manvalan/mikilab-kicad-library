@@ -38,7 +38,7 @@
   (pad "8" smd rect (at 1.2 -0.75) (size 0.3 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a7725269-6351-4f1b-a05c-ed64b76d2700))
   (pad "9" smd roundrect (at 0 0) (size 0.2 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0)
     (chamfer_ratio 0.5) (chamfer top_left) (tstamp f2629356-7a9c-438c-9473-62ded2709908))
-  (model "${KISYS3DMOD}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+  (model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

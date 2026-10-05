@@ -26,5 +26,4 @@
   (pad 1 thru_hole circle (at 0.000000 6.500000) (size 2.90 2.90) (drill 1.900000) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 0.000000 0.500000) (size 2.90 2.90) (drill 1.900000) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at -4.700000 3.500000) (size 2.90 2.90) (drill 1.900000) (layers *.Cu *.Mask))
-  (model ${KISBLIB}/cui.pretty/CUI_PJ-102AH.step (offset (xyz 0 7.2 6.55)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 -90)))
 )

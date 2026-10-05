@@ -265,7 +265,7 @@
   (pad "42" smd oval (at -2.4003 -5.715) (locked) (size 0.4064 1.89992) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b1bb3a11-695d-4127-8085-5e188dd9017b))
   (pad "43" smd oval (at -3.2004 -5.715) (locked) (size 0.4064 1.89992) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp da6966cb-d3c1-4994-99d2-3f641bf76f83))
   (pad "44" smd oval (at -4.0005 -5.715) (locked) (size 0.4064 1.89992) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 9961e48f-0f3b-412d-9ec1-f9c2047bdc84))
-  (model "${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.wrl"
+  (model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

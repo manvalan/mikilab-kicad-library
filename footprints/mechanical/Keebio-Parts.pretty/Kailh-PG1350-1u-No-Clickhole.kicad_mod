@@ -36,14 +36,4 @@
   (pad "2" thru_hole circle (at -5 3.8 41.9) (size 2.25 2.25) (drill 1.47) (layers *.Cu *.Mask) (tstamp 20a824e9-2293-490a-942f-4f1722208eba))
   (pad "" np_thru_hole circle (at -5.5 0 180) (size 1.7 1.7) (drill 1.7) (layers *.Cu *.Mask) (tstamp b38fc63e-046d-4c1a-9780-53e82851872b))
   (pad "" np_thru_hole circle (at 5.5 0 180) (size 1.7 1.7) (drill 1.7) (layers *.Cu *.Mask) (tstamp b7e99e1d-64c5-4819-be66-477102a6d4e5))
-  (model "${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl"
-    (offset (xyz 7.4675998878479 7.4675998878479 5.943599910736085))
-    (scale (xyz 0.4 0.4 0.4))
-    (rotate (xyz 270 0 180))
-  )
-  (model "${KISBLIB}/Keebio-Parts.pretty/SA-R3-1u.wrl"
-    (offset (xyz 0 0 11.93799982070923))
-    (scale (xyz 0.394 0.394 0.394))
-    (rotate (xyz 270 0 0))
-  )
 )

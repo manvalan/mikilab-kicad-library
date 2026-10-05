@@ -267,9 +267,4 @@
   (pad "27" smd rect (at 15.875 0 90) (size 2 3.25) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "28" smd rect (at 15.875 -2.54 90) (size 2 3.25) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "29" smd rect (at 15.875 -5.08 90) (size 2 3.25) (layers "F.Cu" "F.Paste" "F.Mask"))
-  (model "${KISBLIB}/Keebio-Parts.pretty/ArduinoProMicro.wrl"
-    (offset (xyz -13.96999979019165 -7.619999885559082 -5.841999912261963))
-    (scale (xyz 0.395 0.395 0.395))
-    (rotate (xyz 90 180 180))
-  )
 )

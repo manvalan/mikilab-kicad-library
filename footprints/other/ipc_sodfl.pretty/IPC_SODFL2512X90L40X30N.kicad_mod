@@ -26,5 +26,5 @@
   (fp_circle (center -1.340000 -0.690000) (end -1.215000 -0.690000) (layer F.SilkS) (width 0.250000))
   (pad C smd rect (at -1.140000 0.000000 0.0) (size 0.840000 0.400000) (layers F.Cu F.Paste F.Mask))
   (pad A smd rect (at 1.140000 0.000000 0.0) (size 0.840000 0.400000) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Diode_SMD.3dshapes/D_SOD-323F.step (at (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+  (model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step" (at (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

@@ -26,5 +26,4 @@
   (pad 2 smd roundrect (at 1.190000 0.965000 0.0) (size 1.25 1.00) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 3 smd roundrect (at 1.190000 -0.965000 0.0) (size 1.25 1.00) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 4 smd roundrect (at -1.190000 -0.965000 0.0) (size 1.25 1.00) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISBLIB}/ipc_osccc.pretty/OSCCC320X250X120L75X100.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
 )

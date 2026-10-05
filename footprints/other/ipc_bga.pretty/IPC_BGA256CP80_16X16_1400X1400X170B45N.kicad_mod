@@ -278,5 +278,4 @@
   (pad P16 smd circle (at 4.400000 -6.000000 0.0) (size 0.41 0.41) (layers F.Cu F.Paste F.Mask))
   (pad R16 smd circle (at 5.200000 -6.000000 0.0) (size 0.41 0.41) (layers F.Cu F.Paste F.Mask))
   (pad T16 smd circle (at 6.000000 -6.000000 0.0) (size 0.41 0.41) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/ipc_bga.pretty/BGA256CP80_16X16_1400X1400X170B45.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
 )

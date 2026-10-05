@@ -378,7 +378,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

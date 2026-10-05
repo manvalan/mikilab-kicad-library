@@ -61,9 +61,4 @@
   (fp_line (start -14.3 3.5) (end -10.639 3.5) (layer F.Fab) (width 0.025))
   (pad 1 smd rect (at -14.65 0) (size 3.2 4.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 14.65 0) (size 3.2 4.2) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/bat_coin.pretty/BU2032SM-BT-GTR.STEP
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 90 180 0))
-  )
 )

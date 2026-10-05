@@ -32,5 +32,4 @@
   (pad 6 smd roundrect (at 0.250000 -0.670000 180.0) (size 0.27 0.69) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 7 smd roundrect (at -0.250000 -0.670000 180.0) (size 0.27 0.69) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 8 smd roundrect (at -0.750000 -0.670000 180.0) (size 0.27 0.69) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISBLIB}/ipc_son.pretty/DLC0008A.stp (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 -90)))
 )

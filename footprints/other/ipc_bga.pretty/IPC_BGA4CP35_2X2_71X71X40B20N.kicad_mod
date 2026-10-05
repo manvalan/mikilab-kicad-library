@@ -18,5 +18,4 @@
   (pad B1 smd circle (at 0.175000 0.175000 0.0) (size 0.20 0.20) (layers F.Cu F.Paste F.Mask))
   (pad A2 smd circle (at -0.175000 -0.175000 0.0) (size 0.20 0.20) (layers F.Cu F.Paste F.Mask))
   (pad B2 smd circle (at 0.175000 -0.175000 0.0) (size 0.20 0.20) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/ipc_bga.pretty/BGA4CP35_2X2_71X71X40B20.step (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
 )

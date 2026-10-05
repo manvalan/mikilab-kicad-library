@@ -140,15 +140,4 @@
 			(justify bottom)
 		)
 	)
-	(model "./Gateron-KS33-Socket.step"
-		(offset
-			(xyz 5.025 -7.925 -3.5)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz -90 0 180)
-		)
-	)
 )

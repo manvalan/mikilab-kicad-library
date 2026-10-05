@@ -35,9 +35,4 @@
   (pad "13" thru_hole oval (at -5.62 6.1) (size 1 1.8) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask") (tstamp 8adb8868-2a84-4c43-9930-9a75a2252bbc))
   (pad "13" thru_hole oval (at 5.62 2.1) (size 1 2.2) (drill oval 0.6 1.8) (layers "*.Cu" "*.Mask") (tstamp 56c29db5-c824-4d79-b267-6108570f7d69))
   (pad "13" thru_hole oval (at 5.62 6.1) (size 1 1.8) (drill oval 0.6 1.4) (layers "*.Cu" "*.Mask") (tstamp 5fa18cee-d283-4600-ac5d-ea7b093d1152))
-  (model "${KISBLIB}/Keebio-Parts.pretty/USB4510-03-1-A.stp"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz -90 0 -180))
-  )
 )

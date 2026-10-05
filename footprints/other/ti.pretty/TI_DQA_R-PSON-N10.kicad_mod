@@ -31,5 +31,4 @@
   (pad 8 smd roundrect (at 0.000000 -0.420000 180.0) (size 0.40 0.69) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 9 smd roundrect (at -0.500000 -0.420000 180.0) (size 0.22 0.69) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 10 smd roundrect (at -1.000000 -0.420000 180.0) (size 0.22 0.69) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISBLIB}/ti.pretty/DQA0010A.stp (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

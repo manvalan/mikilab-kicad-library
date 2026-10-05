@@ -39,9 +39,4 @@
   (pad 6 thru_hole circle (at 7.8994 -3.6068) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask F.SilkS))
   (pad HOLE np_thru_hole circle (at 2.8956 0) (size 0.9906 0.9906) (drill 0.9906) (layers *.Cu *.Mask F.SilkS))
   (pad HOLE np_thru_hole circle (at 7.8994 0) (size 0.9906 0.9906) (drill 0.9906) (layers *.Cu *.Mask F.SilkS))
-  (model "${KISBLIB}/Keebio-Parts.pretty/sj-43514.wrl"
-    (at (xyz 0.175 -0.01 0.06))
-    (scale (xyz 2.77 2.77 2.77))
-    (rotate (xyz 270 0 180))
-  )
 )

@@ -32,13 +32,26 @@ import lib_common as lc
 ROOT = lc.LIBRARY_ROOT
 
 EXPECTED_TOP_LEVEL = {
-    "symbols", "footprints", "3dmodels", "docs", "legacy", "scripts",
+    "symbols", "footprints", "3dmodels", "docs", "legacy", "reference", "scripts",
     "sym-lib-table", "fp-lib-table", "sym-lib-table.global", "fp-lib-table.global",
     "MANIFEST.csv", "MANIFEST.md",
     "README.md", ".git", ".claude", ".gitignore", ".DS_Store",
 }
 
 KNOWN_UNRESOLVED_MODEL_VARS = ("${KISBLIB}",)
+
+# Standard KiCad 3D model variables (${KISYS3DMOD}, ${KICAD10_3DMODEL_DIR},
+# ...), defined by every KiCad install and pointing at its bundled models.
+STD_MODEL_VAR_RE = re.compile(r"^\$\{(?:KISYS3DMOD|KICAD\d+_3DMODEL_DIR)\}/(.+)$")
+
+# Bundled 3D models of the local KiCad install, used to verify standard
+# references when present (skipped silently on machines without it).
+KICAD_STD_3DMODELS_DIRS = (
+    Path("/Applications/KiCad/KiCad.app/Contents/SharedSupport/3dmodels"),
+    Path("/usr/share/kicad/3dmodels"),
+    Path("C:/Program Files/KiCad/share/kicad/3dmodels"),
+)
+KICAD_STD_3DMODELS = next((d for d in KICAD_STD_3DMODELS_DIRS if d.is_dir()), None)
 
 _STRING_LITERAL_RE = re.compile(r'"(?:[^"\\]|\\.)*"')
 
@@ -270,10 +283,16 @@ def check_model_reference(report: Report, footprint_path: Path, model_ref: str):
             )
         return
 
-    if "${KISYS3DMOD}" in model_ref:
+    std = STD_MODEL_VAR_RE.match(model_ref)
+    if std:
         # Standard KiCad env var pointing at the official bundled 3D model
-        # package -- defined automatically by every KiCad install, out of
-        # scope for this library (same as standard footprint libraries).
+        # package -- defined automatically by every KiCad install. Verified
+        # against the local install when one is found.
+        if KICAD_STD_3DMODELS and not (KICAD_STD_3DMODELS / std.group(1)).exists():
+            report.warn(
+                f"[3D] {footprint_path.relative_to(ROOT)}: standard KiCad 3D model "
+                f"'{model_ref}' not found in {KICAD_STD_3DMODELS}"
+            )
         return
 
     report.warn(

@@ -97,14 +97,4 @@
     (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp 6be27416-c7e3-49c5-ae23-1ff0a3e98228))
   (fp_line (start 14.65 2.3) (end 14.65 -3.2)
     (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp 1028a8ec-3787-4332-94fd-45a73e5d426a))
-  (model "${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl"
-    (offset (xyz 7.467599888 7.467599888 5.943599911))
-    (scale (xyz 0.4 0.4 0.4))
-    (rotate (xyz 270 0 180))
-  )
-  (model "${KISBLIB}/Keebio-Parts.pretty/SA-R3-1u.wrl"
-    (offset (xyz 0 0 11.93799982))
-    (scale (xyz 0.394 0.394 0.394))
-    (rotate (xyz 270 0 0))
-  )
 )

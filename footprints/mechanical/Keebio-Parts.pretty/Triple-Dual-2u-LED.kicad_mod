@@ -102,19 +102,4 @@
   (pad 2 thru_hole circle (at 0 -5.9) (size 2 2) (drill 1.4) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at -5 -3.8) (size 2 2) (drill 1.4) (layers *.Cu *.Mask))
   (pad 1 thru_hole oval (at 5 -3.8 221.9) (size 1.4 2) (drill 1.4) (layers *.Cu *.Mask))
-  (model "${KISBLIB}/Keebio-Parts.pretty/mx-switch.wrl"
-    (at (xyz 0.294 0.294 0.24))
-    (scale (xyz 0.4 0.4 0.4))
-    (rotate (xyz 270 0 180))
-  )
-  (model "${KISBLIB}/Keebio-Parts.pretty/cherry-mx-stabilizer-2u-pcb.wrl"
-    (at (xyz -0.47 0 0.14))
-    (scale (xyz 0.394 0.394 0.394))
-    (rotate (xyz 270 0 0))
-  )
-  (model "${KISBLIB}/Keebio-Parts.pretty/SA-R3-2u.wrl"
-    (at (xyz 0 0 0.47))
-    (scale (xyz 0.394 0.394 0.394))
-    (rotate (xyz 270 0 0))
-  )
 )

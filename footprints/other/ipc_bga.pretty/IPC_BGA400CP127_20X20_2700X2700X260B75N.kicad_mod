@@ -422,5 +422,4 @@
   (pad V20 smd circle (at 9.525000 -12.065000 0.0) (size 0.61 0.61) (layers F.Cu F.Paste F.Mask))
   (pad W20 smd circle (at 10.795000 -12.065000 0.0) (size 0.61 0.61) (layers F.Cu F.Paste F.Mask))
   (pad Y20 smd circle (at 12.065000 -12.065000 0.0) (size 0.61 0.61) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/ipc_bga.pretty/BGA400CP127_20X20_2700X2700X260B75.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
 )

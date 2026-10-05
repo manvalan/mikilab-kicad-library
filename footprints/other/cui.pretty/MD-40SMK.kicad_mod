@@ -30,5 +30,4 @@
   (pad 2 thru_hole circle (at 3.400000 2.050000) (size 1.35 1.35) (drill 0.900000) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at -3.400000 4.550000) (size 1.35 1.35) (drill 0.900000) (layers *.Cu *.Mask))
   (pad 4 thru_hole circle (at 3.400000 4.550000) (size 1.35 1.35) (drill 0.900000) (layers *.Cu *.Mask))
-  (model ${KISBLIB}/cui.pretty/CUI_MD-40S.step (offset (xyz 0 6.45 6.5)) (scale (xyz 1 1 1)) (rotate (xyz 90 -180 90)))
 )

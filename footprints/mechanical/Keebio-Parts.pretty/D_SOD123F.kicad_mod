@@ -196,7 +196,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "1d7a3bde-f35d-4cbc-9373-b1832b700e52")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
 		(offset
 			(xyz 0 0 0)
 		)

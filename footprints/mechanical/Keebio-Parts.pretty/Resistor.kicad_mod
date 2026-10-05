@@ -47,7 +47,7 @@
   (fp_line (start -2 -0.8) (end 2 -0.8) (layer F.SilkS) (width 0.15))
   (pad 1 thru_hole circle (at -5.08 0) (size 1.651 1.651) (drill 0.9906) (layers *.Cu *.SilkS *.Mask))
   (pad 2 thru_hole circle (at 5.08 0) (size 1.651 1.651) (drill 0.9906) (layers *.Cu *.SilkS *.Mask))
-  (model Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl
+  (model "${KICAD10_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.step"
     (at (xyz -0.2 0 0))
     (scale (xyz 0.525 0.525 0.525))
     (rotate (xyz 0 0 0))

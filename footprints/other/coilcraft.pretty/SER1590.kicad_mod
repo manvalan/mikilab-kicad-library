@@ -24,5 +24,4 @@
   (pad 1 smd roundrect (at -4.190000 7.110000 0.0) (size 3.81 4.06) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.0656))
   (pad 2 smd roundrect (at 4.190000 7.110000 0.0) (size 3.81 4.06) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.0656))
   (pad 3 smd roundrect (at 0.000000 -5.715000 0.0) (size 6.35 3.81) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.0656))
-  (model ${KISBLIB}/coilcraft.pretty/SER1590.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 90)))
 )

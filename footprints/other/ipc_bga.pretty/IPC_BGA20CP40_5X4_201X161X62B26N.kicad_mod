@@ -34,5 +34,4 @@
   (pad C4 smd circle (at 0.000000 -0.600000 0.0) (size 0.21 0.21) (layers F.Cu F.Paste F.Mask))
   (pad D4 smd circle (at 0.400000 -0.600000 0.0) (size 0.21 0.21) (layers F.Cu F.Paste F.Mask))
   (pad E4 smd circle (at 0.800000 -0.600000 0.0) (size 0.21 0.21) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/ipc_bga.pretty/BGA20CP40_5X4_201X161X62B26.step (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
 )

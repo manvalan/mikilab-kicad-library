@@ -1,0 +1,163 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "OPA2172IDGKR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 2.54 3.175 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "OPA2172IDGKR" (id 1) (at 2.54 -5.08 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "MIKILAB_OPA2172IDGKR:OPA2172IDGKR_SOP65P490X110-8N" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Texas Instruments" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SNAPEDA_PACKAGE_ID" "5176" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "VSSOP-8 Texas Instruments" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/OPA2172IDGKR/Texas+Instruments/view-part/?ref=eda" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "IPC7351B" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "May 2018" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/OPA2172IDGKR/Texas+Instruments/view-part/?ref=snap" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "OPA2172IDGKR" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=552381&manufacturer=Texas Instruments&part_name=OPA2172IDGKR&search_term=opa2172" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            Dual, 36-V, 10-MHz, low-power operational amplifier\n                        \n" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Texas Instruments" (id 16) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "OPA2172IDGKR_1_0"
+      (polyline
+        (pts (xy -5.08 5.08) (xy -5.08 -5.08)) (stroke (width 0.4064))
+      )
+      (polyline
+        (pts (xy -5.08 -5.08) (xy 5.08 0.0)) (stroke (width 0.4064))
+      )
+      (polyline
+        (pts (xy 5.08 0.0) (xy -5.08 5.08)) (stroke (width 0.4064))
+      )
+      (polyline
+        (pts (xy -3.81 3.175) (xy -3.81 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -4.445 2.54) (xy -3.175 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -4.445 -2.54) (xy -3.175 -2.54)) (stroke (width 0.1524))
+      )
+      (text "V+" (at 1.27 3.175 900)
+        (effects (font (size 0.8128 0.8128)) (justify bottom left))
+      )
+      (text "V-" (at 1.27 -4.445 900)
+        (effects (font (size 0.8128 0.8128)) (justify bottom left))
+      )
+      (pin input line (at -7.62 -2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at -7.62 2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin output line (at 7.62 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 0.0 7.62 270.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "8"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 0.0 -7.62 90.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+    (symbol "OPA2172IDGKR_2_0"
+      (polyline
+        (pts (xy -5.08 5.08) (xy -5.08 -5.08)) (stroke (width 0.4064))
+      )
+      (polyline
+        (pts (xy -5.08 -5.08) (xy 5.08 0.0)) (stroke (width 0.4064))
+      )
+      (polyline
+        (pts (xy 5.08 0.0) (xy -5.08 5.08)) (stroke (width 0.4064))
+      )
+      (polyline
+        (pts (xy -3.81 3.175) (xy -3.81 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -4.445 2.54) (xy -3.175 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -4.445 -2.54) (xy -3.175 -2.54)) (stroke (width 0.1524))
+      )
+      (pin input line (at -7.62 -2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at -7.62 2.54 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin output line (at 7.62 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

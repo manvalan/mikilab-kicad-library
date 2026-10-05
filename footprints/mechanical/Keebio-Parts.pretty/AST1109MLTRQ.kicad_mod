@@ -33,7 +33,7 @@
   (fp_line (start 7.5 1) (end 7.5 -1) (layer "F.CrtYd") (width 0.12) (tstamp fd36e6ef-0055-4c8a-8161-be2b74fe0ec1))
   (pad "1" smd rect (at -6.5 0) (size 2.3 2.3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp afc1b556-b5ba-472b-bd90-d4e779045d8e))
   (pad "2" smd rect (at 6.5 0) (size 2.3 2.3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 79bb40db-e0ee-4b8a-9b3e-489050bd7392))
-  (model "${KICAD6_3DMODEL_DIR}/Buzzer_Beeper.3dshapes/Buzzer_Mallory_AST1109MLTRQ.step"
+  (model "${KICAD10_3DMODEL_DIR}/Buzzer_Beeper.3dshapes/Buzzer_Mallory_AST1109MLTRQ.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

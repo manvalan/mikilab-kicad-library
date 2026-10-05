@@ -26,5 +26,4 @@
   (pad 2 smd roundrect (at 1.140000 0.915000 0.0) (size 1.13 0.88) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 3 smd roundrect (at 1.140000 -0.915000 0.0) (size 1.13 0.88) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
   (pad 4 smd roundrect (at -1.140000 -0.915000 0.0) (size 1.13 0.88) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2500))
-  (model ${KISBLIB}/ipc_osccc.pretty/ASTX-H11.STEP (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

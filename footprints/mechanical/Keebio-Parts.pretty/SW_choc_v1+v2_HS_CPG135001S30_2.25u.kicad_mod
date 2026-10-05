@@ -738,15 +738,4 @@
 		(uuid "c486791e-f839-4b9d-b468-46263a99d648")
 	)
 	(embedded_fonts no)
-	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/HS_CPG135001S30_Choc.step"
-		(offset
-			(xyz -5 -3.75 0.12)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 90 0 180)
-		)
-	)
 )

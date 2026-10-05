@@ -66,9 +66,4 @@
     (clearance 0.4))
   (pad "" np_thru_hole circle (at 4.5 0) (size 1.7 1.7) (drill 1.7) (layers *.Cu *.Mask F.SilkS)
     (clearance 0.4))
-  (model ${KISBLIB}/cui.pretty/sj-43514-smt.stp
-    (offset (xyz -7 0 2.6))
-    (scale (xyz 1 1 1))
-    (rotate (xyz -90 0 180))
-  )
 )

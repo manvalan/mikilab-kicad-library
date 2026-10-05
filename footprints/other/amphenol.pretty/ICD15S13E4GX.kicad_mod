@@ -38,5 +38,4 @@
   (pad 15 thru_hole circle (at -4.850000 -1.125000) (size 1.35 1.35) (drill 0.900000) (layers *.Cu *.Mask))
   (pad 0 thru_hole circle (at -12.495000 -3.665000) (size 4.80 4.80) (drill 3.200000) (layers *.Cu *.Mask))
   (pad 0 thru_hole circle (at 12.495000 -3.665000) (size 4.80 4.80) (drill 3.200000) (layers *.Cu *.Mask))
-  (model ${KISBLIB}/amphenol.pretty/sicd15s13e4gx00lf.stp (offset (xyz 0 -7.37 0)) (scale (xyz 1 1 1)) (rotate (xyz 180 0 180)))
 )

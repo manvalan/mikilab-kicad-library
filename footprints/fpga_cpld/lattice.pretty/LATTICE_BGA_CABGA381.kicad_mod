@@ -403,5 +403,4 @@
   (pad U20 smd circle (at 5.200000 -7.600000 0.0) (size 0.37 0.37) (layers F.Cu F.Paste F.Mask))
   (pad V20 smd circle (at 6.000000 -7.600000 0.0) (size 0.37 0.37) (layers F.Cu F.Paste F.Mask))
   (pad W20 smd circle (at 6.800000 -7.600000 0.0) (size 0.37 0.37) (layers F.Cu F.Paste F.Mask))
-  (model ${KISBLIB}/lattice.pretty/LATTICE_BGA_CABGA381.step (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz -90 0 0)))
 )

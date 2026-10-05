@@ -18,9 +18,4 @@
   (fp_line (start 0.1905 0) (end -0.1905 -0.381) (layer F.SilkS) (width 0.2))
   (pad 1 smd rect (at -1.4 0) (size 1.6 1.397) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.4 0) (size 1.6 1.397) (layers F.Cu F.Paste F.Mask))
-  (model smd/chip_cms.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 0.1 0.1 0.1))
-    (rotate (xyz 0 0 0))
-  )
 )

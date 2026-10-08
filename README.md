@@ -171,6 +171,15 @@ EQFP-144 → LQFP-144, TI DGN → MSOP-8-EP, Taiyo NR6028 → FNR6028S,
 Coilcraft LPS4018 → TechFuse SL0420). The remaining footprints without a
 model are listed in `docs/footprint_senza_modello_3d.csv`.
 
+**Extra standard BGA models (`3dmodels/other/Package_BGA/`):** 25 STEP
+bodies from KiCad's `Package_BGA.3dshapes` (kicad-packages3D, CC-BY-SA 4.0
+with the KiCad libraries exception) that do *not* ship with the local
+KiCad 10 install -- 24 of them are referenced by KiCad's own
+`Package_BGA` footprints (UFBGA/VFBGA/XFBGA, TI DSBGA, BGA-153/-672/-676
+NSMD, ...). Models that KiCad already bundles were not copied (the
+bundled versions are newer). Reference them as
+`${MIKILAB}/3dmodels/other/Package_BGA/<Name>.step`.
+
 **Removed dead 3D references:** a set of vendor-imported footprints
 referenced 3D files that were never present locally (`${KISBLIB}/...`,
 `${KICAD8_3RD_PARTY}/...`, relative paths, or models no longer shipped

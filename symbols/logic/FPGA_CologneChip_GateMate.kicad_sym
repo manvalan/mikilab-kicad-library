@@ -24,7 +24,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_BGA:BGA-324_15.0x15.0mm_Layout18x18_P0.8mm_Ball0.45mm_Pad0.4mm_NSMD"
+		(property "Footprint" "Package_BGA:BGA-324_15x15mm_Layout18x18_P0.8mm"
 			(at -5.08 16.51 0)
 			(effects
 				(font

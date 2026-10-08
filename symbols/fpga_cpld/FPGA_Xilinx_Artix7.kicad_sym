@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -25398,7 +25398,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_FT[G]256"
 			(at 0 0 0)
 			(effects
 				(font
@@ -34554,7 +34554,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -40518,7 +40518,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -54735,7 +54735,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_FT[G]256"
 			(at 0 0 0)
 			(effects
 				(font
@@ -113201,7 +113201,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -119165,7 +119165,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -133382,7 +133382,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_FT[G]256"
 			(at 0 0 0)
 			(effects
 				(font
@@ -142538,7 +142538,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148502,7 +148502,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -162719,7 +162719,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_FT[G]256"
 			(at 0 0 0)
 			(effects
 				(font
@@ -167446,7 +167446,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_CS[G]32[45]"
 			(at 0 0 0)
 			(effects
 				(font
@@ -192819,7 +192819,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MIKILAB_xilinx:XILINX_FT[G]256"
 			(at 0 0 0)
 			(effects
 				(font

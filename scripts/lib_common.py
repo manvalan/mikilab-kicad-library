@@ -412,3 +412,39 @@ def append_manifest_rows(root: Path, rows: list[list[str]]):
             writer.writerow(MANIFEST_HEADER)
         for row in rows:
             writer.writerow(row)
+
+
+# ---------------------------------------------------------------------------
+# Symbol pin <-> footprint pad correspondence
+# ---------------------------------------------------------------------------
+
+_PIN_NUMBER_RE = re.compile(r'\(number\s+"([^"]*)"')
+_PAD_NUMBER_RE = re.compile(r'\(pad\s+(?:"([^"]*)"|([^\s()"]+))')
+
+
+def symbol_pin_numbers(text: str) -> set[str]:
+    """Pin numbers declared in a .kicad_sym file (all units, hidden pins included)."""
+    return {n.strip() for n in _PIN_NUMBER_RE.findall(text) if n.strip()}
+
+
+def footprint_pad_numbers(text: str) -> set[str]:
+    """Numbered pads of a .kicad_mod file. Unnumbered pads ("" -- mechanical,
+    paste-only, npth holes) are not electrical and are left out."""
+    pads = set()
+    for quoted, bare in _PAD_NUMBER_RE.findall(text):
+        number = (quoted or bare).strip()
+        if number:
+            pads.add(number)
+    return pads
+
+
+def compare_pins_pads(symbol_text: str, footprint_text: str) -> tuple[set[str], set[str], set[str]]:
+    """Return (pins, pins_without_pad, pads_without_pin).
+
+    pins_without_pad is the blocking mismatch: a symbol pin that has no
+    copper on the footprint can never be routed. pads_without_pin is
+    usually benign (mounting/shield tabs such as 'MP', 'SH') but is
+    reported so it can be reviewed."""
+    pins = symbol_pin_numbers(symbol_text)
+    pads = footprint_pad_numbers(footprint_text)
+    return pins, pins - pads, pads - pins

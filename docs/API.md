@@ -247,15 +247,22 @@ Ogni script accetta `--help`, tranne `sync_global_tables.py`.
 |---|---|
 | `add_component.py` / `import_component.py` | Import singolo: `--name N --symbol S [--footprint F] [--model M] [--category C] [--update] [--remove]` |
 | `import_batch.py` | `--source DIR [--category C]`: una sottocartella per componente (nome cartella = nome componente), esattamente un `.kicad_sym` ciascuna |
-| `import_snapeda.py` | `--zip FILE.zip [--name N] [--category C] [--update]`: zip "Download KiCad" di SnapEDA |
-| `import_ultralibrarian.py` | `--zip FILE.zip [--name N] [--category C] [--update]`: zip KiCad di UltraLibrarian |
+| `import_snapeda.py` | `--zip FILE.zip [--name N] [--category C] [--update] [--allow-pin-mismatch]`: zip "Download KiCad" di SnapEDA |
+| `import_ultralibrarian.py` | `--zip FILE.zip [--name N] [--category C] [--update] [--allow-pin-mismatch]`: zip KiCad di UltraLibrarian |
+| `import_easyeda.py` | `--lcsc C123 [--name N] [--category C] [--update] [--allow-pin-mismatch]`: parte JLCPCB/LCSC convertita con `easyeda2kicad` |
+| `fetch_components.py` | `--list LISTA.json [--dry-run] [--only REF,MPN] [--sources snapeda,ultralibrarian,easyeda] [--no-download] [--update] [--allow-pin-mismatch] [--credentials F] [--report F]`: scarica, importa e valida una lista di componenti (vedi GUIDA_USO §3.1) |
+| `fetch_worker.py` | `[--once] [--interval S] [--shared-dir DIR] [--index-only] [--credentials F]`: esegue le richieste di ComponentVault lette dalla cartella condivisa (`kicad/jobs/*`) e vi scrive esito, zip KiCad, render, indice libreria e heartbeat (vedi GUIDA_USO §3.2) |
+| `credentials_keychain.py` | `set SORGENTE` / `status` / `delete SORGENTE`: account SnapEDA/UltraLibrarian nel Portachiavi di macOS (letti da `fetch_components.py`) |
+| `library_index.py` | `[-o FILE]`: indice JSON di tutti i simboli (nome, libreria, footprint, LCSC/MPN, 3D) per ComponentVault |
 
 Regole comuni:
 - senza `--update` l'import si rifiuta di sovrascrivere un componente
   esistente;
 - i footprint sono deduplicati per contenuto (SHA256), non per nome;
 - in caso di stesso nome con contenuto diverso, il footprint viene
-  importato con un nome distinto e marcato `RENAMED_COLLISION`.
+  importato con un nome distinto e marcato `RENAMED_COLLISION`;
+- SnapEDA/UltraLibrarian/EasyEDA: ogni pin del simbolo deve avere un pad
+  nel footprint, altrimenti non viene copiato nulla.
 
 ### 3.2 Generatori
 
@@ -269,6 +276,7 @@ Regole comuni:
 |---|---|
 | `check_library.py` | Controllo completo: struttura, sintassi, duplicati, riferimenti 3D (inclusi i modelli standard `${KICAD10_3DMODEL_DIR}`, verificati sull'installazione locale di KiCad), lib-table, riferimenti simbolo→footprint. Exit code `0` = `RESULT: OK` |
 | `find_missing_3d_models.py` | `[--category C] [--csv OUT.csv]`: componenti con footprint ma senza modello 3D, con link di ricerca SnapEDA, Octopart e UltraLibrarian |
+| `model_check.py` | `FILE.kicad_mod... | --all [--render DIR]`: posizione/orientamento del modello STEP rispetto a courtyard/fab/pad (ruotato di 90°, sotto la scheda, fuori centro, scala), render isometrico con `kicad-cli` |
 
 ### 3.4 Tabelle globali di KiCad
 

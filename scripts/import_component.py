@@ -75,6 +75,36 @@ def validate_args(args) -> None:
         )
 
 
+def verify_symbol_footprint(symbol: Path, footprint: Path | None, report: list,
+                            require_footprint: bool = False, allow_mismatch: bool = False) -> None:
+    """Check that a downloaded symbol/footprint pair is complete and that
+    every symbol pin number has a matching footprint pad. Raises
+    ImportError_ before anything is copied into the library."""
+    if footprint is None:
+        if require_footprint:
+            raise ImportError_("incomplete part: symbol found but no footprint (.kicad_mod)")
+        return
+
+    pins, no_pad, no_pin = lc.compare_pins_pads(
+        symbol.read_text(encoding="utf-8", errors="replace"),
+        footprint.read_text(encoding="utf-8", errors="replace"),
+    )
+    if not pins:
+        raise ImportError_(f"symbol {symbol.name} declares no pin numbers")
+
+    if no_pin:
+        report.append(f"  NOTE: footprint pads with no symbol pin (mounting/shield?): {', '.join(sorted(no_pin))}")
+
+    if no_pad:
+        msg = (f"pin/pad mismatch: {len(no_pad)} of {len(pins)} symbol pins have no pad "
+               f"in {footprint.name}: {', '.join(sorted(no_pad)[:20])}{' ...' if len(no_pad) > 20 else ''}")
+        if not allow_mismatch:
+            raise ImportError_(msg)
+        report.append(f"  WARNING: {msg} (imported anyway)")
+    else:
+        report.append(f"  Verified: all {len(pins)} symbol pins have a matching footprint pad")
+
+
 def import_symbol(name: str, category: str, src: Path, manifest_rows: list, report: list, update: bool = False) -> Path:
     bad_name = lc.check_component_name(name)
     if bad_name:

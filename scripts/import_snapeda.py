@@ -61,57 +61,44 @@ def guess_name(symbol_path: Path) -> str:
     return m.group(1)
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description="Import a component from a SnapEDA KiCad export zip.")
-    parser.add_argument("--zip", required=True, help="Path to the SnapEDA .zip download")
-    parser.add_argument("--name", help="Component name (default: taken from the symbol's own name)")
-    parser.add_argument("--category", choices=lc.CATEGORIES, help="MIKILAB category (default: auto-detected)")
-    parser.add_argument("--update", action="store_true", help="Replace an existing component's symbol/footprint in place instead of refusing")
-    args = parser.parse_args()
-
-    zip_path = Path(args.zip).expanduser().resolve()
-    if not zip_path.is_file():
-        print(f"ERROR: --zip file not found: {zip_path}")
-        return 1
-
+def import_zip(zip_path: Path, name: str | None = None, category: str | None = None,
+               update: bool = False, require_footprint: bool = False,
+               allow_mismatch: bool = False) -> tuple[str, list[str]]:
+    """Import one SnapEDA KiCad zip into the library (symbol, footprint,
+    3D model, MANIFEST rows). Does not regenerate the lib tables -- the
+    caller does that once. Returns (component name, report lines);
+    raises ic.ImportError_ on failure."""
     with tempfile.TemporaryDirectory(prefix="snapeda_") as tmp:
         tmp_dir = Path(tmp)
         try:
             with zipfile.ZipFile(zip_path) as zf:
                 zf.extractall(tmp_dir)
         except zipfile.BadZipFile:
-            print(f"ERROR: {zip_path} is not a valid zip file")
-            return 1
+            raise ic.ImportError_(f"{zip_path} is not a valid zip file")
 
         symbol = find_first(tmp_dir, (".kicad_sym",))
         if symbol is None:
-            print(f"ERROR: no .kicad_sym file found inside {zip_path.name}")
-            return 1
+            raise ic.ImportError_(f"no .kicad_sym file found inside {zip_path.name}")
 
         footprint = find_first(tmp_dir, (".kicad_mod",))
         model = find_first(tmp_dir, MODEL_EXTS)
 
-        try:
-            name = args.name or guess_name(symbol)
-        except ic.ImportError_ as e:
-            print(f"ERROR: {e}")
-            return 1
-
-        category = args.category or lc.classify(name)
+        name = name or guess_name(symbol)
+        category = category or lc.classify(name)
         manifest_rows: list[list[str]] = []
         report: list[str] = [f"Importing '{name}' from SnapEDA zip {zip_path.name} into category '{category}'"]
         for label, path in (("symbol", symbol), ("footprint", footprint), ("model", model)):
             report.append(f"  found {label}: {path.relative_to(tmp_dir) if path else '(none)'}")
 
         try:
-            ic.import_symbol(name, category, symbol, manifest_rows, report, update=args.update)
+            ic.verify_symbol_footprint(symbol, footprint, report, require_footprint, allow_mismatch)
+            ic.import_symbol(name, category, symbol, manifest_rows, report, update=update)
         except ic.ImportError_ as e:
-            print(f"ERROR: {e}")
             lc.append_manifest_rows(ROOT, [["symbol", str(zip_path), "", "ERROR", "", str(e)]])
-            return 1
+            raise
 
         if footprint is not None:
-            fp_path, fp_nick, fp_name, _ = ic.import_footprint(name, category, footprint, manifest_rows, report, update=args.update)
+            fp_path, fp_nick, fp_name, _ = ic.import_footprint(name, category, footprint, manifest_rows, report, update=update)
 
             if model is not None:
                 ic.import_model(name, category, model, fp_path, manifest_rows, report)
@@ -127,9 +114,35 @@ def main() -> int:
 
         lc.append_manifest_rows(ROOT, manifest_rows)
 
+    return name, report
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Import a component from a SnapEDA KiCad export zip.")
+    parser.add_argument("--zip", required=True, help="Path to the SnapEDA .zip download")
+    parser.add_argument("--name", help="Component name (default: taken from the symbol's own name)")
+    parser.add_argument("--category", choices=lc.CATEGORIES, help="MIKILAB category (default: auto-detected)")
+    parser.add_argument("--update", action="store_true", help="Replace an existing component's symbol/footprint in place instead of refusing")
+    parser.add_argument("--allow-pin-mismatch", action="store_true", help="Import even if some symbol pins have no matching footprint pad")
+    args = parser.parse_args()
+
+    zip_path = Path(args.zip).expanduser().resolve()
+    if not zip_path.is_file():
+        print(f"ERROR: --zip file not found: {zip_path}")
+        return 1
+
+    try:
+        _, report = import_zip(zip_path, args.name, args.category, update=args.update,
+                               allow_mismatch=args.allow_pin_mismatch)
+    except ic.ImportError_ as e:
+        print(f"ERROR: {e}")
+        return 1
+
     sym_entries = lc.write_sym_lib_table(ROOT)
     fp_entries = lc.write_fp_lib_table(ROOT)
+    lc.write_global_tables(ROOT)
     report.append(f"Regenerated sym-lib-table ({len(sym_entries)} libraries) and fp-lib-table ({len(fp_entries)} libraries)")
+    report.append("Regenerated sym-lib-table.global and fp-lib-table.global")
 
     print("\n".join(report))
     print("\nOK.")

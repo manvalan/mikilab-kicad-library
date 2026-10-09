@@ -36,6 +36,7 @@ EXPECTED_TOP_LEVEL = {
     "sym-lib-table", "fp-lib-table", "sym-lib-table.global", "fp-lib-table.global",
     "MANIFEST.csv", "MANIFEST.md",
     "README.md", ".git", ".claude", ".gitignore", ".DS_Store",
+    "credentials.json", "credentials.example.json",
 }
 
 KNOWN_UNRESOLVED_MODEL_VARS = ("${KISBLIB}",)

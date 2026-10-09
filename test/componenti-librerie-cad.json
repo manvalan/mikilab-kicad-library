@@ -1,0 +1,248 @@
+{
+  "progetto": "Scheda Linux RK3308B",
+  "data": "2026-10-08",
+  "nota": "Solo componenti con MPN specifico; passivi, header 2.54 mm e induttori usano footprint generici della libreria CAD. Disponibilità su SnapEDA/Ultra Librarian non verificata.",
+  "componenti": [
+    {
+      "ref": "U1",
+      "funzione": "SoC",
+      "mpn": "RK3308B",
+      "produttore": "Rockchip",
+      "package": "TFBGA-355",
+      "lcsc": "C22447822",
+      "snapeda": "https://www.snapeda.com/search/?q=RK3308B",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=RK3308B",
+      "note": "Probabilmente assente su SnapEDA/UL: usare simbolo/footprint EasyEDA di LCSC"
+    },
+    {
+      "ref": "U2",
+      "funzione": "PMIC",
+      "mpn": "RK805-1",
+      "produttore": "Rockchip",
+      "package": "QFN-32-EP 4x4",
+      "lcsc": "C2934708",
+      "snapeda": "https://www.snapeda.com/search/?q=RK805-1",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=RK805-1",
+      "note": "Probabilmente assente su SnapEDA/UL: usare EasyEDA/LCSC"
+    },
+    {
+      "ref": "U3",
+      "funzione": "RAM DDR3L 4Gb x16",
+      "mpn": "W634GU6RB-11",
+      "produttore": "Winbond",
+      "package": "FBGA-96",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=W634GU6RB-11",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=W634GU6RB-11",
+      "note": "Alternative: MT41K256M16TW-107, K4B4G1646E-BCMA"
+    },
+    {
+      "ref": "U3-alt",
+      "funzione": "RAM DDR3L 4Gb x16 (alternativa)",
+      "mpn": "MT41K256M16TW-107",
+      "produttore": "Micron",
+      "package": "FBGA-96",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=MT41K256M16TW-107",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=MT41K256M16TW-107"
+    },
+    {
+      "ref": "U4",
+      "funzione": "eMMC 8 GB",
+      "mpn": "KLM8G1GETF-B041",
+      "produttore": "Samsung",
+      "package": "FBGA-153",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=KLM8G1GETF-B041",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=KLM8G1GETF-B041",
+      "note": "Alternativa: FORESEE FEMDRW008G"
+    },
+    {
+      "ref": "U4-alt",
+      "funzione": "eMMC 8 GB (alternativa)",
+      "mpn": "FEMDRW008G",
+      "produttore": "FORESEE (Longsys)",
+      "package": "FBGA-153",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=FEMDRW008G",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=FEMDRW008G",
+      "note": "Probabilmente solo su EasyEDA/LCSC"
+    },
+    {
+      "ref": "U5",
+      "funzione": "Ethernet PHY 10/100",
+      "mpn": "RTL8201F-VB-CG",
+      "produttore": "Realtek",
+      "package": "QFN-32-EP 5x5",
+      "lcsc": "C45044",
+      "snapeda": "https://www.snapeda.com/search/?q=RTL8201F-VB-CG",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=RTL8201F-VB-CG"
+    },
+    {
+      "ref": "U6",
+      "funzione": "Modulo Wi-Fi/BT RTL8723DS",
+      "mpn": "6223N-SRD",
+      "produttore": "Fn-Link",
+      "package": null,
+      "lcsc": "C5135436",
+      "snapeda": "https://www.snapeda.com/search/?q=6223N-SRD",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=6223N-SRD",
+      "note": "Codice LCSC non verificato; footprint quasi certamente da disegnare dal datasheet del modulo"
+    },
+    {
+      "ref": "U7",
+      "funzione": "Buck VDD_LOG 1.0 V",
+      "mpn": "SY8089AAAC",
+      "produttore": "Silergy",
+      "package": "SOT-23-5",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=SY8089AAAC",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=SY8089AAAC"
+    },
+    {
+      "ref": "U8",
+      "funzione": "Buck 3.3 V Wi-Fi",
+      "mpn": "SY8089AAAC",
+      "produttore": "Silergy",
+      "package": "SOT-23-5",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=SY8089AAAC",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=SY8089AAAC",
+      "note": "Stesso componente di U7"
+    },
+    {
+      "ref": "U9",
+      "funzione": "RTC",
+      "mpn": "RV-3028-C7",
+      "produttore": "Micro Crystal",
+      "package": "C7 (3.2x1.5 mm)",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=RV-3028-C7",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=RV-3028-C7",
+      "note": "Alternativa: PCF8563T (NXP, SO-8)"
+    },
+    {
+      "ref": "U10",
+      "funzione": "Load switch VBUS USB host",
+      "mpn": "SY6280AAC",
+      "produttore": "Silergy",
+      "package": "SOT-23-5",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=SY6280AAC",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=SY6280AAC"
+    },
+    {
+      "ref": "U11",
+      "funzione": "ESD USB",
+      "mpn": "USBLC6-2SC6",
+      "produttore": "STMicroelectronics",
+      "package": "SOT-23-6",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=USBLC6-2SC6",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=USBLC6-2SC6",
+      "note": "Uno per la USB host, uno per la USB-C"
+    },
+    {
+      "ref": "Y1",
+      "funzione": "Quarzo 24 MHz",
+      "mpn": "X322524MOB4SI",
+      "produttore": "YXC",
+      "package": "SMD3225-4P",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=X322524MOB4SI",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=X322524MOB4SI",
+      "note": "MPN da verificare per la capacità di carico; il C15743 originale non è verificabile"
+    },
+    {
+      "ref": "Y2",
+      "funzione": "Quarzo 25 MHz",
+      "mpn": "X322525MOB4SI",
+      "produttore": "YXC",
+      "package": "SMD3225-4P",
+      "lcsc": "C9006",
+      "snapeda": "https://www.snapeda.com/search/?q=X322525MOB4SI",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=X322525MOB4SI"
+    },
+    {
+      "ref": "J1",
+      "funzione": "USB-C alimentazione/OTG",
+      "mpn": "USB4105-GF-A",
+      "produttore": "GCT",
+      "package": "USB-C 16 pin SMT",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=USB4105-GF-A",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=USB4105-GF-A"
+    },
+    {
+      "ref": "J2",
+      "funzione": "USB-A host",
+      "mpn": "48037-0001",
+      "produttore": "Molex",
+      "package": "USB-A orizzontale THT",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=48037-0001",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=48037-0001"
+    },
+    {
+      "ref": "J3",
+      "funzione": "RJ45 con magnetici",
+      "mpn": "HR911105A",
+      "produttore": "HanRun",
+      "package": "RJ45 THT",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=HR911105A",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=HR911105A",
+      "note": "Se non trovato: Würth 7499010211A (pinout diverso)"
+    },
+    {
+      "ref": "J4",
+      "funzione": "Slot microSD push-push",
+      "mpn": "DM3AT-SF-PEJM5",
+      "produttore": "Hirose",
+      "package": "microSD SMT",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=DM3AT-SF-PEJM5",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=DM3AT-SF-PEJM5"
+    },
+    {
+      "ref": "J5",
+      "funzione": "Connettore antenna",
+      "mpn": "U.FL-R-SMT-1(10)",
+      "produttore": "Hirose",
+      "package": "U.FL",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=U.FL-R-SMT-1%2810%29",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=U.FL-R-SMT-1%2810%29"
+    },
+    {
+      "ref": "SW1-3",
+      "funzione": "Pulsanti reset/maskrom/recovery",
+      "mpn": "PTS810 SJM 250 SMTR LFS",
+      "produttore": "C&K",
+      "package": "SMD 4.2x3.2",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=PTS810%20SJM%20250%20SMTR%20LFS",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=PTS810%20SJM%20250%20SMTR%20LFS"
+    },
+    {
+      "ref": "FB*",
+      "funzione": "Ferrite rail analogici",
+      "mpn": "BLM15AG601SN1D",
+      "produttore": "Murata",
+      "package": "0402",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=BLM15AG601SN1D",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=BLM15AG601SN1D"
+    },
+    {
+      "ref": "D1",
+      "funzione": "TVS ingresso 5 V",
+      "mpn": "SMAJ5.0A",
+      "produttore": "Littelfuse",
+      "package": "SMA",
+      "lcsc": null,
+      "snapeda": "https://www.snapeda.com/search/?q=SMAJ5.0A",
+      "ultralibrarian": "https://app.ultralibrarian.com/search?queryText=SMAJ5.0A"
+    }
+  ]
+}

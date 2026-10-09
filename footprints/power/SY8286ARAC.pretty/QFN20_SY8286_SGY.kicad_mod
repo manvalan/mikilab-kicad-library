@@ -173,4 +173,9 @@
   (pad "19" smd rect (at -0.449999 -1.4986) (size 0.254 0.7112) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "20" smd rect (at -0.900001 -1.4986) (size 0.254 0.7112) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "21" smd rect (at 0 0) (size 1.0922 1.0922) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model ${MIKILAB}/3dmodels/power/SY8286ARAC.step
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

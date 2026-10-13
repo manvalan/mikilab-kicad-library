@@ -1111,3 +1111,9 @@ footprint,lcsc:C2913551/QFN-68_L8.0-W8.0-P0.40-BL-EP5.5.kicad_mod,footprints/pow
 symbol,lcsc:C9006/lib.kicad_sym,symbols/other/X322525MOB4SI.kicad_sym,NEW,2061486f6d9937779f7d128f9bb0762b31da9a596f0471a3d852ba396b8793e7,category=other
 footprint,lcsc:C9006/CRYSTAL-SMD_4P-L3.2-W2.5-BL.kicad_mod,footprints/other/X322525MOB4SI.pretty/CRYSTAL-SMD_4P-L3.2-W2.5-BL.kicad_mod,NEW,e02b594f511e76ecffbcd5a957952f81c17f892086bb1c5b2940902b2ce6f8af,category=other
 3d-model,lcsc:C9006/CRYSTAL-SMD_4P-L3.2-W2.5-BL.step,3dmodels/other/X322525MOB4SI.step,NEW,46e80157d859ee18098fd27c351039895d29a036f1c1dfadefaf26fa56124a8d,category=other
+symbol,lcsc:C165948/lib.kicad_sym,symbols/interface/TYPE-C-31-M-12.kicad_sym,NEW,c1a9530f195e272fddfaa91ac0e612a38525d0bae87a29b860da307a621525c4,category=interface
+footprint,lcsc:C165948/USB-C_SMD-TYPE-C-31-M-12_1.kicad_mod,footprints/interface/TYPE-C-31-M-12.pretty/USB-C_SMD-TYPE-C-31-M-12_1.kicad_mod,NEW,482b39a759ee59aeb1c8916b0699439b1a2aec3510f1ed9fa2d1f3eac3e1a8bf,category=interface
+3d-model,lcsc:C165948/USB-C_SMD-TYPE-C-31-M-12_1.step,3dmodels/interface/TYPE-C-31-M-12.step,NEW,b083e67ce4d06850a2c3835a6366f4012b2def64f8f2781636381ebcaa33e9a0,category=interface
+symbol,lcsc:C22459640/lib.kicad_sym,symbols/interface/DC-005.kicad_sym,NEW,af00308da060a8bee2bb00499233b21f9d2e9840cac189d56562aa897034e2f1,category=interface
+footprint,lcsc:C22459640/DC-IN-TH_DC-005-2.0_C22459640.kicad_mod,footprints/interface/DC-005.pretty/DC-IN-TH_DC-005-2.0_C22459640.kicad_mod,NEW,84785bb8c0573a3dd8842c7307b180e50a79ca9b7b257a86139ba0dbdeea7d58,category=interface
+3d-model,lcsc:C22459640/DC-IN-TH_DC-005-2.0_C22459640.step,3dmodels/interface/DC-005.step,NEW,918e4d2a3bd08f36bef068e9c361337529a50aa667d4d0375c6faf98474ac8b3,category=interface

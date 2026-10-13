@@ -18,7 +18,8 @@ same list as find_missing_3d_models.py):
   4. model_check.py verifies the placement; if the body comes out turned
      or upside down the usual fixed rotations are tried (SnapEDA models
      are often upright: rotate -90 on X) and the first one that passes is
-     kept. If none passes, the model is removed again (the zip stays in
+     kept; a body sitting under the board is lifted by its lowest
+     point (offset Z). If nothing passes, the model is removed again (the zip stays in
      download_dir for a manual look).
   5. an isometric render of each linked model is written (pin 1 check).
 
@@ -54,10 +55,12 @@ ROOT = lc.LIBRARY_ROOT
 SOURCES = ("ultralibrarian", "snapeda")  # Ultra Librarian exports STEP explicitly
 MODEL_PREFERENCE = (".step", ".stp", ".wrl", ".wrz")
 # Tried in order when model_check says the body is turned or upside down.
-ROTATIONS = ((0, 0, 0), (-90, 0, 0), (90, 0, 0), (0, 0, 90), (180, 0, 0))
+# No 180 deg flips: they pass the geometric check but put pin 1 on the wrong side.
+ROTATIONS = ((0, 0, 0), (-90, 0, 0), (90, 0, 0), (0, 0, 90))
 
 _MPN_RE = re.compile(r'\(property\s+"(?:MPN|Manufacturer_Part_Number|MP)"\s+"([^"]+)"', re.I)
 _MODEL_BLOCK_RE = re.compile(r"\n?[ \t]*\(model [^\n]*\n(?:[ \t]+\([^\n]*\n)*?[ \t]*\)\n", re.M)
+_OFFSET_RE = re.compile(r"(\(model [^\n]*\n[ \t]*\(offset \(xyz )[^)]*(\)\))")
 _ROTATE_RE = re.compile(r"(\(model [^\n]*\n(?:[^\n]*\n)*?[ \t]*\(rotate \(xyz )[^)]*(\)\))")
 
 
@@ -93,6 +96,11 @@ def set_rotation(fp: Path, xyz: tuple[int, int, int]) -> None:
     fp.write_text(new, encoding="utf-8")
 
 
+def set_offset_z(fp: Path, z: float) -> None:
+    text = fp.read_text(encoding="utf-8")
+    fp.write_text(_OFFSET_RE.sub(lambda m: f"{m.group(1)}0 0 {z:g}{m.group(2)}", text, count=1), encoding="utf-8")
+
+
 def unlink_model(fp: Path) -> None:
     text = fp.read_text(encoding="utf-8")
     fp.write_text(_MODEL_BLOCK_RE.sub("\n", text, count=1), encoding="utf-8")
@@ -116,6 +124,17 @@ def attach_and_check(c, model: Path) -> dict:
         if status in ("OK", "SKIP"):
             detail = "" if xyz == (0, 0, 0) else f"ruotato {xyz}"
             return {"status": "ADDED", "check": status, "rotate": list(xyz), "detail": "; ".join(filter(None, [detail] + messages))}
+    # Models placed under the board (top at z=0, or BGA balls below z=0):
+    # lift the body by its lowest point.
+    box = model_check.step_bbox(model)
+    if box and box[0][2] < -0.01:
+        set_rotation(fp, (0, 0, 0))
+        set_offset_z(fp, round(-box[0][2], 3))
+        status, messages = model_check.check_footprint(fp)
+        if status in ("OK", "SKIP"):
+            return {"status": "ADDED", "check": status, "rotate": [0, 0, 0],
+                    "detail": "; ".join([f"alzato di {-box[0][2]:.2f} mm"] + messages)}
+        set_offset_z(fp, 0)
     unlink_model(fp)
     copied = ROOT / manifest_rows[0][2] if manifest_rows and manifest_rows[0][3] != "DUPLICATE" else None
     if copied is not None and copied.is_file():

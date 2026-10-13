@@ -2,66 +2,66 @@
   (version 20211014)
   (generator "https://github.com/uPesy/easyeda2kicad.py")
 
-  (symbol "DC-005-2.0_C22459640"
+  (symbol "DC-005-5A-2.0"
     (in_bom yes)
     (on_board yes)
     (property
       "Reference"
-      "U"
+      "DC"
       (id 0)
       (at 0 6.35 0)
       (effects (font (size 1.27 1.27) ) )
     )
     (property
       "Value"
-      "DC-005-2.0_C22459640"
+      "DC-005-5A-2.0"
       (id 1)
       (at 0 -8.89 0)
       (effects (font (size 1.27 1.27) ) )
     )
     (property
       "Footprint"
-      "MIKILAB_DC_005:DC-IN-TH_DC-005-2.0_C22459640"
+      "MIKILAB_DC_005:DC-IN-TH_DC-005-5A-2.0"
       (id 2)
       (at 0 -11.43 0)
       (effects (font (size 1.27 1.27) ) hide)
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C22459640.pdf"
+      "https://lcsc.com/product-detail/New-Arrivals_XKB-Enterprise-DC-005-5A-2-0_C381116.html"
       (id 3)
       (at 0 -13.97 0)
       (effects (font (size 1.27 1.27) ) hide)
     )
     (property
       "Manufacturer"
-      "HanElectricity(瀚源)"
+      "XKB Connection(中国星坤)"
       (id 4)
       (at 0 -16.51 0)
       (effects (font (size 1.27 1.27) ) hide)
     )
     (property
       "MPN"
-      "DC-005-2.0"
+      "DC-005-5A-2.0"
       (id 5)
       (at 0 -19.05 0)
       (effects (font (size 1.27 1.27) ) hide)
     )
     (property
       "LCSC Part"
-      "C22459640"
+      "C381116"
       (id 6)
       (at 0 -21.59 0)
       (effects (font (size 1.27 1.27) ) hide)
     )
     (property
       "ki_keywords"
-      "DC Power Connectors"
+      "AC/DC Power Connectors"
       (id 8)
       (at 0 -24.13 0)
       (effects (font (size 1.27 1.27) ) hide)
     )
-    (symbol "DC-005-2.0_C22459640_0_1"
+    (symbol "DC-005-5A-2.0_0_1"
       (rectangle
         (start -1.27 2.79)
         (end -0.25 -0.25)
@@ -124,16 +124,16 @@
         (number "1" (effects (font (size 1.27 1.27))))
       )
       (pin unspecified line
-        (at 6.35 -1.27 180)
-        (length 5.08)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
         (at 6.35 -3.81 180)
         (length 5.08)
         (name "2" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 6.35 -1.27 180)
+        (length 5.08)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
       )
     )
   )

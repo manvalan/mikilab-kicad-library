@@ -1156,3 +1156,24 @@ footprint,lcsc:C32346/FC-135R_L3.2-W1.5.kicad_mod,footprints/other/Q13FC13500004
 symbol,lcsc:C78988/lib.kicad_sym,symbols/power/SY8089AAAC.kicad_sym,NEW,7c9806142afea0d2e53cd5311cacd666af45d0865ddac8c57e5cda43142cf4c5,category=power
 footprint,lcsc:C78988/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR.kicad_mod,footprints/power/SY8089AAAC.pretty/SY8089AAAC_SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR.kicad_mod,RENAMED_COLLISION,1679bf75d24ebc7e69d8db4ef3ccd17620c588e6312ec6fea0a74301500dfdcb,"filename collision with footprints/logic/SN74LVC1G17DBVR.pretty/SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR.kicad_mod (different content, verified by SHA256) -> renamed to 'SY8089AAAC_SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR.kicad_mod'"
 3d-model,lcsc:C78988/SOT-23-5_L2.9-W1.6-H1.1-LS2.8-P0.95.step,3dmodels/power/SY8089AAAC.step,NEW,428abdfbc472055993422a992aaa8df42fe862d74021d8cd7cbee9d7277f41b1,category=power
+symbol,lcsc:C496550/lib.kicad_sym,symbols/rf/BWSMA-KE-P001.kicad_sym,NEW,0483c7df18a7c7754f2f7d29e9c682e996a4e09c0938ef291666414a76082efb,category=rf
+footprint,lcsc:C496550/SMA-SMD_BWSMA-KE-P001.kicad_mod,footprints/rf/BWSMA-KE-P001.pretty/SMA-SMD_BWSMA-KE-P001.kicad_mod,NEW,a959891b55b9e151c8b071c8f298ff94150d605ee54167db14d338617cb6c720,category=rf
+3d-model,lcsc:C496550/SMA-TH_5P-L6.5-W6.5-H9.5_BWSMA-KE-P001.step,3dmodels/rf/BWSMA-KE-P001.step,NEW,d546adcea5b79b9533dbcdde7d4a9b029d26d7f979954360ebf3dc34a3896aea,category=rf
+symbol,lcsc:C46407/lib.kicad_sym,symbols/interface/USB-AF-90-14.4X13.6-H7.0-DIP.kicad_sym,NEW,80abe3d9c96b69ad8a2ab8c572867a7e3a9648cefa35521ab74cd1a8db1bb075,category=interface
+footprint,lcsc:C46407/USB-A-TH_C46407.kicad_mod,footprints/interface/USB-AF-90-14.4X13.6-H7.0-DIP.pretty/USB-A-TH_C46407.kicad_mod,NEW,0a310225393c2ed8fbe43845d61c4fdec8713a95afb01d2b6b9e027f3fcde5e8,category=interface
+3d-model,lcsc:C46407/USB-A-TH_4P-L14.4-W13.6-H7.0-S2.71.step,3dmodels/interface/USB-AF-90-14.4X13.6-H7.0-DIP.step,NEW,34c2e530df78e4f4b73c6d58990a434ab9de51b67be5d7f6c1c777194adafa84,category=interface
+symbol,lcsc:C127824/lib.kicad_sym,symbols/power/1812L300MR.kicad_sym,NEW,3e02c09efa24c01ec3e21bd4a97afd087f4b89d919b6af06fa54d76c38c4d192,category=power
+footprint,lcsc:C127824/F1812.kicad_mod,footprints/power/1812L300MR.pretty/F1812.kicad_mod,NEW,42fe06ba36315cb43994b994e737943f4864ab9eb9f0b3ac64b4a5f706b94e63,category=power
+3d-model,lcsc:C127824/F1812_L4.5-W3.2-H1.0.step,3dmodels/power/1812L300MR.step,NEW,c524c7b000487143cdc277d888c687ffa6ef907bacc9dfde14924b5fbd5f574c,category=power
+symbol,lcsc:C70381/lib.kicad_sym,symbols/power/CR1220-2.kicad_sym,NEW,607922e0db436fb0246de7121b22e11453d7cb9eb0759bbc7001beef889397f9,category=power
+footprint,lcsc:C70381/BAT-SMD_CR1220-2.kicad_mod,footprints/power/CR1220-2.pretty/BAT-SMD_CR1220-2.kicad_mod,NEW,40e854ada860e4572955c2074a8e4bde554de7043829e8c7a915ca5c29c49bfe,category=power
+3d-model,lcsc:C70381/BAT-SMD_CR1220-2.step,3dmodels/power/CR1220-2.step,NEW,b5091222ee112c300e57408b18383d5215666b313c9984492b6f32bf5458f14b,category=power
+symbol,lcsc:C720477/lib.kicad_sym,symbols/mechanical/TS-1088-AR02016.kicad_sym,NEW,3864a1efa587c799a6bacd54c92e4b9072f18f0a0c5700375271c39527a20f45,category=mechanical
+footprint,lcsc:C720477/SW-SMD_L3.9-W3.0-P4.45.kicad_mod,footprints/mechanical/TS-1088-AR02016.pretty/SW-SMD_L3.9-W3.0-P4.45.kicad_mod,NEW,1d4d0a70b6320515a1897b7d93f777b128fdcef99d6210cd15df3731c14fb20a,category=mechanical
+3d-model,lcsc:C720477/SW-SMD_L3.9-W2.9-H2.0-LS4.8.step,3dmodels/mechanical/TS-1088-AR02016.step,NEW,eb1d8f55ed502394dd05cbe1efb749c3b0e2a43bfefaf227875d38008fbef7ab,category=mechanical
+symbol,lcsc:C49257/lib.kicad_sym,symbols/interface/Header-Male-2.54_1x3.kicad_sym,NEW,d51a64f8db0e372d855cf8d0a217c5dd8206f703066f16b69278520fd657db92,category=interface
+footprint,lcsc:C49257/HDR-TH_3P-P2.54-V-M-1.kicad_mod,footprints/interface/Header-Male-2.54_1x3.pretty/HDR-TH_3P-P2.54-V-M-1.kicad_mod,NEW,20acd7e8669f4035692013a4fb8a265776540fc04f8fddfa496f4c498e3f9ecb,category=interface
+3d-model,lcsc:C49257/HDR-M-2.54_1x3.step,3dmodels/interface/Header-Male-2.54_1x3.step,NEW,12b1b26696f34c66ac21a7c6fdabac89ed22e549c2dd1a51fcf02abd67e2d2de,category=interface
+symbol,lcsc:C381116/lib.kicad_sym,symbols/interface/DC-005.kicad_sym,UPDATED,6b679f22a0c4b5e7b9cee53e8271c7df6359c506d8d03bb79e433bc987b3640c,category=interface
+footprint,lcsc:C381116/DC-IN-TH_DC-005-5A-2.0.kicad_mod,footprints/interface/DC-005.pretty/DC-IN-TH_DC-005-5A-2.0.kicad_mod,UPDATED,52fde929bb05d6d6a4d86a6cd518acc160bdf14e431662a8578e70ffd8da2869,category=interface
+3d-model,lcsc:C381116/DC-IN-TH_L14.4-W9.0-H11.0.step,3dmodels/interface/DC-005.step,UPDATED,62ed532d30514de13c7a8abd262a5fe5d00433fe3e934a494358f8ace02bdfcd,category=interface

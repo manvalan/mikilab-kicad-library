@@ -5,3 +5,4 @@ __pycache__/
 credentials.json
 *.report.json
 *.renders/
+.secrets/

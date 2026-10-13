@@ -9,6 +9,7 @@ Syncthing/Dropbox folder, an SMB share -- chosen in ComponentVault under
 Settings > Shared folder.
 
     <shared>/kicad/jobs/<uuid>/request.json   written by the app
+                                              ("kind": "models3d" + "names": missing 3D models)
     <shared>/kicad/jobs/<uuid>/status.json    written by this worker
     <shared>/kicad/jobs/<uuid>/<name>.zip     KiCad files of a component
     <shared>/kicad/jobs/<uuid>/<name>.png     3D render
@@ -237,8 +238,57 @@ def write_library_index(shared: SharedFolder) -> None:
     print(f"  indice libreria aggiornato ({index['count']} simboli)")
 
 
+def run_models_job(shared: SharedFolder, job_dir: Path, req: dict, cred_path: Path) -> None:
+    """"kind": "models3d": add the missing 3D models of the named library
+    components (fetch_3d_models.py). Names are only matched against the
+    library's own list, never used as paths or URLs."""
+    names = [str(n).strip()[:128] for n in (req.get("names") or [])[:MAX_ITEMS] if str(n).strip()]
+    print(f"[{time.strftime('%H:%M:%S')}] richiesta {job_dir.name}: modelli 3D per {len(names) or 'tutti i'} componenti")
+    with tempfile.TemporaryDirectory(prefix="models_job_") as tmp:
+        tmp = Path(tmp)
+        report_path = tmp / "report.json"
+        cmd = [sys.executable, str(ROOT / "scripts" / "fetch_3d_models.py"),
+               "--credentials", str(cred_path), "--report", str(report_path), "--render-dir", str(tmp)]
+        if names:
+            cmd += ["--only", ",".join(n.replace(",", "") for n in names)]
+        proc = subprocess.run(cmd)  # not captured: captcha prompts must reach the Mac's user
+        if not report_path.is_file():
+            shared.set_status(job_dir, "failed", {}, f"fetch_3d_models terminato con codice {proc.returncode} senza report")
+            return
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        components = []
+        for c in report.get("components", []):
+            added = c.get("status") == "ADDED"
+            entry = {"name": c.get("name"), "mpn": c.get("mpn"), "category": c.get("category"),
+                     "status": "IMPORTED" if added else "FAILED", "source": c.get("source"),
+                     "detail": c.get("detail"), "model3d": [], "files": {}}
+            if added:
+                z = package_component(c["name"], tmp)
+                if z is not None:
+                    shutil.copyfile(z, job_dir / z.name)
+                    entry["files"]["kicad"] = z.name
+                png = Path(c.get("render") or "")
+                if png.is_file():
+                    shutil.copyfile(png, job_dir / png.name)
+                    entry["files"]["render"] = png.name
+            components.append(entry)
+
+    added = [c for c in components if c["status"] == "IMPORTED"]
+    failed = [c["name"] for c in components if c["status"] != "IMPORTED"]
+    status = "failed" if not added else ("partial" if failed else "done")
+    if not components:
+        status = "done"
+    write_library_index(shared)
+    shared.set_status(job_dir, status, {"library_check": {"ok": True}, "components": components},
+                      f"senza modello: {', '.join(failed)}" if failed else "")
+    print(f"  -> {status}")
+
+
 def run_job(shared: SharedFolder, job_dir: Path, cred_path: Path) -> None:
     req = read_json(job_dir / "request.json") or {}
+    if req.get("kind") == "models3d":
+        run_models_job(shared, job_dir, req, cred_path)
+        return
     items, rejected = clean_items(req.get("items"))
     print(f"[{time.strftime('%H:%M:%S')}] richiesta {job_dir.name}: {len(items)} componenti")
     if not items:

@@ -20,7 +20,13 @@ List format (see test/componenti-librerie-cad.json):
                      # optional overrides:
                      "nome": "<component name>", "categoria": "<category>",
                      "salta": true}, ...]}
-Entries sharing the same MPN are processed once.
+Entries sharing the same MPN are processed once; placeholder MPNs
+("da scegliere") are ignored. "fonte_consigliata" (snapeda,
+ultralibrarian, easyeda) moves that source to the front for the entry.
+
+Accounts, first match wins: the macOS Keychain (credentials_keychain.py),
+then .secrets/account.json (git-ignored, {"accounts": [{"platform":
+"SnapEDA", "username": ..., "password": ...}]}), then credentials.json.
 
 For every component, sources are tried in order (credentials.json
 "source_order" or --sources) until one yields a usable part:
@@ -78,16 +84,21 @@ BROWSER_SOURCES = ("snapeda", "ultralibrarian")  # need an account + browser
 # credentials.json in the library root is git-ignored; the committed
 # credentials.example.json is the empty template to copy from.
 DEFAULT_CREDENTIALS = ROOT / "credentials.json"
+# Account file kept outside credentials.json (git-ignored folder .secrets/):
+#   {"accounts": [{"platform": "SnapEDA", "url": "...", "username": "...", "password": "..."}]}
+DEFAULT_ACCOUNTS = ROOT / ".secrets" / "account.json"
 
 # Category from the list's free-text "funzione" (Italian/English), matched
 # on whole words and tried in order; lc.classify() on the name is the
 # fallback. An explicit "categoria" in the list always wins.
 FUNCTION_RULES = [
+    ("power", r"supercap\w*|batteri\w*|battery"),
     ("memory", r"ram|ddr\d*l?|emmc|flash|eeprom|sram|nand|memoria"),
     ("microcontrollers", r"soc|mcu|cpu|microcontroller\w*"),
-    ("interface", r"usb-[abc]|rj45|connettore|connector|slot|microsd|hdmi"),
-    ("rf", r"wi-?fi|bluetooth|bt|antenna|ethernet|phy|rf"),
+    ("interface", r"usb-[abc]|rj45|connettore|connector|slot|microsd|hdmi|jack"),
+    ("rf", r"wi-?fi|bluetooth|bt|antenna|ethernet|phy|rf|gnss|gps"),
     ("power", r"pmic|buck|boost|ldo|regolatore|regulator|load switch|tvs|ferrite|vbus"),
+    ("logic", r"buffer|schmitt|gate|inverter"),
     ("interface", r"usb|esd|uart|i2c|spi"),
     ("mechanical", r"pulsant\w*|button\w*|switch\w*"),
     ("logic", r"rtc"),
@@ -152,6 +163,26 @@ def keychain_account(source: str) -> tuple[str, str] | None:
     return m.group(1), pwd.stdout.rstrip("\n")
 
 
+def accounts_file_account(source: str, path: Path = DEFAULT_ACCOUNTS) -> tuple[str, str] | None:
+    """(username, password) for a SnapEDA/UltraLibrarian account in the
+    .secrets/account.json file, matched on platform name or URL, or None."""
+    if not path.is_file():
+        return None
+    assert_not_tracked(path)
+    if path.stat().st_mode & 0o077:
+        print(f"WARNING: {path} is readable by other users -- run: chmod 600 {path}")
+    try:
+        accounts = json.loads(path.read_text(encoding="utf-8")).get("accounts", [])
+    except (OSError, ValueError, AttributeError):
+        print(f"WARNING: {path}: JSON non valido, ignorato")
+        return None
+    for acc in accounts:
+        key = norm_mpn(f"{acc.get('platform', '')} {acc.get('url', '')}")
+        if source in key and not is_unset(acc.get("username")) and not is_unset(acc.get("password")):
+            return acc["username"], acc["password"]
+    return None
+
+
 def assert_not_tracked(path: Path) -> None:
     """Refuse to run if the credentials file is (or is about to be) committed."""
     try:
@@ -166,7 +197,7 @@ def assert_not_tracked(path: Path) -> None:
 
 def load_config(path: Path, need_credentials: bool) -> dict:
     if not path.is_file():
-        if need_credentials:
+        if need_credentials and not DEFAULT_ACCOUNTS.is_file():
             raise SystemExit(f"ERROR: credentials file not found: {path}\n"
                              f"       create it with: cp {ROOT / 'credentials.example.json'} {path}")
         return {}
@@ -178,16 +209,19 @@ def load_config(path: Path, need_credentials: bool) -> dict:
     for src in BROWSER_SOURCES:
         acc = cfg.get(src)
         if acc is None:
-            continue
+            if not accounts_file_account(src):
+                continue
+            acc = cfg[src] = {"enabled": True}
         if not isinstance(acc, dict):
             raise SystemExit(f"ERROR: {path}: '{src}' must be an object")
         if not is_unset(acc.get("password")):
             print(f"WARNING: {path}: password '{src}' in chiaro nel file -- spostala nel Portachiavi:\n"
                   f"         python3 scripts/credentials_keychain.py set {src}")
         # The macOS Keychain wins over the file: there the password never sits in clear.
-        keychain = keychain_account(src)
-        if keychain:
-            acc["username"], acc["password"] = keychain
+        # Then .secrets/account.json, then credentials.json.
+        account = keychain_account(src) or accounts_file_account(src)
+        if account:
+            acc["username"], acc["password"] = account
         if acc.get("enabled", True) and (is_unset(acc.get("username")) or is_unset(acc.get("password"))):
             print(f"WARNING: credenziali '{src}' non impostate -- il login andra' fatto a mano nel browser "
                   f"(per salvarle: python3 scripts/credentials_keychain.py set {src})")
@@ -210,6 +244,9 @@ def enabled_sources(cfg: dict, cli_sources: str | None) -> list[str]:
 # ----------------------------------------------------------- list / plan
 
 
+PLACEHOLDER_MPNS = {"da scegliere", "tbd", "n/a", "-"}
+
+
 def load_list(path: Path, only: set[str] | None) -> list[dict]:
     data = json.loads(path.read_text(encoding="utf-8"))
     items = data.get("componenti", data if isinstance(data, list) else None)
@@ -219,7 +256,7 @@ def load_list(path: Path, only: set[str] | None) -> list[dict]:
     parts: dict[str, dict] = {}
     for item in items:
         mpn = (item.get("mpn") or "").strip()
-        if not mpn:
+        if not mpn or mpn.lower() in PLACEHOLDER_MPNS:
             continue
         if only and item.get("ref") not in only and mpn not in only:
             continue
@@ -241,6 +278,7 @@ def load_list(path: Path, only: set[str] | None) -> list[dict]:
             "lcsc": (item.get("lcsc") or "").strip() or None,
             "urls": {"snapeda": item.get("snapeda"), "ultralibrarian": item.get("ultralibrarian")},
             "skip": bool(item.get("salta")),
+            "preferred": (item.get("fonte_consigliata") or "").strip().lower() or None,
         }
     return list(parts.values())
 
@@ -426,7 +464,9 @@ def main() -> int:
         for n, part in enumerate(todo, 1):
             print(f"[{n}/{len(todo)}] {part['name']} ({', '.join(part['refs'])}) -> {part['category']}")
             attempts = []
-            for source in sources:
+            # "fonte_consigliata" in the list goes first, the others follow.
+            order = sorted(sources, key=lambda s: s != part.get("preferred"))
+            for source in order:
                 if source == "easyeda":
                     if not part["lcsc"]:
                         attempts.append("easyeda: nessun codice LCSC nella lista")

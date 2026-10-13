@@ -19,6 +19,8 @@ Neither site offers a public download API, so this drives a real
 
 Playwright is an optional dependency:
     python3 -m pip install playwright && python3 -m playwright install chromium
+(without the bundled Chromium the installed Google Chrome is used;
+"browser_channel": "chrome" in credentials.json forces it).
 Without it fetch_components.py falls back to opening the pages in the
 default browser and picking the zips up from download_dir.
 """
@@ -65,16 +67,24 @@ class BrowserDownloader:
         profile.mkdir(parents=True, exist_ok=True)
 
         self._pw = sync_playwright().start()
-        self.context = self._pw.chromium.launch_persistent_context(
-            str(profile),
-            headless=bool(config.get("headless", False)),
-            accept_downloads=True,
-        )
+        options = dict(headless=bool(config.get("headless", False)), accept_downloads=True)
+        channel = config.get("browser_channel")  # e.g. "chrome": the installed Google Chrome
+        try:
+            self.context = self._pw.chromium.launch_persistent_context(
+                str(profile), **options, **({"channel": channel} if channel else {}))
+        except Exception:
+            if channel:
+                raise
+            # Playwright's own Chromium not installed: use Google Chrome.
+            self.context = self._pw.chromium.launch_persistent_context(str(profile), **options, channel="chrome")
         self.page = self.context.pages[0] if self.context.pages else self.context.new_page()
         self._downloads: list = []
+        # A plain function: recent Playwright cannot wrap builtins like list.append.
+        def on_download(download):
+            self._downloads.append(download)
         for p in self.context.pages:
-            p.on("download", self._downloads.append)
-        self.context.on("page", lambda p: p.on("download", self._downloads.append))
+            p.on("download", on_download)
+        self.context.on("page", lambda p: p.on("download", on_download))
         self._snapeda_logged_in = False
 
     def close(self):
@@ -90,7 +100,8 @@ class BrowserDownloader:
             fn()
             return True
         except Exception as e:  # selectors are best effort by design
-            self.log(f"      (auto) {label}: non riuscito ({type(e).__name__})")
+            detail = (str(e).splitlines() or [""])[0][:120]
+            self.log(f"      (auto) {label}: non riuscito ({type(e).__name__}: {detail})")
             return False
 
     def _wait_download(self, target: Path) -> Path | None:
@@ -171,25 +182,75 @@ class BrowserDownloader:
 
     # -------------------------------------------------------- ultralibrarian
 
+    def _ul_login(self, creds: dict) -> None:
+        """app.ultralibrarian.com redirects to sso.ultralibrarian.com/Account/Login
+        before any page; the persistent profile keeps the session afterwards."""
+        if "sso.ultralibrarian.com" not in self.page.url:
+            return
+        try:  # a remembered SSO session signs in and redirects back by itself
+            self.page.wait_for_url(re.compile(r"https://app\.ultralibrarian\.com/"), timeout=6000)
+            return
+        except Exception:
+            pass
+        if not creds.get("username"):
+            self.log("      Ultra Librarian: nessuna credenziale -- accedi a mano nella finestra")
+            return
+        self.page.fill("input#Username", creds["username"], timeout=SHORT)
+        self.page.fill("input#Password", creds["password"], timeout=SHORT)
+        remember = self.page.locator("input#RememberLogin")
+        if remember.count() and not remember.is_checked():
+            remember.check()
+        self.page.get_by_role("button", name=re.compile(r"^\s*Login\s*$", re.I)).click(timeout=SHORT)
+        try:
+            self.page.wait_for_url(re.compile(r"https://app\.ultralibrarian\.com/"), timeout=30000)
+        except Exception:
+            self.log("      Ultra Librarian: login non confermato (credenziali o captcha?) -- completalo nella finestra")
+
     def fetch_ultralibrarian(self, mpn: str, url: str | None, creds: dict, target: Path) -> Path | None:
         self.page.goto(url or search_url("ultralibrarian", mpn), wait_until="load")
+        self._try("login Ultra Librarian", lambda: self._ul_login(creds))
+        if "sso.ultralibrarian.com" not in self.page.url and "/search" not in self.page.url:
+            self.page.goto(url or search_url("ultralibrarian", mpn), wait_until="load")
 
         def open_part():
-            self.page.locator('a[href*="/details/"]').first.click(timeout=SHORT)
+            # Prefer the result whose name is exactly the MPN (UL lists variants too).
+            links = self.page.locator('a[href*="/details/"]')
+            links.first.wait_for(timeout=SHORT)
+            want = _norm(mpn)
+            for i in range(links.count()):
+                if _norm(links.nth(i).inner_text()) == want:
+                    links.nth(i).click(timeout=SHORT)
+                    break
+            else:
+                links.first.click(timeout=SHORT)
             self.page.wait_for_load_state("load")
 
         def click_download():
-            self.page.get_by_text(re.compile(r"Download Now", re.I)).first.click(timeout=SHORT)
-            self.page.wait_for_load_state("load")
-            if creds.get("username") and self._fill_login(creds["username"], creds["password"]):
-                self.log("      Ultra Librarian: login inviato (se compare un captcha risolvilo a mano)")
-                self.page.get_by_text(re.compile(r"Download Now", re.I)).first.click(timeout=SHORT)
-            kicad = self.page.locator("label").filter(has_text=re.compile(r"KiCad", re.I))
-            kicad.last.click(timeout=SHORT)  # the last KiCad entry is the newest format
-            self.page.locator("a.export-trigger, button:has-text('Download')").first.click(timeout=SHORT)
+            self.page.locator("#export-selection-btn").click(timeout=SHORT)
+            for group, option in (("KiCAD", "KiCADv6"), ("3D CAD", "ThreeDModel")):
+                # The checkbox itself is hidden (custom control): use its label.
+                label = self.page.locator(f"label[for={option}]")
+                if not label.is_visible():
+                    self.page.locator("a.accordion-toggle", has_text=re.compile(group, re.I)).first.click(timeout=SHORT)
+                    label.wait_for(state="visible", timeout=SHORT)
+                if not self.page.locator(f"input#{option}").is_checked():
+                    label.click(timeout=SHORT)
+            # reCAPTCHA and manufacturer data-sharing consents are left to the
+            # user: never solved or ticked here.
+            submit = self.page.locator("#submit-export")
+            submit.scroll_into_view_if_needed(timeout=SHORT)
+            needs = []
+            if self.page.locator("iframe[src*=recaptcha]").count():
+                needs.append("il captcha")
+            if self.page.locator("input.consentRequest").count():
+                needs.append("il consenso del produttore (se vuoi darlo)")
+            if needs:
+                self.log(f"      Ultra Librarian: nella finestra completa {' e '.join(needs)}, poi premi Download Now")
+            else:
+                submit.click(timeout=SHORT)
 
         if self._try("apertura pagina parte", open_part):
-            self._try("click Download Now / KiCad", click_download)
+            self._try("export KiCad v6+ e STEP", click_download)
         return self._wait_download(target)
 
     def fetch(self, source: str, mpn: str, url: str | None, creds: dict, target: Path) -> Path | None:

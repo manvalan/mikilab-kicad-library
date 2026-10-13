@@ -1184,3 +1184,6 @@ footprint,/var/folders/cv/lwgyj_k14gx2rc3t2rlt29s80000gn/T/ultralibrarian_718rf6
 symbol,/var/folders/cv/lwgyj_k14gx2rc3t2rlt29s80000gn/T/snapeda_ka4nqers/CPH3225A.kicad_sym,symbols/power/CPH3225A.kicad_sym,NEW,60112e09ef9c60ab99f615e39e517f3b00feb97169c04a2d4b6fdf9d9d143017,category=power
 footprint,/var/folders/cv/lwgyj_k14gx2rc3t2rlt29s80000gn/T/snapeda_ka4nqers/CAPCP3225X100N.kicad_mod,footprints/power/CPH3225A.pretty/CAPCP3225X100N.kicad_mod,NEW,8689f14396ca0541e48c39a5f1a46b7ada09b4cd78616bf9bff21bf7c9002928,category=power
 3d-model,/var/folders/cv/lwgyj_k14gx2rc3t2rlt29s80000gn/T/snapeda_ka4nqers/CPH3225A.step,3dmodels/power/CPH3225A.step,NEW,22910c511cd61a79aa1ea9aa78c71d677f2020087c1c71e0864ed0461c0bbcba,category=power
+symbol,lcsc:C2798300/lib.kicad_sym,symbols/rf/AP6212.kicad_sym,NEW,b38b93e6dd6146919cbc723e78251f920b0cb19a2301a6fc4c38dafcffeb9902,category=rf
+footprint,lcsc:C2798300/QFN-44_L12.0-W12.0-P0.90-TL_AP6212.kicad_mod,footprints/rf/AP6212.pretty/QFN-44_L12.0-W12.0-P0.90-TL_AP6212.kicad_mod,NEW,1a218d288591dabd336e6a491e4d587b70f163cbd546dd2dccfc3f620f585fc5,category=rf
+3d-model,lcsc:C2798300/QFN-44_L12.0-W12.0-P0.90-TL_AP6212.step,3dmodels/rf/AP6212.step,NEW,da16e76988e97475129abfaacb62f158a598750bb758aebfa58fc0bd4adbe112,category=rf

@@ -348,6 +348,7 @@
   (lib (name "MIKILAB_TPS7A2018PDBVR")(type "KiCad")(uri "${MIKILAB}/symbols/power/TPS7A2018PDBVR.kicad_sym")(options "")(descr "TPS7A2018PDBVR"))
   (lib (name "MIKILAB_Transistor_Power_Module")(type "KiCad")(uri "${MIKILAB}/symbols/power/Transistor_Power_Module.kicad_sym")(options "")(descr "Transistor_Power_Module"))
   (lib (name "MIKILAB_power")(type "KiCad")(uri "${MIKILAB}/symbols/power/power.kicad_sym")(options "")(descr "power"))
+  (lib (name "MIKILAB_AP6212")(type "KiCad")(uri "${MIKILAB}/symbols/rf/AP6212.kicad_sym")(options "")(descr "AP6212"))
   (lib (name "MIKILAB_BWSMA_KE_P001")(type "KiCad")(uri "${MIKILAB}/symbols/rf/BWSMA-KE-P001.kicad_sym")(options "")(descr "BWSMA-KE-P001"))
   (lib (name "MIKILAB_FSC_BT1035")(type "KiCad")(uri "${MIKILAB}/symbols/rf/FSC-BT1035.kicad_sym")(options "")(descr "FSC-BT1035"))
   (lib (name "MIKILAB_FSC_BT1058")(type "KiCad")(uri "${MIKILAB}/symbols/rf/FSC-BT1058.kicad_sym")(options "")(descr "FSC-BT1058"))

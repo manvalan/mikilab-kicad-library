@@ -460,6 +460,7 @@ def main() -> int:
         return 0
 
     downloader = None
+    easyeda_calls = 0
     try:
         for n, part in enumerate(todo, 1):
             print(f"[{n}/{len(todo)}] {part['name']} ({', '.join(part['refs'])}) -> {part['category']}")
@@ -474,6 +475,9 @@ def main() -> int:
                     if args.no_download:
                         attempts.append("easyeda: saltato (--no-download)")
                         continue
+                    if easyeda_calls:  # EasyEDA answers 403 to bursts of requests
+                        time.sleep(float(cfg.get("delay_seconds", 5)))
+                    easyeda_calls += 1
                     print(f"    easyeda: conversione {part['lcsc']} con easyeda2kicad")
                     try:
                         _, report = import_easyeda.import_lcsc(

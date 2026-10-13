@@ -200,6 +200,7 @@
   (lib (name "MIKILAB_TLV62569DBVR")(type "KiCad")(uri "${MIKILAB}/footprints/power/TLV62569DBVR.pretty")(options "")(descr "TLV62569DBVR.pretty"))
   (lib (name "MIKILAB_TLV62569PDDCR")(type "KiCad")(uri "${MIKILAB}/footprints/power/TLV62569PDDCR.pretty")(options "")(descr "TLV62569PDDCR.pretty"))
   (lib (name "MIKILAB_AP6212")(type "KiCad")(uri "${MIKILAB}/footprints/rf/AP6212.pretty")(options "")(descr "AP6212.pretty"))
+  (lib (name "MIKILAB_AP6212A")(type "KiCad")(uri "${MIKILAB}/footprints/rf/AP6212A.pretty")(options "")(descr "AP6212A.pretty"))
   (lib (name "MIKILAB_BWSMA_KE_P001")(type "KiCad")(uri "${MIKILAB}/footprints/rf/BWSMA-KE-P001.pretty")(options "")(descr "BWSMA-KE-P001.pretty"))
   (lib (name "MIKILAB_FSC_BT1035")(type "KiCad")(uri "${MIKILAB}/footprints/rf/FSC-BT1035.pretty")(options "")(descr "FSC-BT1035.pretty"))
   (lib (name "MIKILAB_FSC_BT1058")(type "KiCad")(uri "${MIKILAB}/footprints/rf/FSC-BT1058.pretty")(options "")(descr "FSC-BT1058.pretty"))

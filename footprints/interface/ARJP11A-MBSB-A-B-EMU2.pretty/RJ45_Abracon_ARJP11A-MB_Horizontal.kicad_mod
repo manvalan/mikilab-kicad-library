@@ -413,7 +413,7 @@
 		(uuid "ac6f6033-0704-4ef2-b00e-9ac7f1bbc03a")
 	)
 	(pad "11" thru_hole circle
-		(at -0.66 12.27)
+		(at -0.66 13.79)
 		(size 2 2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -429,7 +429,7 @@
 		(uuid "dda487f3-7f77-4acf-a626-f1ce6a92e401")
 	)
 	(pad "13" thru_hole circle
-		(at 9.5 12.27)
+		(at 9.5 13.79)
 		(size 2 2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -461,4 +461,9 @@
 		(uuid "4999758c-1170-4947-8bee-697a99420d56")
 	)
 	(embedded_fonts no)
+  (model ${MIKILAB}/3dmodels/interface/ARJP11A-MBSB-A-B-EMU2.step
+    (offset (xyz -15.66 -10.054 23.27))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )

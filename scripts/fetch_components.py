@@ -249,7 +249,7 @@ PLACEHOLDER_MPNS = {"da scegliere", "tbd", "n/a", "-"}
 
 def load_list(path: Path, only: set[str] | None) -> list[dict]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    items = data.get("componenti", data if isinstance(data, list) else None)
+    items = data if isinstance(data, list) else data.get("componenti")
     if not isinstance(items, list):
         raise SystemExit(f"ERROR: {path}: expected a 'componenti' array")
 

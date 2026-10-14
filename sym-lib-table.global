@@ -81,6 +81,7 @@
   (lib (name "MIKILAB_LFE5U_45F_8BG381I")(type "KiCad")(uri "${MIKILAB}/symbols/fpga_cpld/LFE5U-45F-8BG381I.kicad_sym")(options "")(descr "LFE5U-45F-8BG381I"))
   (lib (name "MIKILAB_Lattice_ECP_FPGA")(type "KiCad")(uri "${MIKILAB}/symbols/fpga_cpld/Lattice_ECP_FPGA.kicad_sym")(options "")(descr "Lattice_ECP_FPGA"))
   (lib (name "MIKILAB_lattice")(type "KiCad")(uri "${MIKILAB}/symbols/fpga_cpld/lattice.kicad_sym")(options "")(descr "lattice"))
+  (lib (name "MIKILAB_ARJP11A_MBSB_A_B_EMU2")(type "KiCad")(uri "${MIKILAB}/symbols/interface/ARJP11A-MBSB-A-B-EMU2.kicad_sym")(options "")(descr "ARJP11A-MBSB-A-B-EMU2"))
   (lib (name "MIKILAB_Connector")(type "KiCad")(uri "${MIKILAB}/symbols/interface/Connector.kicad_sym")(options "")(descr "Connector"))
   (lib (name "MIKILAB_Connector_Generic")(type "KiCad")(uri "${MIKILAB}/symbols/interface/Connector_Generic.kicad_sym")(options "")(descr "Connector_Generic"))
   (lib (name "MIKILAB_Connector_Generic_MountingPin")(type "KiCad")(uri "${MIKILAB}/symbols/interface/Connector_Generic_MountingPin.kicad_sym")(options "")(descr "Connector_Generic_MountingPin"))

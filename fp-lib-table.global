@@ -13,6 +13,7 @@
   (lib (name "MIKILAB_altera")(type "KiCad")(uri "${MIKILAB}/footprints/fpga_cpld/altera.pretty")(options "")(descr "altera.pretty"))
   (lib (name "MIKILAB_lattice")(type "KiCad")(uri "${MIKILAB}/footprints/fpga_cpld/lattice.pretty")(options "")(descr "lattice.pretty"))
   (lib (name "MIKILAB_xilinx")(type "KiCad")(uri "${MIKILAB}/footprints/fpga_cpld/xilinx.pretty")(options "")(descr "xilinx.pretty"))
+  (lib (name "MIKILAB_ARJP11A_MASA_B_A_EMU2")(type "KiCad")(uri "${MIKILAB}/footprints/interface/ARJP11A-MASA-B-A-EMU2.pretty")(options "")(descr "ARJP11A-MASA-B-A-EMU2.pretty"))
   (lib (name "MIKILAB_ARJP11A_MBSB_A_B_EMU2")(type "KiCad")(uri "${MIKILAB}/footprints/interface/ARJP11A-MBSB-A-B-EMU2.pretty")(options "")(descr "ARJP11A-MBSB-A-B-EMU2.pretty"))
   (lib (name "MIKILAB_DC_005")(type "KiCad")(uri "${MIKILAB}/footprints/interface/DC-005.pretty")(options "")(descr "DC-005.pretty"))
   (lib (name "MIKILAB_DM3AT_SF_PEJM5")(type "KiCad")(uri "${MIKILAB}/footprints/interface/DM3AT-SF-PEJM5.pretty")(options "")(descr "DM3AT-SF-PEJM5.pretty"))

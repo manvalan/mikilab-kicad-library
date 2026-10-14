@@ -260893,7 +260893,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Abracon_ARJP11A-MA_Horizontal"
+		(property "Footprint" "MIKILAB_ARJP11A_MASA_B_A_EMU2:RJ45_Abracon_ARJP11A-MA_Horizontal"
 			(at 0 15.24 0)
 			(effects
 				(font

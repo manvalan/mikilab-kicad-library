@@ -119,6 +119,7 @@
   (lib (name "MIKILAB_SK6812MINI_012")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/SK6812MINI-012.pretty")(options "")(descr "SK6812MINI-012.pretty"))
   (lib (name "MIKILAB_SN74AXC1T45DBVR")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/SN74AXC1T45DBVR.pretty")(options "")(descr "SN74AXC1T45DBVR.pretty"))
   (lib (name "MIKILAB_SOT95P280X145_5N")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/SOT95P280X145-5N.pretty")(options "")(descr "SOT95P280X145-5N.pretty"))
+  (lib (name "MIKILAB_SiT9121")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/SiT9121.pretty")(options "")(descr "SiT9121.pretty"))
   (lib (name "MIKILAB_TPD2E007DCKR")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/TPD2E007DCKR.pretty")(options "")(descr "TPD2E007DCKR.pretty"))
   (lib (name "MIKILAB_TPS2121RUXR")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/TPS2121RUXR.pretty")(options "")(descr "TPS2121RUXR.pretty"))
   (lib (name "MIKILAB_TPS22965DSGR")(type "KiCad")(uri "${KIPRJMOD}/footprints/other/TPS22965DSGR.pretty")(options "")(descr "TPS22965DSGR.pretty"))

@@ -265,6 +265,7 @@
   (lib (name "MIKILAB_BGSA142GN12E6327XTSA1")(type "KiCad")(uri "${MIKILAB}/symbols/other/BGSA142GN12E6327XTSA1.kicad_sym")(options "")(descr "BGSA142GN12E6327XTSA1"))
   (lib (name "MIKILAB_BQ24040DSQR")(type "KiCad")(uri "${MIKILAB}/symbols/other/BQ24040DSQR.kicad_sym")(options "")(descr "BQ24040DSQR"))
   (lib (name "MIKILAB_CDCLVC1102PW")(type "KiCad")(uri "${MIKILAB}/symbols/other/CDCLVC1102PW.kicad_sym")(options "")(descr "CDCLVC1102PW"))
+  (lib (name "MIKILAB_Castellated_Edge")(type "KiCad")(uri "${MIKILAB}/symbols/other/Castellated_Edge.kicad_sym")(options "")(descr "Castellated_Edge"))
   (lib (name "MIKILAB_DAC61402RHBR")(type "KiCad")(uri "${MIKILAB}/symbols/other/DAC61402RHBR.kicad_sym")(options "")(descr "DAC61402RHBR"))
   (lib (name "MIKILAB_DAC81402RHBR")(type "KiCad")(uri "${MIKILAB}/symbols/other/DAC81402RHBR.kicad_sym")(options "")(descr "DAC81402RHBR"))
   (lib (name "MIKILAB_DMT6007LFG_7")(type "KiCad")(uri "${MIKILAB}/symbols/other/DMT6007LFG-7.kicad_sym")(options "")(descr "DMT6007LFG-7"))

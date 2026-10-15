@@ -1,0 +1,291 @@
+{
+ "progetto": "Scheda H616",
+ "data": "2026-10-16",
+ "nota": "Esclusi passivi, eMMC da scegliere e PTC 4 A generico.",
+ "componenti": [
+  {
+   "ref": "U1",
+   "funzione": "SoC",
+   "mpn": "H616",
+   "categoria": "microcontrollers",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C5365289"
+  },
+  {
+   "ref": "U2",
+   "funzione": "PMIC",
+   "mpn": "AXP313A",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C5365290"
+  },
+  {
+   "ref": "U26",
+   "funzione": "LDO 2.5 V VPP DDR4",
+   "mpn": "AP2112K-2.5TRG1",
+   "categoria": "power",
+   "fonte_consigliata": "ultralibrarian"
+  },
+  {
+   "ref": "U3",
+   "funzione": "RAM DDR4 16Gb x16",
+   "mpn": "K4AAG165WA-BCWE",
+   "categoria": "memory",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C2920140"
+  },
+  {
+   "ref": "U6",
+   "funzione": "EEPROM MAC EUI-48",
+   "mpn": "25AA02E48T-I/OT",
+   "categoria": "memory",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C145570"
+  },
+  {
+   "ref": "U7",
+   "funzione": "PHY Gigabit RGMII",
+   "mpn": "RTL8211F-CG",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C187932"
+  },
+  {
+   "ref": "J1",
+   "funzione": "RJ45 con magnetici",
+   "mpn": "HR911130C",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C50933"
+  },
+  {
+   "ref": "Y1",
+   "funzione": "Quarzo 25 MHz",
+   "mpn": "X322525MOB4SI",
+   "categoria": "other",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C9006"
+  },
+  {
+   "ref": "U8",
+   "funzione": "Modulo Wi-Fi/BT",
+   "mpn": "AP6256",
+   "categoria": "rf",
+   "fonte_consigliata": "ultralibrarian"
+  },
+  {
+   "ref": "J2",
+   "funzione": "Connettore antenna Wi-Fi",
+   "mpn": "U.FL-R-SMT-1(80)",
+   "categoria": "rf",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C88374"
+  },
+  {
+   "ref": "J3",
+   "funzione": "USB Type-C 16 pin",
+   "mpn": "TYPE-C-31-M-12",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C165948"
+  },
+  {
+   "ref": "U9",
+   "funzione": "ESD USB",
+   "mpn": "USBLC6-2SC6",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C7519"
+  },
+  {
+   "ref": "U15",
+   "funzione": "Controller USB-C CC/PD",
+   "mpn": "FUSB302BMPX",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C132291"
+  },
+  {
+   "ref": "U16",
+   "funzione": "Switch VBUS",
+   "mpn": "SY6280AAC",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C55136"
+  },
+  {
+   "ref": "U17",
+   "funzione": "Power mux",
+   "mpn": "TPS2121RUXR",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C485916"
+  },
+  {
+   "ref": "J7",
+   "funzione": "Jack DC 5 V",
+   "mpn": "DC-005-5A-2.0",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C381116"
+  },
+  {
+   "ref": "U18",
+   "funzione": "ESD CC1/CC2",
+   "mpn": "TPD2EUSB30ADRTR",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C94934"
+  },
+  {
+   "ref": "J8",
+   "funzione": "USB-A host",
+   "mpn": "903-131A1011D10100",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C46407"
+  },
+  {
+   "ref": "D1",
+   "funzione": "TVS VBUS",
+   "mpn": "SMF5.0A",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C151296"
+  },
+  {
+   "ref": "F1",
+   "funzione": "Fusibile resettabile 3 A",
+   "mpn": "1812L300MR",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C127824"
+  },
+  {
+   "ref": "U10",
+   "funzione": "Modulo GNSS timing",
+   "mpn": "NEO-M9N-00B",
+   "categoria": "rf",
+   "fonte_consigliata": "ultralibrarian"
+  },
+  {
+   "ref": "J4;J9;J10",
+   "funzione": "Connettore SMA",
+   "mpn": "BWSMA-KE-P001",
+   "categoria": "rf",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C496550"
+  },
+  {
+   "ref": "U19;U20",
+   "funzione": "Buffer Schmitt",
+   "mpn": "SN74LVC1G17DBVR",
+   "categoria": "logic",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C7836"
+  },
+  {
+   "ref": "D2;D3",
+   "funzione": "ESD linee timing",
+   "mpn": "ESD9B5.0ST5G",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C111566"
+  },
+  {
+   "ref": "J5",
+   "funzione": "Slot microSD",
+   "mpn": "DM3AT-SF-PEJM5",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C114218"
+  },
+  {
+   "ref": "Y2",
+   "funzione": "Quarzo 24 MHz",
+   "mpn": "X322524MOB4SI",
+   "categoria": "other",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C70590"
+  },
+  {
+   "ref": "Y3",
+   "funzione": "Quarzo 32.768 kHz",
+   "mpn": "Q13FC13500004",
+   "categoria": "other",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C32346"
+  },
+  {
+   "ref": "U14",
+   "funzione": "Portabatteria CR1220",
+   "mpn": "CR1220-2",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C70381"
+  },
+  {
+   "ref": "SW1;SW2",
+   "funzione": "Pulsanti",
+   "mpn": "TS-1088-AR02016",
+   "categoria": "mechanical",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C720477"
+  },
+  {
+   "ref": "J6",
+   "funzione": "Header UART0",
+   "mpn": "2.54-1*3P",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C49257"
+  },
+  {
+   "ref": "J11",
+   "funzione": "Connettore BUS_POWER 30 pin",
+   "mpn": "FH12-30S-0.5SH",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C506793"
+  },
+  {
+   "ref": "J12",
+   "funzione": "Connettore BUS MAIN 28 pin",
+   "mpn": "FPC-05F-28PH20",
+   "categoria": "interface",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C2856807"
+  },
+  {
+   "ref": "U21",
+   "funzione": "eFuse VIN 12 V",
+   "mpn": "TPS259470ARPWR",
+   "categoria": "power",
+   "fonte_consigliata": "ultralibrarian"
+  },
+  {
+   "ref": "U22",
+   "funzione": "Buck 5 V 6 A",
+   "mpn": "TPS56637RPAR",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C841386"
+  },
+  {
+   "ref": "U23",
+   "funzione": "Buck 3V3 3 A",
+   "mpn": "TPS563201DDCR",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C116592"
+  },
+  {
+   "ref": "U24",
+   "funzione": "Load switch USB-C host",
+   "mpn": "TPS2553DBVR",
+   "categoria": "power",
+   "fonte_consigliata": "easyeda",
+   "lcsc": "C55266"
+  }
+ ]
+}

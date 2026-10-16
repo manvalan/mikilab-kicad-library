@@ -1,0 +1,12 @@
+{
+ "progetto": "Scheda RK3568 (ex SchedaH616, MuonScope)",
+ "data": "2026-10-16",
+ "nota": "Componenti nuovi rispetto alla scheda H616. TCS4525 senza codice LCSC: aggiunto a mano con add_component.py (simbolo dal datasheet TCS Ver.1.0, footprint KiCad WLCSP-20 4x5 passo 0.4). Portapila BS-12-B3AA003 escluso.",
+ "componenti": [
+  {"ref": "U301", "funzione": "SoC", "mpn": "RK3568", "produttore": "Rockchip", "package": "FCBGA-636 19x19 P0.65", "categoria": "microcontrollers", "fonte_consigliata": "easyeda", "lcsc": "C2938930"},
+  {"ref": "U201", "funzione": "PMIC", "mpn": "RK809-5", "produttore": "Rockchip", "package": "QFN-68 7x7 P0.35", "categoria": "power", "fonte_consigliata": "easyeda", "lcsc": "C2939628"},
+  {"ref": "U402", "funzione": "eMMC 64 GB", "mpn": "FEMDNN064G-C9A61", "produttore": "FORESEE", "package": "FBGA-153 11.5x13", "categoria": "memory", "fonte_consigliata": "easyeda", "lcsc": "C49284704"},
+  {"ref": "U204", "funzione": "LDO 1.8 V VCCQ eMMC", "mpn": "AP2112K-1.8TRG1", "produttore": "Diodes", "package": "SOT-23-5", "categoria": "power", "fonte_consigliata": "easyeda", "lcsc": "C176944"},
+  {"ref": "U202", "funzione": "Buck VDD_CPU 5 A I2C", "mpn": "TCS4525", "produttore": "TCS", "package": "WCSP-20 2.0x1.6 P0.4", "categoria": "power", "salta": true}
+ ]
+}
